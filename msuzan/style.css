@@ -279,7 +279,7 @@ msuzan HEADER TOP AREA CSS
   background: #073B42;
   padding: 8px 15px 9px;
   display: inline-block;
-  color: #333;
+  color: #fff;
 }
 
 .top-right-menu ul.social-icons.menu_18,
@@ -561,7 +561,7 @@ msuzan HEADING NAV AREA CSS
 }
 
 .msuzan_nav_area.prefix {
-  background: #0d2352 !important;
+  background: #073B42 !important;
   top: 0px;
 }
 
@@ -890,7 +890,7 @@ a.dtbtn:hover {
 }
 
 .header_transparent.headroom--pinned .msuzan_nav_area {
-  background: rgba(0, 0, 0, 0.75);
+  background: #073B42;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -1036,12 +1036,12 @@ CUROUSEL SLIDER AREA
   width: 35px;
   text-align: center;
   line-height: 35px;
-  color: #fff;
+  color: #073B42;
   margin: 0 6px;
   border-radius: 50%;
   transition: 0.5s;
   font-size: 16px;
-  background: #d9bf77;
+  background: #ffffff;
 }
 
 .slider_icon_inner i:hover {
@@ -1536,7 +1536,7 @@ CUROUSEL SLIDER AREA
   padding-bottom: 0;
   font-size: 33px;
   text-transform: uppercase;
-  color: #333;
+  color: #fff;
   position: relative;
   margin-bottom: 0;
 }
@@ -1546,7 +1546,7 @@ CUROUSEL SLIDER AREA
   content: "";
   height: 2px;
   width: 100px;
-  background: #d9bf77;
+  background: #ffffff;
   left: 315px;
   top: 19px;
   margin: auto;
@@ -1558,7 +1558,7 @@ CUROUSEL SLIDER AREA
   content: "";
   height: 2px;
   width: 100px;
-  background: #d9bf77;
+  background: #ffffff;
   left: 0;
   top: 19px;
   margin: auto;
@@ -1594,6 +1594,7 @@ msuzan ABOUT AREA CSS
 
 .about_area {
   padding: 93px 0 52px;
+  background: #073B42;
 }
 
 .about_area.about-left-img {
@@ -1626,12 +1627,12 @@ msuzan ABOUT AREA CSS
   /* margin-top: 2px; */
   text-transform: uppercase;
   font-weight: 700;
-  /* color: #333; */
+  /* color: #fff; */
 }
 
 .single_about_title h3 {
   font-size: 23px;
-  color: #333;
+  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -1646,7 +1647,7 @@ msuzan ABOUT AREA CSS
 }
 
 .single_about_btn a.active {
-  background: #d9bf77;
+  background: #ffffff;
   padding: 8px 25px;
   margin-right: 20px;
   transition: 0.5s;
@@ -1654,10 +1655,10 @@ msuzan ABOUT AREA CSS
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
-  color: #fff;
+  color: #073B42;
   position: relative;
   z-index: 1;
-  border: 3px solid #d9bf77;
+  border: 3px solid #ffffff;
   border-radius: 30px;
 }
 
@@ -1670,21 +1671,21 @@ msuzan ABOUT AREA CSS
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
-  color: #d9bf77;
+  color: #ffffff;
   position: relative;
   z-index: 1;
-  border: 3px solid #d9bf77;
+  border: 3px solid #ffffff;
   border-radius: 30px;
 }
 
 .single_about_btn a.active:hover {
   background: transparent;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .single_about_btn a:hover {
-  background: #d9bf77;
-  color: #fff;
+  background: #ffffff;
+  color: #073B42;
 }
 
 .single_about_btn a:hover:before {
@@ -1725,7 +1726,7 @@ msuzan ABOUT AREA CSS
 
 .about_title h2 {
   font-size: 35px;
-  color: #333;
+  color: #fff;
   padding: 29px 0 22px;
   text-transform: uppercase;
 }
@@ -1922,12 +1923,12 @@ msuzan ABOUT AREA CSS
   line-height: 10px;
   color: #fff;
   text-align: right;
-  background-color: #d9bf77;
+  background-color: #ffffff;
   box-shadow: none;
 }
 
 .ttop {
-  color: #333;
+  color: #fff;
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -2042,7 +2043,7 @@ SERVICE AREA CSS
 .service_area {
   overflow: hidden;
   padding: 93px 0 70px;
-  background: #f9f9f9;
+  background: #073B42;;
 }
 
 .single_service {
@@ -2054,12 +2055,12 @@ SERVICE AREA CSS
   /* box-shadow: 0 0 19px rgba(0,0,0,0.15); */
   position: relative;
   z-index: 1;
-  border-bottom: 4px solid #d9bf77;
+  border-bottom: 4px solid #ffffff;
   background: #073B42;
 }
 
 .single_service:hover {
-  background: #d9bf77;
+  background: #ffffff;
 }
 
 .service_icon {
@@ -2069,9 +2070,9 @@ SERVICE AREA CSS
 
 .service_icon i {
   font-size: 30px;
-  color: #fff;
+  color: #073B42;
   text-align: center;
-  background: #d9bf77;
+  background: #ffffff;
   height: 65px;
   width: 65px;
   line-height: 65px;
@@ -2082,7 +2083,7 @@ SERVICE AREA CSS
 
 .single_service:hover .service_icon i {
   background: #073B42;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .sercive_content {
@@ -2258,7 +2259,7 @@ Portfolio Style Default
   text-align: center;
   border-radius: 100%;
   transition: 0.5s;
-  background: #d9bf77;
+  background: #ffffff;
 }
 
 .port_icon i:hover {
@@ -2460,7 +2461,7 @@ Portfolio Style Default
 
 .minimal .portfolio_nav ul li.current_menu_item,
 .minimal .portfolio_nav ul li:hover {
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .minimal .loade_more a {
@@ -2536,7 +2537,7 @@ msuzan FEATURE AREA CSS
   margin-right: 20px;
   text-align: center;
   float: left;
-  color: #333;
+  color: #fff;
   transition: 0.5s;
   background: #f9f9f9;
 }
@@ -2573,7 +2574,7 @@ msuzan FEATURE AREA CSS
 }
 
 .feature_button a {
-  color: #333;
+  color: #fff;
   display: inline-block;
   border: 1px solid #ddd;
   padding: 5px 20px;
@@ -2601,6 +2602,7 @@ msuzan TESTIMONIAL AREA CSS
 .testimonial_area {
   padding-top: 99px;
   padding-bottom: 101px;
+  background: #073B42;
 }
 
 .testimonial_area.about-pages {
@@ -2685,7 +2687,7 @@ msuzan TESTIMONIAL AREA CSS
 .em_testi_title h2 span {
   display: block;
   font-size: 14px;
-  color: #d9bf77;
+  color: #ffffff;
   margin-top: 4px;
   font-weight: 400;
   text-transform: capitalize;
@@ -2970,6 +2972,7 @@ msuzan BLOG AREA CSS
 
 .blog_area {
   padding: 86px 0 72px;
+  background: #073B42;
 }
 
 .blog_area.blog-grid {
@@ -3048,7 +3051,7 @@ msuzan BLOG AREA CSS
   line-height: 45px;
   text-align: center;
   border-radius: 50%;
-  color: #d9bf77;
+  color: #ffffff;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   transition: 0.5s;
 }
@@ -3068,7 +3071,7 @@ msuzan BLOG AREA CSS
 }
 
 .blog-page-title a {
-  color: #333;
+  color: #fff;
   display: block;
   font-size: 20px;
   font-weight: 600;
@@ -3129,17 +3132,17 @@ msuzan BLOG AREA CSS
 .msuzan-blog-meta-right a:hover,
 .msuzan-blog-meta-left span:hover,
 .msuzan-blog-meta-right span:hover {
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .msuzan-blog-meta-left i {
   margin-right: 5px;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .msuzan-blog-meta-left i {
   margin-right: 12px;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .msuzan-blog-meta-right {
@@ -3187,7 +3190,7 @@ msuzan BLOG AREA CSS
 }
 
 .msuzan-single-blog:hover .blog_icon i {
-  background: #d9bf77;
+  background: #ffffff;
   color: #fff;
 }
 
@@ -3252,7 +3255,7 @@ msuzan BLOG DETAILS AREA CSS
   padding: 10px 20px;
   margin: 37px 0 36px;
   font-size: 14px;
-  border-left: 7px solid #d9bf77;
+  border-left: 7px solid #ffffff;
   background: #f7f7f7;
   font-style: italic;
   font-weight: 500;
@@ -3317,7 +3320,7 @@ msuzan BLOG DETAILS AREA CSS
 }
 
 .blog_comments_section .post_meta span:hover {
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .blog_comments_section .post_meta span:last-child:before {
@@ -3365,7 +3368,7 @@ msuzan BLOG DETAILS AREA CSS
 }
 
 .reply_ttl > h3::before {
-  background: #d9bf77;
+  background: #ffffff;
   content: "";
   height: 1px;
   left: 194px;
@@ -3387,7 +3390,7 @@ msuzan BLOG DETAILS AREA CSS
 
 .contact_area {
   padding: 105px 0 110px;
-  background: #f9f9f9;
+  background: #073B42;
 }
 
 .contact_area_inner {
@@ -3420,10 +3423,10 @@ msuzan BLOG DETAILS AREA CSS
   line-height: 53px;
   border-radius: 100%;
   text-align: center;
-  border: 1px solid #d9bf77;
+  border: 1px solid #ffffff;
   margin-right: 15px;
   transition: 0.3s;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .plases_text {
@@ -3433,7 +3436,7 @@ msuzan BLOG DETAILS AREA CSS
 .plases_text h2 {
   font-size: 18px;
   font-weight: 500;
-  color: #333;
+  color: #fff;
   margin-bottom: 7px;
   text-transform: uppercase;
 }
@@ -3448,7 +3451,7 @@ msuzan BLOG DETAILS AREA CSS
   content: "";
   width: 1px;
   height: 80px;
-  background: #d9bf77;
+  background: #ffffff;
   left: 96%;
   top: -40px;
 }
@@ -3461,6 +3464,7 @@ msuzan BLOG DETAILS AREA CSS
 
 .message_area {
   padding: 90px 0 30px;
+  background: #073B42;
 }
 
 .contact_form_inner {
@@ -3479,7 +3483,7 @@ msuzan BLOG DETAILS AREA CSS
 .form_box input,
 .form_box textarea {
   background: transparent;
-  color: #d9bf77;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   height: 50px;
@@ -3493,11 +3497,11 @@ msuzan BLOG DETAILS AREA CSS
 }
 
 .form_box input:focus {
-  border-color: #d9bf77;
+  border-color: #ffffff;
 }
 
 .form_box textarea:focus {
-  border-color: #d9bf77;
+  border-color: #ffffff;
 }
 
 .blog_reply .form_field_inner input,
@@ -3505,7 +3509,7 @@ msuzan BLOG DETAILS AREA CSS
 .blog_reply .field_comment_inner textarea {
   background: #f7f7f7;
   border: 1px solid #ddd;
-  color: #d9bf77;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   height: 50px;
@@ -3519,7 +3523,7 @@ msuzan BLOG DETAILS AREA CSS
   padding-top: 10px;
 }
 .blog_reply .contact_bnt button {
-  background: #d9bf77;
+  background: #ffffff;
   border: 0;
   color: #fff;
   display: block;
@@ -3546,9 +3550,9 @@ msuzan BLOG DETAILS AREA CSS
 }
 
 .quote_btn button {
-  background: #d9bf77;
+  background: #ffffff;
   border: 0;
-  color: #fff;
+  color: #073B42;
   display: block;
   letter-spacing: 0;
   padding: 10px 30px;
@@ -3562,8 +3566,8 @@ msuzan BLOG DETAILS AREA CSS
 
 .quote_btn button:hover {
   background: transparent;
-  color: #d9bf77;
-  border: 1px solid #d9bf77;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .google_map_area {
@@ -3742,21 +3746,21 @@ msuzan BLOG DETAILS AREA CSS
 
 .home-2 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #333 !important;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 400;
 }
 
 .home-2 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #333 !important;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 400;
 }
 
 .home-2 :-moz-placeholder {
   /* Firefox 18- */
-  color: #333 !important;
+  color: #fff !important;
   font-size: 14px;
   font-weight: 400;
 }
@@ -3892,7 +3896,7 @@ FOOTER AREA CSS
 
 .footer_area {
   padding: 74px 0 73px;
-  background: #f9f9f9;
+  background: #073B42;
 }
 
 .coppyright {
@@ -3928,21 +3932,21 @@ FOOTER AREA CSS
 
 .footer_social_icon a {
   font-size: 16px;
-  background: #d9bf77;
+  background: #ffffff;
   height: 40px;
   width: 40px;
   display: inline-block;
   line-height: 40px;
-  border: 1px solid #d9bf77;
+  border: 1px solid #ffffff;
   border-radius: 50%;
-  color: #fff;
+  color: #073B42;
   transition: 0.5s;
   margin-left: 10px;
 }
 
 .footer_social_icon a:hover {
-  color: #d9bf77;
-  border: 1px solid #d9bf77;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   background: #073B42;
 }
 
@@ -4015,7 +4019,7 @@ FOOTER MINIMAL CSS
 ==================*/
 
 .minimal.footer_area {
-  background: #f7f7f7;
+  background: #073B42;
 }
 
 .minimal .footer_social_icon a {
@@ -4030,8 +4034,8 @@ msuzan FOOTER BOTTOM AREA CSS
 
 .footer-bottom {
   padding: 26px 0 24px;
-  border-top: 1px solid #d9bf77;
-  background: #f9f9f9f9;
+  border-top: 1px solid #ffffff;
+  background: #073B42;
 }
 
 .copy-right-text {
@@ -4063,7 +4067,7 @@ msuzan FOOTER BOTTOM AREA CSS
 .footer-menu ul li a {
   padding: 0 10px;
   display: block;
-  color: #777;
+  color: #fff;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 400;
@@ -4093,12 +4097,12 @@ msuzan FOOTER BOTTOM AREA CSS
 
 .minimal.footer-bottom {
   background: #f7f7f7;
-  border-top: 1px solid #d9bf77;
+  border-top: 1px solid #ffffff;
 }
 
 .minimal .copy-right-text a:hover,
 .footer-menu ul li a:hover {
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 /*==========================
@@ -4116,7 +4120,7 @@ msuzan COUNTER AREA CSS
 .counter_area {
   padding-top: 87px;
   padding-bottom: 65px;
-  background: #f9f9f9f9;
+  background: #073B42;
 }
 
 .single_counter {
@@ -4133,7 +4137,7 @@ msuzan COUNTER AREA CSS
   -webkit-transition: 0.3s;
   margin: 0;
   transition: 0.3s;
-  color: #d9bf77;
+  color: #ffffff;
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
@@ -4154,7 +4158,7 @@ msuzan COUNTER AREA CSS
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  color: #333;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -4457,7 +4461,7 @@ msuzan BREADCRUMB AREA CSS
 =========================*/
 
 .blog-page-title h2 {
-  color: #333;
+  color: #fff;
   display: block;
   font-size: 22px;
   font-weight: 600;
@@ -4470,7 +4474,7 @@ msuzan BREADCRUMB AREA CSS
 }
 
 .blog-page-title a {
-  color: #333;
+  color: #fff;
   display: inline-block;
   font-weight: 600;
 }
@@ -4493,7 +4497,7 @@ msuzan BREADCRUMB AREA CSS
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 500;
-  color: #333;
+  color: #fff;
   font-size: 30px;
 }
 
@@ -4599,8 +4603,8 @@ msuzan BREADCRUMB AREA CSS
 .paginations a:hover,
 .paginations a.current,
 .page-numbers span.current {
-  background: #d9bf77;
-  border-color: #d9bf77;
+  background: #ffffff;
+  border-color: #ffffff;
   color: #fff;
 }
 
@@ -4683,7 +4687,7 @@ msuzan 404 AREA CSS
 .search-error > h3 {
   display: block;
   font-size: 30px;
-  color: #333;
+  color: #fff;
 }
 
 .search-error .search input {
@@ -4711,9 +4715,9 @@ msuzan SCROLL TOP CSS
 =========================*/
 
 #scrollUp {
-  background: #d9bf77 none repeat scroll 0 0;
+  background: #ffffff none repeat scroll 0 0;
   bottom: 30px;
-  color: #fff;
+  color: #073B42;
   font-size: 30px;
   height: 40px;
   line-height: 40px;
@@ -4723,7 +4727,7 @@ msuzan SCROLL TOP CSS
 }
 
 #scrollUp i {
-  color: #fff;
+  color: #073B42;
 }
 
 .copy-right-text a {
@@ -4745,7 +4749,7 @@ msuzan SCROLL TOP CSS
 }
 
 .mean-container .mean-nav ul li li a {
-  color: #333;
+  color: #fff;
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
@@ -4975,7 +4979,7 @@ BLOG AREA CSS
 }
 
 .blog-page-title a {
-  color: #333;
+  color: #fff;
   display: block;
   font-size: 18px;
   font-weight: 500;
@@ -4987,7 +4991,7 @@ BLOG AREA CSS
 }
 
 .blog-page-title a:hover {
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .blog-content h2 a {
@@ -5074,9 +5078,9 @@ msuzan CUOROSEL  CSS
 =============================*/
 
 .curosel-style .owl-nav div {
-  border: 2px solid #d9bf77;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  color: #d9bf77;
+  color: #ffffff;
   font-size: 19px;
   height: 44px;
   left: -45px;
@@ -5124,12 +5128,12 @@ msuzan CUOROSEL  CSS
 
 .curosel-style .owl-nav .owl-next:hover {
   background: #transparent;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .curosel-style .owl-nav .owl-prev:hover {
   background: #transparent;
-  color: #d9bf77;
+  color: #ffffff;
 }
 
 .owl-carousel .owl-item img {
@@ -5153,7 +5157,7 @@ msuzan CUOROSEL  CSS
   width: 24px;
   height: 4px;
   margin: 0px 5px 0;
-  background: #d9bf77;
+  background: #ffffff;
 }
 
 .testimonial_list .owl-dot.active {
@@ -5297,7 +5301,7 @@ msuzan ACOADING AREA CSS
 }
 
 .ui-accordion-header a i {
-  background: #333;
+  background: #fff;
   color: #fff;
   border-radius: 50%;
   height: 28px;
@@ -5310,7 +5314,7 @@ msuzan ACOADING AREA CSS
 
 .ui-accordion-header.ui-state-active a i {
   background: #073B42;
-  color: #333;
+  color: #fff;
 }
 
 .kc-panel-body ul {
@@ -5392,7 +5396,7 @@ table#wp-calendar td#today a {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 91px 0 101px;
-  background: #f9f9f9f9;
+  background: #073B42;
 }
 
 .biography-timline {
@@ -5409,7 +5413,7 @@ table#wp-calendar td#today a {
   left: calc(50% - 1px);
   bottom: 0;
   width: 2px;
-  background-color: #d9bf77;
+  background-color: #ffffff;
   -webkit-border-radius: 4rem;
   -moz-border-radius: 4rem;
   -ms-border-radius: 4rem;
@@ -5442,7 +5446,7 @@ table#wp-calendar td#today a {
   -o-border-radius: 50%;
   border-radius: 50%;
   content: " ";
-  background-color: #d9bf77;
+  background-color: #ffffff;
   z-index: 0;
   animation: video-icon-animation 1.4s 0.7s linear infinite;
 }
@@ -5474,7 +5478,7 @@ table#wp-calendar td#today a {
 }
 
 .biography_text:hover {
-  background: #d9bf77;
+  background: #ffffff;
 }
 
 .biography_text h3 {
@@ -5483,7 +5487,7 @@ table#wp-calendar td#today a {
   margin: 0;
   margin-bottom: 5px;
   transition: 0.3s;
-  color: #333;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -5502,13 +5506,13 @@ table#wp-calendar td#today a {
 
 .biography_text span {
   font-size: 15px;
-  color: #333;
+  color: #fff;
   transition: 0.3s;
 }
 
 .biography_text p {
   margin-top: 19px;
-  color: #333;
+  color: #fff;
   transition: 0.3s;
 }
 
@@ -5525,8 +5529,8 @@ table#wp-calendar td#today a {
   padding: 4px 28px;
   border-radius: 20px 0 0;
   font-size: 18px;
-  color: #fff;
-  background: #d9bf77;
+  color: #073B42;
+  background: #ffffff;
   transition: 0.3s;
 }
 
@@ -5584,7 +5588,7 @@ biography minimal CSS
 }
 
 .minimal .biography_text h4 {
-  color: #777;
+  color: #fff;
 }
 
 .minimal .biography_text:hover.biography_text h4 {
@@ -5617,14 +5621,14 @@ biography minimal CSS
 
 .panel-title {
   font-size: 18px;
-  color: #333;
+  color: #fff;
 }
 
 .panel-title a {
 }
 
 .panel-heading1 a i {
-  background: #333;
+  background: #fff;
   color: #fff;
   height: 28px;
   width: 28px;
@@ -5660,7 +5664,7 @@ biography minimal CSS
 .panel-heading1::before {
   position: absolute;
   content: "+";
-  color: #333;
+  color: #fff;
   right: 15px;
   transform: translateY(-50%);
   top: 50%;
@@ -5686,12 +5690,12 @@ biography minimal CSS
 
 .panel-heading1 a {
   display: block;
-  color: #333;
+  color: #fff;
 }
 
 .panel-heading1.active a i {
   background: #073B42;
-  color: #333;
+  color: #fff;
 }
 
 /*======================

@@ -23,7 +23,7 @@ p {
 	font-style: normal;
 	font-size:13px;
 	font-family: 'Poppins', sans-serif;
-	color:#777;
+	color:#fff;
 	letter-spacing:0.5px;
 	line-height:1.5;
 }
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #333;
+    color: #fff;
     font-family: Roboto,Helvetica,Arial,sans-serif;
     font-style: normal;
 	margin-bottom: 11px;

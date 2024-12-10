@@ -842,7 +842,7 @@
 	.biography_text:hover.biography_text h3,
 	.biography_text:hover.biography_text span,
 	.biography_text:hover.biography_text p {
-		color: #333;
+		color: #fff;
 	}
 }
 

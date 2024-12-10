@@ -72,7 +72,7 @@ html {
 }
 
 a:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #fff;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -226,7 +226,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #ffffff;
   background-color: #073B42;
 }
 
@@ -974,7 +974,7 @@ pre {
   padding: 0 3px 2px;
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
   font-size: 12px;
-  color: #333333;
+  color: #ffffff;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
@@ -1041,7 +1041,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: 40px;
-  color: #333333;
+  color: #ffffff;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1210,7 +1210,7 @@ select:focus,
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #fff;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -2950,7 +2950,7 @@ table th[class*="span"],
   clear: both;
   font-weight: normal;
   line-height: 20px;
-  color: #333333;
+  color: #ffffff;
   white-space: nowrap;
 }
 
@@ -3203,7 +3203,7 @@ button.close {
   *margin-left: .3em;
   font-size: 14px;
   line-height: 20px;
-  color: #333333;
+  color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
   vertical-align: middle;
@@ -3238,7 +3238,7 @@ button.close {
 .btn.active,
 .btn.disabled,
 .btn[disabled] {
-  color: #333333;
+  color: #ffffff;
   background-color: #e6e6e6;
   *background-color: #d9d9d9;
 }
@@ -3254,7 +3254,7 @@ button.close {
 
 .btn:hover,
 .btn:focus {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
   background-position: 0 -15px;
   -webkit-transition: background-position 0.1s linear;
@@ -3264,7 +3264,7 @@ button.close {
 }
 
 .btn:focus {
-  outline: thin dotted #333;
+  outline: thin dotted #fff;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
@@ -3613,7 +3613,7 @@ input[type="submit"].btn.btn-mini {
 
 .btn-link[disabled]:hover,
 .btn-link[disabled]:focus {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -4418,7 +4418,7 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #777777;
+  color: #ffffff;
   text-shadow: 0 1px 0 #ffffff;
 }
 
@@ -4430,16 +4430,16 @@ input[type="submit"].btn.btn-mini {
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
-  color: #777777;
+  color: #ffffff;
 }
 
 .navbar-link {
-  color: #777777;
+  color: #ffffff;
 }
 
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #333333;
+  color: #ffffff;
 }
 
 .navbar .divider-vertical {
@@ -4613,7 +4613,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #ffffff;
   text-decoration: none;
   text-shadow: 0 1px 0 #ffffff;
 }
@@ -4624,7 +4624,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
   background-color: transparent;
 }
@@ -4738,8 +4738,8 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
-  border-top-color: #333333;
-  border-bottom-color: #333333;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle,
@@ -4750,8 +4750,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #777777;
-  border-bottom-color: #777777;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
@@ -4903,7 +4903,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .navbar-search .search-query:focus,
 .navbar-inverse .navbar-search .search-query.focused {
   padding: 5px 15px;
-  color: #333333;
+  color: #ffffff;
   text-shadow: 0 1px 0 #ffffff;
   background-color: #073B42;
   border: 0;
@@ -5712,7 +5712,7 @@ a.badge:focus {
 
 .label-inverse,
 .badge-inverse {
-  background-color: #333333;
+  background-color: #ffffff;
 }
 
 .label-inverse[href],
@@ -6099,7 +6099,7 @@ a.badge:focus {
   bottom: 0;
   left: 0;
   padding: 15px;
-  background: #333333;
+  background: #ffffff;
   background: rgba(0, 0, 0, 0.75);
 }
 
