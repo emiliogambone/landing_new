@@ -2105,7 +2105,7 @@ SERVICE AREA CSS
 
 .single_service:hover .sercive_content h2,
 .single_service:hover .sercive_content p {
-  color: #fff;
+  color: #073B42;
 }
 
 /*====================
@@ -5542,7 +5542,7 @@ table#wp-calendar td#today a {
 .biography_text:hover.biography_text h3,
 .biography_text:hover.biography_text span,
 .biography_text:hover.biography_text p {
-  color: #fff;
+  color: #073B42;
 }
 
 .biography-date,
