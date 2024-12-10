@@ -820,7 +820,7 @@ a.dtbtn {
 
 a.dtbtn:hover {
   background-color: #073B42;
-  color: #444;
+  color: #fff;
 }
 
 .redX {
@@ -957,7 +957,7 @@ CUROUSEL SLIDER AREA
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
-  color: #444;
+  color: #fff;
   letter-spacing: 3px;
 }
 
@@ -989,7 +989,7 @@ CUROUSEL SLIDER AREA
 }
 
 .sreadmore:hover {
-  color: #444;
+  color: #fff;
   background: #073B42;
 }
 
@@ -2057,6 +2057,8 @@ SERVICE AREA CSS
   z-index: 1;
   border-bottom: 4px solid #ffffff;
   background: #073B42;
+  height: 100%; /* Ensures all blocks have the same height */
+  min-height: 350px; /* Set a minimum height for all blocks */
 }
 
 .single_service:hover {
@@ -2758,7 +2760,7 @@ msuzan VIDEO AREA CSS
 }
 
 .abtext em {
-  color: #444;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -3164,7 +3166,7 @@ msuzan BLOG AREA CSS
 
 .readmore a {
   border: 1px solid #ddd;
-  color: #444;
+  color: #fff;
   display: inline-block;
   font-size: 11px;
   font-weight: 400;
@@ -4002,7 +4004,7 @@ FOOTER AREA CSS
   border: 0;
   border-radius: 5px;
   background: #073B42;
-  color: #444;
+  color: #fff;
   transition: 0.5s;
   text-transform: uppercase;
   font-size: 14px;
@@ -4187,9 +4189,9 @@ COUNTER MINIMAL CSS
 }
 
 .minimal .counter_icon i {
-  color: #444;
+  color: #fff;
   background: #073B42;
-  border: 7px solid #444;
+  border: 7px solid #fff;
 }
 
 .minimal .single_counter:hover .counter_icon i {
@@ -4745,7 +4747,7 @@ msuzan SCROLL TOP CSS
 
 .mean-container .mean-bar {
   float: none;
-  background: #000 none repeat scroll 0 0;
+  background: #073B42 none repeat scroll 0 0;
 }
 
 .mean-container .mean-nav ul li li a {
@@ -5181,6 +5183,7 @@ msuzan CUOROSEL  CSS
   }
   .mean-container a.meanmenu-reveal {
     padding: 19px 20px 18px;
+    color: #ffffff
   }
 }
 
@@ -5749,7 +5752,7 @@ portfolio DITALS AREA CSS
 }
 
 .single_portfolio_content a {
-  color: #444;
+  color: #fff;
   background: #073B42;
   padding: 11px 33px;
   transition: 0.3s;

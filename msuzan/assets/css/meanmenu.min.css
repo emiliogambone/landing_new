@@ -45,7 +45,7 @@ a.meanmenu-reveal{display:none}
   width: 80%;
   font-weight: normal;
   text-transform: capitalize;
-  color: #444;
+  color: #fff;
 }
 .mean-container .mean-nav ul li.mean-last a{border-bottom:0;margin-bottom:0}
 .mean-container .mean-nav ul li li li a{width:70%;padding:1em 15%}
@@ -97,7 +97,7 @@ a.meanmenu-reveal{display:none}
 	border-radius: 0;
 }
 .mean-container a.meanmenu-reveal span {
-  background: #073B42;
+  background: #fff;
 }
 .mobile-menu-area {
   background: #073B42 none repeat scroll 0 0;
@@ -105,7 +105,7 @@ a.meanmenu-reveal{display:none}
 }
 .mean-container .mean-nav ul li a {
   background: #073B42;
-  color: #444;
+  color: #fff;
   display: block;
 }
 .mean-container .mean-nav ul li a.mean-expand {
@@ -116,7 +116,7 @@ a.meanmenu-reveal{display:none}
   background: none;
 }
 .mean-container .mean-nav ul li {
-  background: #444;
+  background: #fff;
 }
 .mean-container .mean-nav ul li li a {
   color: #fff;
@@ -130,11 +130,10 @@ a.meanmenu-reveal{display:none}
   color: #fff !important;
 }
 .mean-container a.meanmenu-reveal:hover span {
-  background: #073B42;
+  background: #fff;
 }
 .mean-container .mean-bar::before {
-  color: #fff;
-  content: "msuzan";
+  color: #fff !important;
   font-size: 18px;
   font-weight: 700;
   left: 10px;
