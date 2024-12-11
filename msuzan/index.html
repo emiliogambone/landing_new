@@ -150,7 +150,7 @@
             <div class="col-md-9 col-sm-9 col-xs-8">
               <nav class="msuzan_menu main-search-menu">
                 <ul class="main-menu sub-menu nav_scroll">
-                  <li><a href="index-3.html">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#service">Servizi</a></li>
                   <!-- <li><a href="#gallery">Gallery</a></li> -->
@@ -174,7 +174,7 @@
       <div class="menu_area mobile-menu">
         <nav class="msuzan_menu main-search-menu">
           <ul class="main-menu sub-menu clearfix nav_scroll">
-            <li><a href="index-3.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#service">Service</a></li>
             <!-- <li><a href="#gallery">Gallery</a></li> -->
@@ -400,7 +400,9 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
                   <i class="fa fa-chalkboard-user"></i>
                 </div>
                 <div class="sercive_content">
-                  <h2>FORMAZIONE</h2>
+                  <!-- <h2>FORMAZIONE</h2> -->
+                  <h2 data-translate="test">FORMAZIONE</h2>
+
                   <p>
                     Offro formazione su tecnologie, strumenti e best practices per permettere ai team aziendali di gestire autonomamente soluzioni IT complesse. Organizzo corsi personalizzati su misura per le esigenze specifiche di ogni cliente, migliorando le competenze interne.
                   </p>
@@ -1240,6 +1242,9 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
                 <a href="https://github.com/emiliogambone"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/emilio-gambone-41624458/"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
+              <button class="lang-switch" data-lang="en">English</button>
+<button class="lang-switch" data-lang="it">Italiano</button>
+
             </div>
           </div>
         </div>
@@ -1263,7 +1268,7 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Servizi</a></li>
-                <li><a href="#">portfolio</a></li>
+                <!-- <li><a href="#">portfolio</a></li> -->
               </ul>
             </div>
           </div>
@@ -1272,12 +1277,43 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
     </div>
     <!-- END FOOTER BOTTOM AREA -->
 
+
+  
+
     <!-- Main jquery js -->
     <script
       type="text/javascript"
       src="assets/js/vendor/jquery-3.2.1.min.js"
     ></script>
-    <!-- bootstrap js -->
+    <script>
+      // Function to dynamically load the translation file
+      function loadTranslations(lang) {
+          // Create the script element for the translation file
+          var script = document.createElement("script");
+          script.src = "translations_" + lang + ".js"; // e.g., translations_en.js
+          script.onload = function() {
+              // Once the script is loaded, update the text content of elements with data-translate
+              $("[data-translate]").each(function() {
+                  var key = $(this).data("translate");
+                  // Set the text to the translation, or leave it unchanged if no translation found
+                  $(this).text(translations[key] || $(this).text());
+              });
+          };
+          // Append the script tag to the body to load the translation file
+          document.body.appendChild(script);
+      }
+
+      // Event listener for language buttons
+      $(".lang-switch").click(function() {
+          var lang = $(this).data("lang");
+          loadTranslations(lang);
+      });
+
+      // Load default language (optional, default to English)
+      loadTranslations('en');
+  </script>
+
+<!-- bootstrap js -->
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <!-- directional js -->
     <script
