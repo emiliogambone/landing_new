@@ -238,8 +238,8 @@
             <div class="single_about_area">
               <div class="single_about_content">
                 <div class="single_about_title">
-                  <h3 data-translate="hello">Ciao,</h3>
-                  <h2 data-translate="my_name">Mi chiamo Emilio Gambone</h2>
+                  <h2 data-translate="hello">Ciao,</h2>
+                  <!-- <h2 data-translate="my_name">Mi chiamo Emilio Gambone</h2> -->
                 </div>
                 <div class="single_about_content_text about-text">
                   <p data-translate="description">
@@ -1243,9 +1243,9 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
                 <a href="https://www.linkedin.com/in/emilio-gambone-41624458/"><i class="fa-brands fa-linkedin-in"></i></a>
               </div>
               <div class="language-dropdown">
-                <button class="dropdown-btn">Language
+                <button class="dropdown-btn">
+                  <span data-translate="language">Language</span>
                   <i class="fa fa-chevron-down"></i>
-
                 </button>
                 <div class="dropdown-content">
                   <button class="lang-switch" data-lang="en">English</button>
@@ -1327,6 +1327,15 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
           loadTranslations("en"); // Default to English
       }
   }
+  $(".dropdown-btn").click(function() {
+    $(".dropdown-content").toggle(); // Toggle dropdown visibility
+  });
+  // Close the dropdown when a language is selected
+  $(".lang-switch").click(function() {
+    var lang = $(this).data("lang");
+    loadTranslations(lang); // Call your function to load translations
+    $(".dropdown-content").hide(); // Close the dropdown
+  });
 
   // Event listener for language buttons
   $(".lang-switch").click(function() {

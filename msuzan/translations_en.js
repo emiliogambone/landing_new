@@ -4,7 +4,7 @@ var translations = {
     "contacts": "Contacts",
     "hello" :"Hello,",
     "my_name": "My name is Emilio Gambone",
-"description": "I am an IT engineer with a solid academic and professional background: a degree in Computer Science, a technical diploma in Computer Science, and years of experience in developing innovative solutions. I offer customized services for businesses and individuals who wish to undertake cutting-edge technology projects. For collaborations or more information about my services, feel free to contact me.",
+"description": "My name is Emilio Gambone, I am an IT engineer with a solid academic and professional background: a degree in Computer Science, a technical diploma in Computer Science, and years of experience in developing innovative solutions. I offer customized services for businesses and individuals who wish to undertake cutting-edge technology projects. For collaborations or more information about my services, feel free to contact me.",
     "download_cv": "Download resume",
     "hire_me": "hire me",
     "what_i_do": "What i do?",

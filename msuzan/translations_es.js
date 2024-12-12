@@ -4,7 +4,7 @@ var translations = {
     "contacts": "Contactos",
     "hello" :"Hola,",
     "my_name": "Mi nombre es Emilio Gambone",
-    "description": "Soy un ingeniero de IT con una sólida formación académica y profesional: un título en Ciencias de la Computación, un diploma técnico en Informática y años de experiencia en el desarrollo de soluciones innovadoras. Ofrezco servicios personalizados para empresas y particulares que deseen llevar a cabo proyectos tecnológicos de vanguardia. Para colaboraciones o más información sobre mis servicios, no dude en ponerse en contacto conmigo.",
+    "description": "Mi nombre es Emilio Gambone, soy un ingeniero de IT con una sólida formación académica y profesional: un título en Ciencias de la Computación, un diploma técnico en Informática y años de experiencia en el desarrollo de soluciones innovadoras. Ofrezco servicios personalizados para empresas y particulares que deseen llevar a cabo proyectos tecnológicos de vanguardia. Para colaboraciones o más información sobre mis servicios, no dude en ponerse en contacto conmigo.",
     "download_cv": "Descargar CV",
     "hire_me": "Contrátame",
     "what_i_do": "¿Qué hago?",
