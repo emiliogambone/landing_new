@@ -5812,3 +5812,49 @@ portfolio DITALS AREA CSS
   -o-object-fit: cover;
   object-fit: cover;
 }
+
+.language-dropdown {
+  position: relative;
+  text-align: center;       /* Ensure text inside dropdown is centered */
+  width: 100%;
+  margin-top: 20px;                /* Ensure the dropdown takes full width of the container */
+}
+
+.dropdown-btn {
+  background-color: #073B42;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;           /* Center the button horizontally */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  left: 50%;                /* Center the dropdown horizontally */
+  transform: translateX(-50%); /* Ensure the dropdown is perfectly centered */
+  z-index: 1;
+}
+
+.dropdown-content button {
+  background-color: #f1f1f1;
+  color: black;
+  padding: 12px 16px;
+  text-align: left;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
+
+.language-dropdown:hover .dropdown-content {
+  display: block;
+}
