@@ -255,7 +255,7 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
                   </p>
                 </div>
                 <div class="single_about_btn">
-                  <a class="active" target="_blank" href="./EMILIO_GAMBONE.pdf" download="cv_emilio_gambone.pdf" data-translate="download_cv">Scarica CV</a>
+                  <a class="active" id="downloadLink" target="_blank" href="./EMILIO_GAMBONE_en.pdf" download="cv_emilio_gambone_en.pdf" data-translate="download_cv">Download CV</a>
                   <a href="mailto:emilio.gambone@gmail.com"> Hire Me</a>
                 </div>
               </div>
@@ -1324,16 +1324,38 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
 
       function detectUserLanguage() {
       const userLanguage = navigator.language || navigator.userLanguage;  // Get the user's language
-
+      console.log('AAAAAA',userLanguage);
       // Set the language based on the browser's language
       if (userLanguage.startsWith("it")) {
           loadTranslations("it"); // Italian
+          updateDownloadLink("it");
+
       } else if (userLanguage.startsWith("es")) {
           loadTranslations("es"); // Spanish
+          updateDownloadLink("es");
+
       } else {
           loadTranslations("en"); // Default to English
+          updateDownloadLink("en");
+
       }
   }
+  // Update the download link based on the selected language
+function updateDownloadLink(lang) {
+    var downloadLink = $("#downloadLink");
+    var fileName = "cv_emilio_gambone_" + lang + ".pdf";
+    
+    if (lang === "it") {
+        downloadLink.attr("href", "./EMILIO_GAMBONE_it.pdf");
+        downloadLink.attr("download", fileName);
+    } else if (lang === "es") {
+        downloadLink.attr("href", "./EMILIO_GAMBONE_es.pdf");
+        downloadLink.attr("download", fileName);
+    } else {
+        downloadLink.attr("href", "./EMILIO_GAMBONE_en.pdf");
+        downloadLink.attr("download", fileName);
+    }
+}
   $(".dropdown-btn").click(function() {
     $(".dropdown-content").toggle(); // Toggle dropdown visibility
   });
@@ -1341,6 +1363,7 @@ Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi
   $(".lang-switch").click(function() {
     var lang = $(this).data("lang");
     loadTranslations(lang); // Call your function to load translations
+    updateDownloadLink(lang);
     $(".dropdown-content").hide(); // Close the dropdown
   });
 
