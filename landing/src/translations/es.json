@@ -1,0 +1,59 @@
+{
+  "contact": {
+    "phone": {
+      "title": "Teléfono",
+      "value": "+39 3493554864"
+    },
+    "email": {
+      "title": "Correo electrónico",
+      "value": "emilio.gambone@gmail.com"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "value": "+39 3493554864"
+    }
+  },
+  "about": {
+    "greeting": "Hola,",
+    "name": "Me llamo Emilio Gambone",
+    "description": "Soy un ingeniero en informática con una sólida formación académica y profesional: título en Informática, diploma técnico en Informática y años de experiencia desarrollando soluciones innovadoras. Ofrezco servicios personalizados para empresas y particulares que deseen crear proyectos tecnológicos de vanguardia. Para colaboraciones o información sobre mis servicios, no dudes en contactarme.",
+    "cvButton": "Descargar CV",
+    "hireButton": "Contrátame"
+  },
+  "services": {
+    "sectionTitle": "Servicios",
+    "sectionSubtitle": "¿Qué hago?",
+    "items": [
+      {
+        "title": "CONSULTORÍA",
+        "description": "Ofrezco consultoría tecnológica para evaluar necesidades de TI, definir estrategias efectivas, analizar código para mejorar la calidad y seguridad, elegir e implementar soluciones listas para usar y definir requisitos con documentación técnica detallada."
+      },
+      {
+        "title": "ANÁLISIS",
+        "description": "Realizo análisis profundos de los sistemas de TI existentes para identificar áreas de mejora, optimizar el rendimiento, mejorar la seguridad y garantizar la compatibilidad con los requisitos empresariales."
+      },
+      {
+        "title": "GESTIÓN DE PROYECTOS",
+        "description": "Gestiono proyectos tecnológicos complejos desde la planificación hasta la ejecución, asegurando el cumplimiento de plazos, presupuestos y objetivos. Coordino equipos multidisciplinarios y gestiono la comunicación con los clientes, asegurando el éxito de cada fase del proyecto."
+      },
+      {
+        "title": "TRANSFORMACIÓN DIGITAL",
+        "description": "Apoyo a las empresas en la transición digital mediante la implementación de soluciones innovadoras para optimizar los procesos empresariales. Guío el cambio tecnológico, mejorando la eficiencia operativa y la interacción con los clientes mediante tecnologías avanzadas."
+      },
+      {
+        "title": "RELACIONES CON CLIENTES Y PROVEEDORES",
+        "description": "Gestiono y optimizo las relaciones con clientes y proveedores para garantizar una colaboración fluida y productiva. Coordino comunicaciones y negociaciones, asegurando que se satisfagan las necesidades de todas las partes y que se logren los objetivos comunes de manera eficaz."
+      },
+      {
+        "title": "FORMACIÓN",
+        "description": "Ofrezco formación sobre tecnologías, herramientas y mejores prácticas para permitir que los equipos gestionen soluciones de TI complejas de forma autónoma. Organizo cursos personalizados adaptados a las necesidades específicas de cada cliente, mejorando las competencias internas."
+      }
+    ]
+  },
+  "menu": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "contact": "Contacto"
+  }
+}

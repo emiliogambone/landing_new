@@ -1,6 +1,9 @@
-import React from 'react';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const FooterBottom = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="footer-bottom">
       <div className="container">
@@ -8,17 +11,22 @@ const FooterBottom = () => {
           <div className="col-md-6 col-sm-6">
             <div className="copy-right-content">
               {/* FOOTER COPYRIGHT TEXT */}
-              {/* <p>Copyright © msuzan all rights reserved.</p> */}
+              {/* <p>{t("footer.copyright")}</p> */}
             </div>
           </div>
           <div className="col-md-6 col-sm-6">
             <div className="footer-menu">
-              {/* FOOTER COPYRIGHT MENU */}
               <ul className="text-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Servizi</a></li>
-                {/* <li><a href="#">Portfolio</a></li> */}
+                <li>
+                  <a href="#">{t("menu.home")}</a>
+                </li>
+                <li>
+                  <a href="#about">{t("menu.about")}</a>
+                </li>
+                <li>
+                  <a href="#service">{t("menu.services")}</a>
+                </li>
+                {/* <li><a href="#portfolio">{t("menu.portfolio")}</a></li> */}
               </ul>
             </div>
           </div>
