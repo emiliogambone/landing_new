@@ -1,248 +1,128 @@
-import React, { useEffect, useRef } from 'react';
-import sliderBackground from '../assets/images/slider-bg1.jpg'; // Import the image
-import $ from 'jquery'; // Import jQuery
-import WOW from 'wow.js';
+import React from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { useTranslation } from "react-i18next";
+import Typewriter from "typewriter-effect";
 
+const HeroParticles = () => {
+  const { t } = useTranslation();
 
-const Slider = () => {
-    const headlineRef = useRef(null); // Ref for the headline
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
 
-    useEffect(() => {
-        // Ensure the DOM is ready before running the script
-        new WOW().init();
+  const particlesLoaded = (container) => {};
 
-        if (headlineRef.current) {
-          // Adjust the timings to slow down the animation
-          const animationDelay = 4000; // Increased delay for slower animation
-          const barAnimationDelay = 6000; // Increased delay for the loading bar
-          const barWaiting = barAnimationDelay - 4000;
-          const lettersDelay = 100; // Increased delay between letters
-          const typeLettersDelay = 250; // Slower typing animation
-          const selectionDuration = 600; // Longer selection duration
-          const typeAnimationDelay = selectionDuration + 1000;
-          const revealDuration = 1000; // Increased reveal duration
-          const revealAnimationDelay = 2000; // Slower reveal animation
-    
-          // jQuery initialization for the headline
-          initHeadline();
-    
-          function initHeadline() {
-            singleLetters($('.cd-headline.letters').find('b'));
-            animateHeadline($('.cd-headline'));
-          }
-    
-          function singleLetters($words) {
-            $words.each(function () {
-              var word = $(this);
-              var letters = word.text().split('');
-              const selected = word.hasClass('is-visible');
-              for (let i in letters) {
-                if (word.parents('.rotate-2').length > 0) {
-                  letters[i] = '<em>' + letters[i] + '</em>';
-                }
-                letters[i] = selected ? '<i class="in">' + letters[i] + '</i>' : '<i>' + letters[i] + '</i>';
-              }
-              var newLetters = letters.join('');
-              word.html(newLetters).css('opacity', 1);
-            });
-          }
-    
-          function animateHeadline($headlines) {
-            var duration = animationDelay;
-            $headlines.each(function () {
-              var headline = $(this);
-              if (headline.hasClass('loading-bar')) {
-                duration = barAnimationDelay;
-                setTimeout(function () {
-                  headline.find('.cd-words-wrapper').addClass('is-loading');
-                }, barWaiting);
-              } else if (headline.hasClass('clip')) {
-                var spanWrapper = headline.find('.cd-words-wrapper');
-                var newWidth = spanWrapper.width() + 10;
-                spanWrapper.css('width', newWidth);
-              } else if (!headline.hasClass('type')) {
-                var words = headline.find('.cd-words-wrapper b');
-                var width = 0;
-                words.each(function () {
-                  var wordWidth = $(this).width();
-                  if (wordWidth > width) width = wordWidth;
-                });
-                headline.find('.cd-words-wrapper').css('width', width);
-              }
-              setTimeout(function () {
-                hideWord(headline.find('.is-visible').eq(0));
-              }, duration);
-            });
-          }
-    
-          function hideWord($word) {
-            var nextWord = takeNext($word);
-            if ($word.parents('.cd-headline').hasClass('type')) {
-              var parentSpan = $word.parent('.cd-words-wrapper');
-              parentSpan.addClass('selected').removeClass('waiting');
-              setTimeout(function () {
-                parentSpan.removeClass('selected');
-                $word.removeClass('is-visible').addClass('is-hidden').children('i').removeClass('in').addClass('out');
-              }, selectionDuration);
-              setTimeout(function () {
-                showWord(nextWord, typeLettersDelay);
-              }, typeAnimationDelay);
-            } else if ($word.parents('.cd-headline').hasClass('letters')) {
-              var bool = $word.children('i').length >= nextWord.children('i').length;
-              hideLetter($word.find('i').eq(0), $word, bool, lettersDelay);
-              showLetter(nextWord.find('i').eq(0), nextWord, bool, lettersDelay);
-            } else if ($word.parents('.cd-headline').hasClass('clip')) {
-              $word.parents('.cd-words-wrapper').animate({ width: '2px' }, revealDuration, function () {
-                switchWord($word, nextWord);
-                showWord(nextWord);
-              });
-            } else if ($word.parents('.cd-headline').hasClass('loading-bar')) {
-              $word.parents('.cd-words-wrapper').removeClass('is-loading');
-              switchWord($word, nextWord);
-              setTimeout(function () {
-                hideWord(nextWord);
-              }, barAnimationDelay);
-              setTimeout(function () {
-                $word.parents('.cd-words-wrapper').addClass('is-loading');
-              }, barWaiting);
-            } else {
-              switchWord($word, nextWord);
-              setTimeout(function () {
-                hideWord(nextWord);
-              }, animationDelay);
-            }
-          }
-    
-          function showWord($word, $duration) {
-            if ($word.parents('.cd-headline').hasClass('type')) {
-              showLetter($word.find('i').eq(0), $word, false, $duration);
-              $word.addClass('is-visible').removeClass('is-hidden');
-            } else if ($word.parents('.cd-headline').hasClass('clip')) {
-              $word.parents('.cd-words-wrapper').animate({ 'width': $word.width() + 10 }, revealDuration, function () {
-                setTimeout(function () {
-                  hideWord($word);
-                }, revealAnimationDelay);
-              });
-            }
-          }
-    
-          function hideLetter($letter, $word, $bool, $duration) {
-            $letter.removeClass('in').addClass('out');
-            if (!$letter.is(':last-child')) {
-              setTimeout(function () {
-                hideLetter($letter.next(), $word, $bool, $duration);
-              }, $duration);
-            } else if ($bool) {
-              setTimeout(function () {
-                hideWord(takeNext($word));
-              }, animationDelay);
-            }
-            if ($letter.is(':last-child') && $('html').hasClass('no-csstransitions')) {
-              var nextWord = takeNext($word);
-              switchWord($word, nextWord);
-            }
-          }
-    
-          function showLetter($letter, $word, $bool, $duration) {
-            $letter.addClass('in').removeClass('out');
-            if (!$letter.is(':last-child')) {
-              setTimeout(function () {
-                showLetter($letter.next(), $word, $bool, $duration);
-              }, $duration);
-            } else {
-              if ($word.parents('.cd-headline').hasClass('type')) {
-                setTimeout(function () {
-                  $word.parents('.cd-words-wrapper').addClass('waiting');
-                }, 200);
-              }
-              if (!$bool) {
-                setTimeout(function () {
-                  hideWord($word);
-                }, animationDelay);
-              }
-            }
-          }
-    
-          function takeNext($word) {
-            return !$word.is(':last-child') ? $word.next() : $word.parent().children().eq(0);
-          }
-    
-          function takePrev($word) {
-            return !$word.is(':first-child') ? $word.prev() : $word.parent().children().last();
-          }
-    
-          function switchWord($oldWord, $newWord) {
-            $oldWord.removeClass('is-visible').addClass('is-hidden');
-            $newWord.removeClass('is-hidden').addClass('is-visible');
-          }
-        }
-    
-        return () => {
-          // Cleanup jQuery when component unmounts
-          $(headlineRef.current).off();
-        };
-      }, []);    
+  // Roles stay in English
+  const roles = [
+    "Software Engineer",
+    "Technical Project Manager",
+    "IT Consultant",
+  ];
 
-
-    return (
-    <div
-      className="slider_area creative minimal-2"
-      id="home"
+  return (
+    <section
+      className="hero_section"
       style={{
-        backgroundImage: `url(${sliderBackground})`, // Set background dynamically
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        position: 'relative',
-        zIndex: 1,
+        position: "relative",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        color: "#fff",
+        overflow: "hidden",
       }}
-    >      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            {/* Single Slide */}
-            <div className="single_slide">
-              <div className="slider_content">
-                <div className="slider_text">
-                  <div className="slider_text_inner">
-                    <h1 className="cd-headline clip is-full-width" ref={headlineRef}>
-                      <span className="cd-words-wrapper">
-                        <b className="is-visible">EMILIO GAMBONE</b>
-                        <b>IT ENGINEER</b>
-                        {/* <b>Web DEVELOPER</b> */}
-                      </span>
-                    </h1>
-                    <ul>
-                      <li>Solutions Architect</li>
-                      <li>IT Consultant</li>
-                      {/* <li>Freelancer</li> */}
-                    </ul>
-                  </div>
-                </div>
+    >
+      {/* Particles Background */}
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fullScreen: { enable: true, zIndex: -1 },
+          background: { color: { value: "#073B42" } },
+          fpsLimit: 60,
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "repulse" },
+              resize: true,
+            },
+            modes: { repulse: { distance: 100, duration: 0.4 } },
+          },
+          particles: {
+            color: { value: "#00fff0" },
+            links: {
+              enable: true,
+              color: "#00fff0",
+              distance: 150,
+              opacity: 0.3,
+            },
+            collisions: { enable: false },
+            move: {
+              enable: true,
+              speed: 1.5,
+              direction: "none",
+              outModes: { default: "out" },
+            },
+            number: { value: 50 },
+            opacity: { value: 0.5 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 4 } },
+          },
+          detectRetina: true,
+        }}
+      />
 
-                <div
-                  className="scroll-next text-center wow infinite fadeInDown"
-                  data-wow-duration="2s"
-                >
-                  <a href="#about">
-                    <i className="fa fa-angle-double-down"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="single_slider_icon">
-            <div className="slider_icon_inner">
-              <a href="https://github.com/emiliogambone">
-                <i className="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/emilio-gambone-41624458/">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
+      {/* Hero Content */}
+      <div
+        className="hero_content"
+        style={{
+          position: "relative",
+          zIndex: 1,
+          maxWidth: "700px",
+          padding: "0 20px",
+        }}
+      >
+        {/* Name */}
+        <h1 style={{ fontSize: "3rem", marginBottom: "20px" }}>
+          {t("hero.name")}
+        </h1>
+
+        {/* Typewriter roles */}
+        <h2 style={{ fontSize: "1.8rem", marginBottom: "20px" }}>
+          <Typewriter
+            options={{
+              strings: roles,
+              autoStart: true,
+              loop: true,
+              delay: 100,
+              deleteSpeed: 50,
+            }}
+          />
+        </h2>
+
+        {/* Description */}
+        <p style={{ marginBottom: "30px" }}>{t("hero.description")}</p>
+
+        {/* Buttons */}
+        <div className="single_about_btn">
+          <a
+            href="https://app.simplymeet.me/emiliogambone"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="single_about_btn"
+            style={{ marginRight: "10px" }}
+          >
+            {t("hero.ctaContact")}
+          </a>
+          {/* <a href="#services" className="btn btn-outline-light">
+            {t("hero.ctaWork")}
+          </a> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Slider;
+export default HeroParticles;

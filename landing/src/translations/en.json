@@ -18,7 +18,7 @@
     "name": "My name is Emilio Gambone",
     "description": "I am an IT engineer with a solid academic and professional background: degree in Computer Science, technical diploma in Computer Science, and years of experience developing innovative solutions. I offer personalized services for companies and individuals who want to create cutting-edge technology projects. For collaborations or information about my services, feel free to contact me.",
     "cvButton": "Download CV",
-    "hireButton": "Hire Me"
+    "hireButton": "Contact Me"
   },
   "services": {
     "sectionTitle": "Services",
@@ -55,5 +55,11 @@
     "about": "About",
     "services": "Services",
     "contact": "Contact"
+  },
+  "hero": {
+    "name": "EMILIO GAMBONE",
+    "description": "Helping businesses deliver scalable software & manage complex IT projects",
+    "ctaContact": "Contact Me",
+    "ctaWork": "See My Work"
   }
 }

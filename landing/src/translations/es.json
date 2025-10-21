@@ -18,7 +18,7 @@
     "name": "Me llamo Emilio Gambone",
     "description": "Soy un ingeniero en informática con una sólida formación académica y profesional: título en Informática, diploma técnico en Informática y años de experiencia desarrollando soluciones innovadoras. Ofrezco servicios personalizados para empresas y particulares que deseen crear proyectos tecnológicos de vanguardia. Para colaboraciones o información sobre mis servicios, no dudes en contactarme.",
     "cvButton": "Descargar CV",
-    "hireButton": "Contrátame"
+    "hireButton": "Contactame"
   },
   "services": {
     "sectionTitle": "Servicios",
@@ -55,5 +55,11 @@
     "about": "Acerca de",
     "services": "Servicios",
     "contact": "Contacto"
+  },
+  "hero": {
+    "name": "EMILIO GAMBONE",
+    "description": "Ayudo a las empresas a entregar software escalable y gestionar proyectos de TI complejos",
+    "ctaContact": "Contáctame",
+    "ctaWork": "Ver mi trabajo"
   }
 }

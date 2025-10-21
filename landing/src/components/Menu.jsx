@@ -42,11 +42,11 @@ const MainMenu = () => {
                   <li>
                     <a href="#contact">{t("menu.contact")}</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="">
                       <i className="fa fa-bars"></i>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>

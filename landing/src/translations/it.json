@@ -18,7 +18,7 @@
     "name": "Mi chiamo Emilio Gambone",
     "description": "Sono un IT engineer con una solida formazione accademica e professionale: laurea in Informatica, diploma tecnico in Informatica, e anni di esperienza nello sviluppo di soluzioni innovative. Offro servizi personalizzati per aziende e privati che desiderano realizzare progetti tecnologici all'avanguardia. Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi",
     "cvButton": "Scarica CV",
-    "hireButton": "Hire Me"
+    "hireButton": "Contattami"
   },
   "services": {
     "sectionTitle": "Servizi",
@@ -55,5 +55,11 @@
     "about": "Chi sono",
     "services": "Servizi",
     "contact": "Contatti"
+  },
+  "hero": {
+    "name": "EMILIO GAMBONE",
+    "description": "Aiuto le aziende a realizzare software scalabili e gestire progetti IT complessi",
+    "ctaContact": "Contattami",
+    "ctaWork": "Vedi il mio lavoro"
   }
 }

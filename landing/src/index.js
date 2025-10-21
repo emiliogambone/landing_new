@@ -23,6 +23,7 @@ import "./styles/unittest.css";
 import "./styles/widget.css";
 import "./scripts/vendor/modernizr-3.5.0.min.js";
 import "./i18n";
+import { LanguageProvider } from "./context/LanguageContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

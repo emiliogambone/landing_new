@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -15,7 +14,7 @@ function App() {
       {/* Other content/components */}
       <Menu />
       <MobileMenu />
-      {/* <Slider /> */}
+      <Slider />
       <About />
       <Services />
       <ContactArea />
