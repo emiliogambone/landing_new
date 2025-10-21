@@ -1,0 +1,65 @@
+{
+  "contact": {
+    "phone": {
+      "title": "Telefono",
+      "value": "+39 3493554864"
+    },
+    "email": {
+      "title": "Email",
+      "value": "emilio.gambone@gmail.com"
+    },
+    "whatsapp": {
+      "title": "Whatsapp",
+      "value": "+39 3493554864"
+    }
+  },
+  "about": {
+    "greeting": "Ciao,",
+    "name": "Mi chiamo Emilio Gambone",
+    "description": "Sono un IT engineer con una solida formazione accademica e professionale: laurea in Informatica, diploma tecnico in Informatica, e anni di esperienza nello sviluppo di soluzioni innovative. Offro servizi personalizzati per aziende e privati che desiderano realizzare progetti tecnologici all'avanguardia. Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi",
+    "cvButton": "Scarica CV",
+    "hireButton": "Contattami"
+  },
+  "services": {
+    "sectionTitle": "Servizi",
+    "sectionSubtitle": "Cosa faccio?",
+    "items": [
+      {
+        "title": "CONSULENZA",
+        "description": "Offro consulenza tecnologica per valutare esigenze IT, definire strategie efficaci, analizzare codice per migliorarne qualità e sicurezza, scegliere e implementare soluzioni pronte all’uso, e definire requisiti con documentazione tecnica dettagliata."
+      },
+      {
+        "title": "ANALISI",
+        "description": "Eseguo analisi approfondite dei sistemi IT esistenti per identificare aree di miglioramento, ottimizzare le prestazioni, migliorare la sicurezza e garantire la compatibilità con le esigenze aziendali."
+      },
+      {
+        "title": "PROJECT MANAGEMENT",
+        "description": "Gestisco progetti tecnologici complessi, dalla pianificazione alla realizzazione, garantendo il rispetto di tempi, budget e obiettivi. Coordino team multidisciplinari e gestisco la comunicazione con i clienti, assicurando che ogni fase del progetto venga completata con successo."
+      },
+      {
+        "title": "DIGITAL TRANSFORMATION",
+        "description": "Supporto le aziende nella transizione digitale, implementando soluzioni innovative per ottimizzare i processi aziendali. Guida il cambiamento tecnologico, migliorando l'efficienza operativa e l'interazione con i clienti attraverso l'adozione di tecnologie avanzate."
+      },
+      {
+        "title": "Relazioni con Clienti e Fornitori",
+        "description": "Gestisco e ottimizzo le relazioni con clienti e fornitori per garantire una collaborazione fluida e produttiva. Coordino le comunicazioni e le trattative, assicurando che le esigenze di tutte le parti siano soddisfatte e che gli obiettivi comuni siano raggiunti efficacemente."
+      },
+      {
+        "title": "FORMAZIONE",
+        "description": "Offro formazione su tecnologie, strumenti e best practices per permettere ai team aziendali di gestire autonomamente soluzioni IT complesse. Organizzo corsi personalizzati su misura per le esigenze specifiche di ogni cliente, migliorando le competenze interne."
+      }
+    ]
+  },
+  "menu": {
+    "home": "Home",
+    "about": "Chi sono",
+    "services": "Servizi",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "name": "EMILIO GAMBONE",
+    "description": "Aiuto le aziende a realizzare software scalabili e gestire progetti IT complessi",
+    "ctaContact": "Contattami",
+    "ctaWork": "Vedi il mio lavoro"
+  }
+}

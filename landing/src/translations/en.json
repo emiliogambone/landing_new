@@ -1,0 +1,65 @@
+{
+  "contact": {
+    "phone": {
+      "title": "Phone",
+      "value": "+39 3493554864"
+    },
+    "email": {
+      "title": "Email",
+      "value": "emilio.gambone@gmail.com"
+    },
+    "whatsapp": {
+      "title": "WhatsApp",
+      "value": "+39 3493554864"
+    }
+  },
+  "about": {
+    "greeting": "Hello,",
+    "name": "My name is Emilio Gambone",
+    "description": "I am an IT engineer with a solid academic and professional background: degree in Computer Science, technical diploma in Computer Science, and years of experience developing innovative solutions. I offer personalized services for companies and individuals who want to create cutting-edge technology projects. For collaborations or information about my services, feel free to contact me.",
+    "cvButton": "Download CV",
+    "hireButton": "Contact Me"
+  },
+  "services": {
+    "sectionTitle": "Services",
+    "sectionSubtitle": "What I do?",
+    "items": [
+      {
+        "title": "CONSULTING",
+        "description": "I provide technology consulting to evaluate IT needs, define effective strategies, analyze code to improve quality and security, choose and implement ready-made solutions, and define requirements with detailed technical documentation."
+      },
+      {
+        "title": "ANALYSIS",
+        "description": "I perform in-depth analyses of existing IT systems to identify areas of improvement, optimize performance, enhance security, and ensure compatibility with business requirements."
+      },
+      {
+        "title": "PROJECT MANAGEMENT",
+        "description": "I manage complex technology projects from planning to execution, ensuring deadlines, budgets, and goals are met. I coordinate multidisciplinary teams and handle client communications, ensuring successful completion of every project phase."
+      },
+      {
+        "title": "DIGITAL TRANSFORMATION",
+        "description": "I support companies in digital transformation by implementing innovative solutions to optimize business processes. I guide technological change, improving operational efficiency and customer interaction through advanced technologies."
+      },
+      {
+        "title": "CLIENT & VENDOR RELATIONS",
+        "description": "I manage and optimize relationships with clients and vendors to ensure smooth and productive collaboration. I coordinate communications and negotiations, ensuring all parties' needs are met and common goals are achieved efficiently."
+      },
+      {
+        "title": "TRAINING",
+        "description": "I provide training on technologies, tools, and best practices to enable teams to manage complex IT solutions independently. I organize customized courses tailored to each client's specific needs, improving internal skills."
+      }
+    ]
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "EMILIO GAMBONE",
+    "description": "Helping businesses deliver scalable software & manage complex IT projects",
+    "ctaContact": "Contact Me",
+    "ctaWork": "See My Work"
+  }
+}
