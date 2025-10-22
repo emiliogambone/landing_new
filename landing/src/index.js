@@ -23,12 +23,14 @@ import "./styles/unittest.css";
 import "./styles/widget.css";
 import "./scripts/vendor/modernizr-3.5.0.min.js";
 import "./i18n";
-import { LanguageProvider } from "./context/LanguageContext";
+import { BrowserRouter } from "react-router-dom"; // <-- import BrowserRouter
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

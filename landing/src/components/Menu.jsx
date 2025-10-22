@@ -40,6 +40,9 @@ const MainMenu = () => {
                     <a href="#service">{t("menu.services")}</a>
                   </li>
                   <li>
+                    <a href="#blog">{t("menu.blog")}</a>
+                  </li>
+                  <li>
                     <a href="#contact">{t("menu.contact")}</a>
                   </li>
                   {/* <li>
