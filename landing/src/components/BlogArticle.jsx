@@ -40,12 +40,17 @@ const BlogArticle = () => {
   }, [id, currentLang]);
 
   if (!post)
-    return <p style={{ textAlign: "center", marginTop: "50px" }}>Loading...</p>;
+    return (
+      <p style={{ textAlign: "center", marginTop: "50px", fontSize: "1.8rem" }}>
+        Loading...
+      </p>
+    );
 
   const langContent = post.translations[currentLang];
 
   return (
     <section
+      className="blog_article_section"
       style={{
         minHeight: "100vh",
         background: "#0a3a44",
@@ -64,7 +69,7 @@ const BlogArticle = () => {
           background: "none",
           border: "none",
           color: "#00fff0",
-          fontSize: "1.8rem",
+          fontSize: "2rem",
           cursor: "pointer",
         }}
       >
@@ -77,23 +82,36 @@ const BlogArticle = () => {
           margin: "0 auto",
           display: "flex",
           flexDirection: "column",
-          gap: "20px",
+          gap: "30px",
+          textAlign: "left",
         }}
       >
         {/* Title */}
-        <h1 style={{ fontSize: "2.5rem", margin: "10px 0", lineHeight: "1.2" }}>
+        <h1
+          style={{
+            fontSize: "3.5rem", // increased
+            fontWeight: "700",
+            margin: "0",
+            lineHeight: "1.3",
+          }}
+        >
           {langContent.title}
         </h1>
 
+        {/* Published Date */}
+        <p
+          style={{ color: "#00fff0", fontSize: "1.4rem", margin: "5px 0 25px" }}
+        >
+          {new Date(post.publishedAt).toLocaleDateString(undefined, {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
+
         {/* Header Image */}
         {post.image && (
-          <div
-            style={{
-              position: "relative",
-              borderRadius: "12px",
-              overflow: "hidden",
-            }}
-          >
+          <div style={{ borderRadius: "12px", overflow: "hidden" }}>
             <img
               src={urlFor(post.image).url()}
               alt={post.image.alt || langContent.title}
@@ -102,14 +120,10 @@ const BlogArticle = () => {
             {post.image.alt && (
               <span
                 style={{
-                  position: "absolute",
-                  bottom: "0",
-                  left: "0",
-                  right: "0",
-                  background: "rgba(0,0,0,0.5)",
-                  color: "#fff",
-                  fontSize: "0.9rem",
-                  padding: "5px 10px",
+                  display: "block",
+                  marginTop: "8px",
+                  color: "#ccc",
+                  fontSize: "1.1rem",
                 }}
               >
                 {post.image.alt}
@@ -118,29 +132,18 @@ const BlogArticle = () => {
           </div>
         )}
 
-        {/* Published Date */}
-        <p style={{ color: "#00fff0", fontSize: "0.9rem" }}>
-          {new Date(post.publishedAt).toLocaleDateString(undefined, {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-          })}
-        </p>
-
         {/* Tags */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
           {post.tags?.map((tag) => (
             <span
               key={tag}
               style={{
                 background: "#00fff0",
                 color: "#073B42",
-                padding: "4px 10px",
+                padding: "8px 14px",
                 borderRadius: "20px",
-                fontSize: "0.85rem",
+                fontSize: "1.1rem",
                 fontWeight: "600",
-                transition: "transform 0.2s",
-                cursor: "default",
               }}
             >
               {tag}
@@ -149,7 +152,9 @@ const BlogArticle = () => {
         </div>
 
         {/* Content */}
-        <div style={{ marginTop: "30px", lineHeight: "1.8", fontSize: "1rem" }}>
+        <div
+          style={{ lineHeight: "2.2", fontSize: "1.4rem", marginTop: "25px" }}
+        >
           <PortableText
             value={langContent.content}
             components={{
@@ -161,7 +166,7 @@ const BlogArticle = () => {
                     style={{
                       width: "100%",
                       borderRadius: "12px",
-                      margin: "25px 0",
+                      margin: "30px 0",
                       boxShadow: "0 4px 15px rgba(0,0,0,0.3)",
                     }}
                   />
@@ -176,38 +181,52 @@ const BlogArticle = () => {
                 h3: ({ children }) => (
                   <h3
                     style={{
-                      marginTop: "35px",
+                      marginTop: "40px",
+                      fontSize: "2.2rem",
                       color: "#00fff0",
-                      fontSize: "1.5rem",
                     }}
                   >
                     {children}
                   </h3>
                 ),
                 normal: ({ children }) => (
-                  <p style={{ margin: "12px 0" }}>{children}</p>
+                  <p style={{ margin: "18px 0", fontSize: "1.4rem" }}>
+                    {children}
+                  </p>
                 ),
               },
               list: {
                 bullet: ({ children }) => (
-                  <ul style={{ margin: "12px 0", paddingLeft: "16px" }}>
+                  <ul style={{ margin: "18px 0", paddingLeft: "22px" }}>
                     {children}
                   </ul>
                 ),
                 number: ({ children }) => (
-                  <ol style={{ margin: "12px 0", paddingLeft: "16px" }}>
+                  <ol style={{ margin: "18px 0", paddingLeft: "22px" }}>
                     {children}
                   </ol>
                 ),
               },
               listItem: {
                 bullet: ({ children }) => (
-                  <li style={{ margin: "4px 0", listStylePosition: "inside" }}>
+                  <li
+                    style={{
+                      margin: "10px 0",
+                      listStylePosition: "inside",
+                      fontSize: "1.4rem",
+                    }}
+                  >
                     {children}
                   </li>
                 ),
                 number: ({ children }) => (
-                  <li style={{ margin: "4px 0", listStylePosition: "inside" }}>
+                  <li
+                    style={{
+                      margin: "10px 0",
+                      listStylePosition: "inside",
+                      fontSize: "1.4rem",
+                    }}
+                  >
                     {children}
                   </li>
                 ),

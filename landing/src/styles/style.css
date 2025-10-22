@@ -2067,6 +2067,25 @@ SERVICE AREA CSS
   min-height: 350px; /* Set a minimum height for all blocks */
 }
 
+.blog_article_section {
+  font-family: inherit; /* inherit the theme font */
+  color: #fff;
+}
+
+.blog_article_section h1,
+.blog_article_section h2,
+.blog_article_section h3 {
+  font-family: inherit; /* match theme font */
+}
+
+.blog_article_section p,
+.blog_article_section li {
+  font-family: inherit; /* match theme font */
+  font-size: 1.25rem; /* slightly bigger text */
+  line-height: 2;
+  text-align: left;
+}
+
 .single_service:hover {
   background: #ffffff;
 }
