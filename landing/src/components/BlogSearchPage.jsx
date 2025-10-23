@@ -16,7 +16,7 @@ const BlogSearchPage = () => {
   const currentLang = i18n.language;
 
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6; // Number of posts per page
+  const postsPerPage = 3; // Number of posts per page
 
   useEffect(() => {
     setCurrentPage(1);
@@ -145,7 +145,7 @@ const BlogSearchPage = () => {
             gap: "20px",
           }}
         >
-          {filteredPosts.map((post) => (
+          {currentPosts.map((post) => (
             <div
               key={post.id}
               style={{

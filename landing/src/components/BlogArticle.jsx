@@ -176,8 +176,25 @@ const BlogArticle = () => {
                 strong: ({ children }) => (
                   <strong style={{ color: "#00fff0" }}>{children}</strong>
                 ),
+                em: ({ children }) => (
+                  <em style={{ color: "#fff", fontStyle: "italic" }}>
+                    {children}
+                  </em>
+                ),
+                // add more marks if needed
               },
               block: {
+                normal: ({ children }) => (
+                  <p
+                    style={{
+                      margin: "18px 0",
+                      fontSize: "1.4rem",
+                      color: "#fff", // normal text color
+                    }}
+                  >
+                    {children}
+                  </p>
+                ),
                 h3: ({ children }) => (
                   <h3
                     style={{
@@ -189,20 +206,42 @@ const BlogArticle = () => {
                     {children}
                   </h3>
                 ),
-                normal: ({ children }) => (
-                  <p style={{ margin: "18px 0", fontSize: "1.4rem" }}>
+                blockquote: ({ children }) => (
+                  <blockquote
+                    style={{
+                      backgroundColor: "#0a3a44", // your dark background
+                      color: "#fff", // text color
+                      padding: "12px 20px",
+                      borderLeft: "4px solid #00fff0", // optional visual accent
+                      margin: "20px 0",
+                      borderRadius: "6px",
+                      fontStyle: "italic",
+                    }}
+                  >
                     {children}
-                  </p>
+                  </blockquote>
                 ),
               },
               list: {
                 bullet: ({ children }) => (
-                  <ul style={{ margin: "18px 0", paddingLeft: "22px" }}>
+                  <ul
+                    style={{
+                      margin: "18px 0",
+                      paddingLeft: "22px",
+                      color: "#fff",
+                    }}
+                  >
                     {children}
                   </ul>
                 ),
                 number: ({ children }) => (
-                  <ol style={{ margin: "18px 0", paddingLeft: "22px" }}>
+                  <ol
+                    style={{
+                      margin: "18px 0",
+                      paddingLeft: "22px",
+                      color: "#fff",
+                    }}
+                  >
                     {children}
                   </ol>
                 ),
@@ -214,6 +253,7 @@ const BlogArticle = () => {
                       margin: "10px 0",
                       listStylePosition: "inside",
                       fontSize: "1.4rem",
+                      color: "#fff",
                     }}
                   >
                     {children}
@@ -225,6 +265,7 @@ const BlogArticle = () => {
                       margin: "10px 0",
                       listStylePosition: "inside",
                       fontSize: "1.4rem",
+                      color: "#fff",
                     }}
                   >
                     {children}
