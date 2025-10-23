@@ -1,8 +1,12 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
+import cvEn from "../assets/EMILIO_GAMBONE_en.pdf";
+import cvIt from "../assets/EMILIO_GAMBONE_it.pdf";
 
 const About = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
+
+  const cvFile = currentLang === "it" ? cvIt : cvEn;
 
   return (
     <div className="about_area" id="about">
@@ -19,7 +23,7 @@ const About = () => {
                   <p>{t("about.description")}</p>
                 </div>
                 <div className="single_about_btn">
-                  <a className="active" href="#">
+                  <a className="active" href={cvFile} download>
                     {t("about.cvButton")}
                   </a>
                   <a href="mailto:emilio.gambone@gmail.com">
