@@ -169,6 +169,16 @@ const LifestyleArticle = () => {
                     {children}
                   </em>
                 ),
+                link: ({ children, value }) => (
+                  <a
+                    href={value.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#ff9900" }} // pick your custom color
+                  >
+                    {children}
+                  </a>
+                ),
               },
               block: {
                 normal: ({ children }) => (
