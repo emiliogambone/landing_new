@@ -62,7 +62,7 @@ const MobileMenu = () => {
             >
               <li style={{ padding: "6px 20px" }}>
                 <a
-                  href="index-3.html"
+                  href="#about"
                   onClick={() => setIsOpen(false)}
                   style={{ color: "#fff", textDecoration: "none" }}
                 >

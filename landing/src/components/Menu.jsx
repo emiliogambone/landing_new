@@ -31,7 +31,7 @@ const MainMenu = () => {
               <nav className="msuzan_menu main-search-menu">
                 <ul className="main-menu sub-menu nav_scroll">
                   <li>
-                    <a href="index-3.html">{t("menu.home")}</a>
+                    <a href="#about">{t("menu.home")}</a>
                   </li>
                   <li>
                     <a href="#about">{t("menu.about")}</a>
