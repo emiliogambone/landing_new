@@ -10,12 +10,15 @@ import Footer from "./components/Footer";
 import FooterBottom from "./components/FooterBottom";
 import BlogArticle from "./components/BlogArticle";
 import BlogSearchPage from "./components/BlogSearchPage";
+import LifestyleArticle from "./components/LifestyleArticle";
+
 import ReactGA from "react-ga4";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 function Layout() {
   const location = useLocation();
   const isBlogArticle = location.pathname.startsWith("/blog/");
+  const isLifestyleArticle = location.pathname.startsWith("/lifestyle/");
 
   // Track pageviews on route change
   useEffect(() => {
@@ -24,7 +27,7 @@ function Layout() {
 
   return (
     <div className="App">
-      {!isBlogArticle && (
+      {!isBlogArticle && !isLifestyleArticle && (
         <>
           <Menu />
           <MobileMenu />
@@ -37,9 +40,10 @@ function Layout() {
       <Routes>
         <Route path="/" element={<BlogSearchPage />} />
         <Route path="/blog/:id" element={<BlogArticle />} />
+        <Route path="/lifestyle/:id" element={<LifestyleArticle />} />
       </Routes>
 
-      {!isBlogArticle && (
+      {!isBlogArticle && !isLifestyleArticle && (
         <>
           <ContactArea />
           <Footer />

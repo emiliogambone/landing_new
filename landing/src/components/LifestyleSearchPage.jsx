@@ -1,55 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import { client, urlFor } from "../sanityClient";
+import { client } from "../sanityClient";
 import { useTranslation } from "react-i18next";
-import LifestyleSearchPage from "./LifestyleSearchPage";
 
-const BlogSearchPage = () => {
-  const [blogPosts, setBlogPosts] = useState([]);
-
+const LifestyleSearchPage = () => {
+  const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
-  const [tagFilter, setTagFilter] = useState("All");
-
-  const allTags = ["All", ...new Set(blogPosts.flatMap((p) => p.tags))];
-
-  const { i18n } = useTranslation(); // i18n.language is the current language, e.g., "en", "it", "es"
+  const [categoryFilter, setCategoryFilter] = useState("All");
+  const { i18n } = useTranslation();
   const currentLang = i18n.language;
 
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 3; // Number of posts per page
+  const postsPerPage = 3;
 
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [search, tagFilter]);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const query = `*[_type == "blogPost"] | order(publishedAt desc) {
-        _id,
-        slug,
-        tags,
-        publishedAt,
-        translations{
-            ${currentLang}{
-            title,
-            excerpt,
-            content
-            }
-        }
-        }`;
-      const posts = await client.fetch(query);
-      setBlogPosts(posts);
-    };
-    fetchPosts();
-  }, []);
+  useEffect(() => setCurrentPage(1), [search, categoryFilter]);
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const query = `*[_type == "blogPost"] | order(publishedAt desc) {
+      const query = `*[_type == "lifestylePost"] | order(publishedAt desc) {
         _id,
         slug,
-        tags,
+        category,
         publishedAt,
         translations{
           ${currentLang}{
@@ -59,26 +30,27 @@ const BlogSearchPage = () => {
           }
         }
       }`;
-
       try {
-        const posts = await client.fetch(query);
-        setBlogPosts(posts);
+        const data = await client.fetch(query);
+        setPosts(data);
       } catch (err) {
         console.error("Error fetching posts:", err);
       }
     };
-
     fetchPosts();
   }, [currentLang]);
 
-  const filteredPosts = blogPosts.filter((post) => {
+  const allCategories = ["All", ...new Set(posts.map((p) => p.category))];
+
+  const filteredPosts = posts.filter((post) => {
     const translation = post.translations?.[currentLang];
-    if (!translation) return false; // skip posts without translation
-    const matchesTag = tagFilter === "All" || post.tags.includes(tagFilter);
+    if (!translation) return false;
+    const matchesCategory =
+      categoryFilter === "All" || post.category === categoryFilter;
     const matchesText = translation.title
       .toLowerCase()
       .includes(search.toLowerCase());
-    return matchesTag && matchesText;
+    return matchesCategory && matchesText;
   });
 
   const indexOfLastPost = currentPage * postsPerPage;
@@ -94,10 +66,9 @@ const BlogSearchPage = () => {
         color: "#fff",
         padding: "60px 20px",
       }}
-      id="blog"
     >
       <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-        <h1 style={{ marginBottom: "30px" }}>Blog</h1>
+        <h1 style={{ marginBottom: "30px" }}>Lifestyle</h1>
 
         {/* Search */}
         <input
@@ -116,12 +87,12 @@ const BlogSearchPage = () => {
           }}
         />
 
-        {/* Tag Filters */}
+        {/* Category Filters */}
         <div style={{ marginBottom: "30px" }}>
-          {allTags.map((tag) => (
+          {allCategories.map((cat) => (
             <button
-              key={tag}
-              onClick={() => setTagFilter(tag)}
+              key={cat}
+              onClick={() => setCategoryFilter(cat)}
               style={{
                 marginRight: "8px",
                 marginBottom: "8px",
@@ -129,16 +100,16 @@ const BlogSearchPage = () => {
                 borderRadius: "4px",
                 border: "none",
                 cursor: "pointer",
-                background: tagFilter === tag ? "#00fff0" : "#073B42",
-                color: tagFilter === tag ? "#073B42" : "#fff",
+                background: categoryFilter === cat ? "#00fff0" : "#073B42",
+                color: categoryFilter === cat ? "#073B42" : "#fff",
               }}
             >
-              {tag}
+              {cat}
             </button>
           ))}
         </div>
 
-        {/* Blog Grid */}
+        {/* Grid */}
         <div
           style={{
             display: "grid",
@@ -148,7 +119,7 @@ const BlogSearchPage = () => {
         >
           {currentPosts.map((post) => (
             <div
-              key={post.id}
+              key={post._id}
               style={{
                 background: "#073B42",
                 padding: "20px",
@@ -158,25 +129,8 @@ const BlogSearchPage = () => {
               <h3>{post.translations[currentLang].title}</h3>
               <small style={{ color: "#00fff0" }}>{post.category}</small>
               <p>{post.translations[currentLang].excerpt}</p>
-              <div style={{ marginTop: "10px" }}>
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    style={{
-                      background: "#00fff0",
-                      color: "#073B42",
-                      padding: "2px 6px",
-                      marginRight: "5px",
-                      borderRadius: "4px",
-                      fontSize: "0.8rem",
-                    }}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
               <Link
-                to={`/blog/${post._id}`}
+                to={`/lifestyle/${post._id}`}
                 style={{
                   display: "block",
                   marginTop: "10px",
@@ -188,6 +142,8 @@ const BlogSearchPage = () => {
             </div>
           ))}
         </div>
+
+        {/* Pagination */}
         <div style={{ marginTop: "30px", textAlign: "center" }}>
           {Array.from({ length: totalPages }, (_, i) => (
             <button
@@ -207,12 +163,9 @@ const BlogSearchPage = () => {
             </button>
           ))}
         </div>
-        <div style={{ marginTop: "50px" }}>
-          <LifestyleSearchPage embedMode={true} />
-        </div>
       </div>
     </section>
   );
 };
 
-export default BlogSearchPage;
+export default LifestyleSearchPage;

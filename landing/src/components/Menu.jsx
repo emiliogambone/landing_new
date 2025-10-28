@@ -20,7 +20,7 @@ const MainMenu = () => {
                 >
                   <img src={logo} alt="msuzan" />
                 </a>
-                <a className="main_sticky_l" href="index.html" title="msuzan">
+                <a className="main_sticky_l" href="#about" title="msuzan">
                   <img src={logo} alt="msuzan" />
                 </a>
               </div>
