@@ -1,10 +1,14 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+
 import cvEn from "../assets/EMILIO_GAMBONE_en.pdf";
 import cvIt from "../assets/EMILIO_GAMBONE_it.pdf";
 
 const About = () => {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
+
+  const [showCv, setShowCv] = useState(false);
 
   const cvFile = currentLang === "it" ? cvIt : cvEn;
 
@@ -21,6 +25,27 @@ const About = () => {
                 </div>
                 <div className="single_about_content_text about-text">
                   <p>{t("about.description")}</p>
+                  {showCv && (
+                    <iframe
+                      src={cvFile}
+                      title="CV Preview"
+                      width="100%"
+                      height="600px"
+                      style={{ border: "none", marginTop: "20px" }}
+                    ></iframe>
+                  )}
+                </div>
+
+                <div className="single_about_btn">
+                  <a
+                    className="active"
+                    onClick={() => setShowCv(!showCv)}
+                    style={{ cursor: "pointer" }}
+                  >
+                    {showCv
+                      ? t("about.hideCvButton") || "Hide CV"
+                      : t("about.showCvButton") || "View CV"}
+                  </a>
                 </div>
                 <div className="single_about_btn">
                   <a className="active" href={cvFile} download>

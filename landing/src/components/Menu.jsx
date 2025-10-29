@@ -13,11 +13,7 @@ const MainMenu = () => {
             {/* LOGO */}
             <div className="col-md-3 col-sm-3 col-xs-4">
               <div className="logo">
-                <a
-                  className="main_sticky_main_l"
-                  href="index.html"
-                  title="msuzan"
-                >
+                <a className="main_sticky_main_l" href="#about" title="msuzan">
                   <img src={logo} alt="msuzan" />
                 </a>
                 <a className="main_sticky_l" href="#about" title="msuzan">

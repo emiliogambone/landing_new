@@ -2735,7 +2735,7 @@ TESTIMONIAL MINIMAL CSS
 =======================*/
 
 .minimal.testimonial_area {
-  background: #073B42fff;
+  background: #073b42;
 }
 
 .minimal .em_testi_title h2 {
@@ -5084,7 +5084,7 @@ BLOG MINIMAL CSS
 
 .minimal.blog_area {
   padding: 80px 0 52px;
-  background: #073B42fff;
+  background: #073b42;
 }
 
 .minimal .single_blog_content {
@@ -5154,12 +5154,12 @@ msuzan CUOROSEL  CSS
 }
 
 .curosel-style .owl-nav .owl-next:hover {
-  background: #transparent;
+  background: #000;
   color: #ffffff;
 }
 
 .curosel-style .owl-nav .owl-prev:hover {
-  background: #transparent;
+  background: #000;
   color: #ffffff;
 }
 

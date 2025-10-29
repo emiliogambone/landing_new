@@ -50,7 +50,7 @@ const ContactArea = () => {
                   <i className="fa-brands fa-whatsapp"></i>
                 </div>
                 <a
-                  href={`https://wa.me/${t("contact.whatsapp.value")}`}
+                  href={`https://wa.me/393493554864`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
