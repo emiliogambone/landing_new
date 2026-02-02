@@ -11,7 +11,7 @@ const About = () => {
   const currentLang = i18n.language;
 
   const [showCv, setShowCv] = useState(false);
-  const navigate = useNavigate(); // <-- add this
+  const navigate = useNavigate();
 
   const cvFile = currentLang === "it" ? cvIt : cvEn;
 
