@@ -15,40 +15,48 @@
   },
   "about": {
     "greeting": "Ciao,",
-    "name": "Mi chiamo Emilio Gambone",
-    "description": "Sono un IT engineer con una solida formazione accademica e professionale: laurea in Informatica, diploma tecnico in Informatica, e anni di esperienza nello sviluppo di soluzioni innovative. Offro servizi personalizzati per aziende e privati che desiderano realizzare progetti tecnologici all'avanguardia. Per collaborazioni o informazioni sui miei servizi, non esitare a contattarmi",
-    "cvButton": "Scarica CV",
+    "name": "Professionista con anni di esperienza nel settore IT.",
+    "description": "Dal codice alla strategia: <b>realizzo l'architettura digitale del tuo business</b>.<br>Con una solida base accademica e anni di esperienza sul campo, supporto aziende e professionisti a superare le sfide tecnologiche con <b>soluzioni su misura</b> che crescono con i tuoi obiettivi.<br>Non mi limito a scrivere codice: costruisco strumenti <b>scalabili</b> e processi efficienti per far funzionare il tuo business.<br><br><b>Cosa posso fare per te:</b><br>• <b>Sviluppo Software Custom</b>: soluzioni scalabili progettate sulle tue esigenze.<br>• <b>Consulenza Strategica</b>: ottimizzazione di infrastrutture e processi IT esistenti.<br>• <b>Innovazione Tecnologica</b>: integrazione di nuove tecnologie per mantenere la tua azienda competitiva.",
+    "cvButton": "Visiona CV",
     "hireButton": "Contattami",
     "showCvButton": "Mostra CV",
-    "hideCvButton": "Nascondi CV"
+    "hideCvButton": "Nascondi CV",
+    "workWithMeButton": "Scopri come lavoro"
   },
   "services": {
     "sectionTitle": "Servizi",
     "sectionSubtitle": "Cosa faccio?",
+    "discoverMoreLabel": "Scopri di più",
     "items": [
       {
+        "title": "SVILUPPO FULL STACK",
+        "description": "Sviluppo applicazioni web e mobile complete, occupandomi di frontend, backend e integrazioni con tecnologie moderne e scalabili.",
+        "link": "/servizi/development",
+        "details": "<h2>Applicazioni web e mobile complete, costruite sulle reali esigenze del tuo progetto</h2><p>Offro servizi di <strong>sviluppo full stack</strong> occupandomi di ogni aspetto tecnico del progetto: dalla progettazione dell’architettura allo sviluppo, fino alla messa in produzione e all’evoluzione nel tempo.</p><p>Lavoro sia sul <strong>frontend</strong>, creando interfacce moderne e intuitive, sia sul <strong>backend</strong>, sviluppando logiche applicative robuste, sicure e scalabili. Quando serve, realizzo anche <strong>applicazioni mobile</strong> integrate con i sistemi esistenti.</p><h3>Tecnologie che utilizzo</h3><p>Frontend: React, Vue.js, Angular; Backend: Node.js, .NET; Mobile: React Native. La tecnologia non è mai un fine, ma uno strumento: se il progetto lo richiede, valuto e utilizzo anche stack differenti.</p><h3>Cosa realizzo</h3><ul><li>Applicazioni web custom</li><li>Piattaforme aziendali e gestionali</li><li>API e servizi backend</li><li>Integrazioni con sistemi esterni (CRM, ERP, pagamenti, servizi cloud)</li><li>Applicazioni mobile cross-platform</li><li>Refactoring e ottimizzazione di progetti esistenti</li></ul><h3>A chi sono rivolti i miei servizi</h3><ul><li>Aziende che vogliono digitalizzare processi o sviluppare soluzioni su misura</li><li>Startup che devono costruire un prodotto solido e scalabile</li><li>Team tecnici che necessitano di un supporto esperto su frontend, backend o architettura</li><li>Imprenditori e professionisti che cercano un unico referente tecnico affidabile</li></ul>"
+      },
+      {
         "title": "CONSULENZA",
-        "description": "Offro consulenza tecnologica per valutare esigenze IT, definire strategie efficaci, analizzare codice per migliorarne qualità e sicurezza, scegliere e implementare soluzioni pronte all’uso, e definire requisiti con documentazione tecnica dettagliata."
+        "description": "Valutazione delle tue esigenze IT e strategie personalizzate.",
+        "link": "/servizi/consulenza",
+        "details": "<h2>Consulenza IT e Tecnologica</h2><h3>Chiarezza, strategia e decisioni tecniche consapevoli</h3><p>Offro servizi di consulenza IT per aiutare aziende, startup, software house e web agency a prendere decisioni tecnologiche solide, riducendo rischi, sprechi di tempo e costi inutili. La consulenza è pensata per trasformare esigenze di business in scelte tecniche concrete, sostenibili e allineate agli obiettivi reali del progetto.</p><h3>In cosa consiste la consulenza</h3><p>Affianco clienti e team in tutte le fasi decisionali, fornendo una visione tecnica chiara e indipendente:</p><ul><li>Analisi delle esigenze e degli obiettivi di business</li><li>Valutazione di architetture software e stack tecnologici</li><li>Supporto nella definizione di roadmap tecniche</li><li>Scelte tecnologiche consapevoli (stack, framework, cloud, integrazioni)</li><li>Revisione di soluzioni esistenti o in fase di progettazione</li><li>Supporto a CTO, PM e stakeholder non tecnici</li></ul><h3>Quando è utile la consulenza</h3><p>La consulenza è particolarmente utile quando:</p><ul><li>devi avviare un nuovo progetto e vuoi partire con le basi giuste</li><li>un progetto esistente non scala o non performa come dovrebbe</li><li>ci sono dubbi sulle tecnologie da adottare</li><li>stai valutando fornitori o soluzioni alternative</li><li>serve una second opinion tecnica prima di prendere decisioni importanti</li></ul><h3>A chi è rivolta</h3><ul><li>Aziende che vogliono fare scelte tecnologiche più efficaci</li><li>Startup che devono validare idee e architetture</li><li>Software house che necessitano di un confronto tecnico esterno</li><li>Web agency che cercano supporto strategico su progetti complessi</li><li>Imprenditori e decisori che vogliono chiarezza senza tecnicismi inutili</li></ul>"
       },
       {
-        "title": "ANALISI",
-        "description": "Eseguo analisi approfondite dei sistemi IT esistenti per identificare aree di miglioramento, ottimizzare le prestazioni, migliorare la sicurezza e garantire la compatibilità con le esigenze aziendali."
+        "title": "Project Management & Tech Lead",
+        "description": "Gestione completa dei progetti tecnologici complessi.",
+        "link": "/servizi/project-management",
+        "details": "<h2>Project Management & Tech Lead</h2><h3>Gestione completa dei progetti tecnologici complessi</h3><p>Offro servizi di <strong>Project Management e Tech Lead</strong>, affiancando aziende, startup, software house e web agency nella gestione e coordinamento di progetti IT di qualsiasi complessità. L’obiettivo è garantire <strong>consegne puntuali, budget rispettati e soluzioni tecnicamente solide</strong>, con un unico referente tecnico e strategico.</p><h3>Cosa faccio concretamente</h3><ul><li>Pianificazione, organizzazione e gestione dei progetti tecnologici</li><li>Coordinamento di team interni e fornitori esterni</li><li>Supervisione tecnica come <strong>Tech Lead</strong> su architetture e sviluppo</li><li>Definizione di roadmap e milestone di progetto</li><li>Monitoraggio avanzamento lavori e gestione dei rischi</li><li>Ottimizzazione di processi e strumenti per incrementare produttività e qualità</li></ul><h3>Quando è utile</h3><ul><li>I progetti devono rispettare tempi e budget</li><li>Ci sono team distribuiti o fornitori esterni da coordinare</li><li>Servono decisioni tecniche rapide e informate</li><li>Vuoi un <strong>referente unico</strong> che comprenda sia business che tecnologia</li><li>È necessario un supporto strategico per l’evoluzione del prodotto</li></ul><h3>A chi è rivolto</h3><ul><li>Aziende che vogliono progetti IT gestiti in modo professionale</li><li>Startup che hanno bisogno di un Tech Lead esperto per guidare lo sviluppo</li><li>Software house e web agency che necessitano di supporto per coordinare team o progetti complessi</li><li>Team tecnici che vogliono ottimizzare flussi e processi</li><li>Imprenditori e decisori che cercano chiarezza e controllo sullo sviluppo tecnologico</li></ul><h3>Il mio approccio</h3><p>Il mio approccio combina <strong>gestione rigorosa dei progetti</strong> con <strong>consulenza tecnica</strong>: non solo coordino, ma garantisco che le soluzioni siano <strong>scalabili, sicure e allineate agli obiettivi di business</strong>. Il focus è sempre sulla <strong>trasparenza, comunicazione chiara e risultati tangibili</strong>.</p>"
       },
       {
-        "title": "PROJECT MANAGEMENT",
-        "description": "Gestisco progetti tecnologici complessi, dalla pianificazione alla realizzazione, garantendo il rispetto di tempi, budget e obiettivi. Coordino team multidisciplinari e gestisco la comunicazione con i clienti, assicurando che ogni fase del progetto venga completata con successo."
-      },
-      {
-        "title": "DIGITAL TRANSFORMATION",
-        "description": "Supporto le aziende nella transizione digitale, implementando soluzioni innovative per ottimizzare i processi aziendali. Guida il cambiamento tecnologico, migliorando l'efficienza operativa e l'interazione con i clienti attraverso l'adozione di tecnologie avanzate."
-      },
-      {
-        "title": "Relazioni con Clienti e Fornitori",
-        "description": "Gestisco e ottimizzo le relazioni con clienti e fornitori per garantire una collaborazione fluida e produttiva. Coordino le comunicazioni e le trattative, assicurando che le esigenze di tutte le parti siano soddisfatte e che gli obiettivi comuni siano raggiunti efficacemente."
+        "title": "Gestione delle Relazioni B2B",
+        "description": "Ottimizzo la collaborazione prima, durante e dopo la vendita",
+        "link": "/servizi/relazioni-clienti-fornitori",
+        "details": "<h2>Gestione delle Relazioni B2B</h2><h3>Ottimizzo la collaborazione prima, durante e dopo la vendita</h3><p>Offro servizi di <strong>Gestione delle Relazioni B2B</strong> per aziende, software house e web agency, aiutandole a migliorare la comunicazione e la collaborazione con clienti e fornitori. L’obiettivo è garantire <strong>processi chiari, partnership solide e rapporti produttivi</strong>, riducendo attriti, inefficienze e problemi nella gestione commerciale e operativa.</p><h3>Cosa faccio concretamente</h3><ul><li>Coordinamento e ottimizzazione dei rapporti con clienti e fornitori</li><li>Gestione del <strong>ciclo pre-vendita</strong>: analisi esigenze, proposta commerciale, definizione obiettivi</li><li>Gestione del <strong>ciclo post-vendita</strong>: supporto, follow-up, monitoraggio della soddisfazione, gestione feedback</li><li>Creazione di processi chiari e procedure standardizzate</li><li>Miglioramento della comunicazione tra team interni e partner esterni</li><li>Supporto nella risoluzione di conflitti o criticità nelle relazioni B2B</li></ul><h3>Quando è utile</h3><ul><li>Le relazioni con clienti o fornitori sono frammentate o poco chiare</li><li>Vuoi aumentare <strong>efficienza, collaborazione e soddisfazione dei partner</strong></li><li>Serve un supporto strategico nella gestione dei cicli <strong>pre e post vendita</strong></li><li>Vuoi ridurre errori, ritardi o incomprensioni tra team, clienti e fornitori</li><li>È necessario un <strong>referente unico</strong> che coordini comunicazione e processi</li></ul><h3>A chi è rivolto</h3><ul><li>Aziende che vogliono migliorare le interazioni commerciali e operative</li><li>Startup che gestiscono fornitori e clienti in modo strutturato per crescere rapidamente</li><li>Software house e web agency che vogliono ottimizzare relazioni con clienti e partner</li><li>Team commerciali o tecnici che necessitano di processi chiari e coordinamento efficiente</li><li>Imprenditori e manager che vogliono avere controllo e visibilità su tutte le relazioni B2B</li></ul><h3>Il mio approccio</h3><p>Il mio approccio combina <strong>gestione organizzativa, comunicazione efficace e strategie pratiche</strong>. Non solo coordino le relazioni, ma creo <strong>processi sostenibili</strong> che riducono attriti, migliorano la soddisfazione dei partner e aumentano la produttività complessiva.</p>"
       },
       {
         "title": "FORMAZIONE",
-        "description": "Offro formazione su tecnologie, strumenti e best practices per permettere ai team aziendali di gestire autonomamente soluzioni IT complesse. Organizzo corsi personalizzati su misura per le esigenze specifiche di ogni cliente, migliorando le competenze interne."
+        "description": "Organizzo corsi su tecnologie e best practices per migliorare le competenze interne.",
+        "link": "/servizi/formazione",
+        "details": "<h2>Formazione Tecnologica</h2><h3>Miglioro le competenze interne e potenzio il tuo team</h3><p>Offro servizi di <strong>formazione su tecnologie, metodologie e best practice IT</strong>, pensati per aziende, startup, software house e web agency. L’obiettivo è <strong>rendere i team più autonomi, efficienti e aggiornati</strong>, aumentando la qualità dei progetti e riducendo dipendenza da consulenze esterne.</p><h3>Cosa faccio concretamente</h3><ul><li>Corsi personalizzati su frontend, backend e sviluppo mobile</li><li>Formazione su architetture software, integrazioni e API</li><li>Workshop su metodologie agili, project management e DevOps</li><li>Sessioni pratiche di aggiornamento su React, Vue, Angular, Node.js, .NET, React Native</li><li>Affiancamento dei team durante progetti reali per trasferire competenze operative</li><li>Documentazione e materiali formativi personalizzati</li></ul><h3>Quando è utile</h3><ul><li>Il team interno ha bisogno di aggiornamenti tecnologici</li><li>Vuoi ridurre dipendenza da consulenti esterni</li><li>Serve migliorare processi, qualità e produttività</li><li>Si vogliono introdurre nuove tecnologie o metodologie in azienda</li><li>Vuoi potenziare la crescita professionale dei membri del team</li></ul><h3>A chi è rivolta</h3><ul><li>Team interni di aziende e startup che vogliono crescere rapidamente</li><li>Software house e web agency che vogliono aggiornare il personale o trasferire competenze su progetti specifici</li><li>Imprenditori e manager che vogliono rafforzare le competenze strategiche e tecniche del loro team</li><li>Team junior o nuovi assunti che necessitano di onboarding efficace</li></ul><h3>Il mio approccio</h3><p>La formazione combina <strong>teoria e pratica</strong>, con un approccio modulare e personalizzato sulle esigenze del team. Non solo spiego le tecnologie, ma insegno <strong>come applicarle concretamente</strong> nei progetti reali, per creare competenze subito spendibili.</p>"
       }
     ]
   },
@@ -61,8 +69,55 @@
   },
   "hero": {
     "name": "EMILIO GAMBONE",
-    "description": "Aiuto le aziende a realizzare software scalabili e gestire progetti IT complessi",
+    "description": "Aperto a collaborazioni freelance e progetti a contratto",
     "ctaContact": "Contattami",
     "ctaWork": "Vedi il mio lavoro"
+  },
+  "workWithMe": {
+    "hero": {
+      "title": "Lavora con me",
+      "subtitle": "Software Engineer & Solution Architect | Aperto a collaborazioni freelance e progetti a contratto",
+      "description": "Dal codice alla strategia: realizzo l'architettura digitale del tuo business. Con solida esperienza, supporto aziende e professionisti a superare sfide tecnologiche con soluzioni su misura.",
+      "ctaButton": "Contattami Ora"
+    },
+    "howIWork": {
+      "title": "Come lavoro",
+      "description1": "Ogni progetto inizia con una valutazione approfondita delle tue esigenze e degli obiettivi del business. Definiamo insieme priorità, funzionalità chiave e risultati attesi.",
+      "description2": "Propongo soluzioni trasparenti e scalabili, con stime realistiche di tempi e costi. Sono sempre disponibile per supporto, aggiornamenti e consigli anche dopo la consegna."
+    },
+    "servicesOverview": {
+      "title": "Cosa posso fare per te:",
+      "services": [
+        {
+          "title": "Sviluppo Software Custom",
+          "description": "Soluzioni scalabili progettate sulle tue esigenze."
+        },
+        {
+          "title": "Consulenza Strategica",
+          "description": "Ottimizzazione di infrastrutture e processi IT esistenti."
+        },
+        {
+          "title": "Innovazione Tecnologica",
+          "description": "Integrazione di nuove tecnologie per mantenere la tua azienda competitiva."
+        },
+        {
+          "title": "Project Management & Tech Lead",
+          "description": "Gestione completa dei progetti tecnologici complessi."
+        },
+        {
+          "title": "Formazione & Mentoring",
+          "description": "Sviluppo delle competenze del tuo team IT."
+        },
+        {
+          "title": "Gestione Relazioni B2B",
+          "description": "Ottimizzazione delle relazioni con clienti e fornitori."
+        }
+      ]
+    },
+    "contactCTA": {
+      "title": "Pronto a collaborare?",
+      "callButton": "Parliamo dei tuoi progetti",
+      "emailButton": "Inviami un'email"
+    }
   }
 }

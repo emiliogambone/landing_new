@@ -87,6 +87,15 @@ const MobileMenu = () => {
                   {t("menu.services")}
                 </a>
               </li>
+              {/* <li style={{ padding: "6px 20px" }}>
+                <a
+                  href="#blog"
+                  onClick={() => setIsOpen(false)}
+                  style={{ color: "#fff", textDecoration: "none" }}
+                >
+                  {t("menu.blog")}
+                </a>
+              </li> */}
               <li style={{ padding: "6px 20px" }}>
                 <a
                   href="#contact"

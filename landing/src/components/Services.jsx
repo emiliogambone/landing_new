@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { trackEvent } from "../utils/gaEvents"; // <-- import GA helper
 
 const Services = () => {
   const { t } = useTranslation();
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const icons = [
     "fa-briefcase",
@@ -13,39 +15,66 @@ const Services = () => {
     "fa-chalkboard-user",
   ];
 
-  // 👇 this must include returnObjects: true
   const services = t("services.items", { returnObjects: true });
+  const discoverLabel = t("services.discoverMoreLabel");
 
-  // 👇 add a fallback to prevent crash if data is missing
-  if (!Array.isArray(services)) {
-    console.warn("⚠️ services.items is not an array:", services);
-    return null;
-  }
+  if (!Array.isArray(services)) return null;
+
+  const prev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? services.length - 1 : prev - 1));
+  };
+
+  const next = () => {
+    setCurrentIndex((prev) => (prev === services.length - 1 ? 0 : prev + 1));
+  };
+
+  const service = services[currentIndex];
 
   return (
     <div className="service_area" id="service">
-      <div className="container">
-        <div className="section_title">
+      <div className="container text-center">
+        {/* Titolo servizi */}
+        <div className="section_title mb-5">
           <h1>
             <span className="title">{t("services.sectionTitle")}</span>
           </h1>
           <p>{t("services.sectionSubtitle")}</p>
         </div>
 
-        <div className="row justify-content-center">
-          {services.map((service, index) => (
-            <div key={index} className="col-md-4 col-lg-4 col-sm-6 col-xs-12">
-              <div className="single_service">
-                <div className="service_icon">
-                  <i className={`fa ${icons[index]}`}></i>
-                </div>
-                <div className="sercive_content">
-                  <h2>{service.title}</h2>
-                  <p>{service.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Slider singolo servizio */}
+        <div className="single_service slider text-center mx-auto">
+          <div className="service_icon">
+            <i className={`fa ${icons[currentIndex]}`}></i>
+          </div>
+          <div className="sercive_content">
+            <h2>{service.title}</h2>
+            <p>{service.description}</p>
+            {service.link && (
+              <a
+                href={service.link}
+                className="discover_more_btn"
+                onClick={() => {
+                  trackEvent({
+                    category: "Services Slider",
+                    action: "Click Discover More",
+                    label: service.title,
+                  });
+                }}
+              >
+                {discoverLabel} →
+              </a>
+            )}
+          </div>
+        </div>
+
+        {/* Controlli slider */}
+        <div className="slider_controls mt-3">
+          <button onClick={prev} className="slider_btn">
+            ←
+          </button>
+          <button onClick={next} className="slider_btn">
+            →
+          </button>
         </div>
       </div>
     </div>

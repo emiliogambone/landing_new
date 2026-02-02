@@ -11,6 +11,8 @@ import FooterBottom from "./components/FooterBottom";
 import BlogArticle from "./components/BlogArticle";
 import BlogSearchPage from "./components/BlogSearchPage";
 import LifestyleArticle from "./components/LifestyleArticle";
+import ServicePage from "./components/ServicePage";
+import WorkWithMe from "./components/WorkWithMe";
 
 import ReactGA from "react-ga4";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -19,6 +21,10 @@ function Layout() {
   const location = useLocation();
   const isBlogArticle = location.pathname.startsWith("/blog/");
   const isLifestyleArticle = location.pathname.startsWith("/lifestyle/");
+  const isServicePage =
+    location.pathname.startsWith("/servizi/") &&
+    location.pathname !== "/servizi";
+  const isWorkWithMePage = location.pathname === "/work-with-me";
 
   // Track pageviews on route change
   useEffect(() => {
@@ -27,20 +33,25 @@ function Layout() {
 
   return (
     <div className="App">
-      {!isBlogArticle && !isLifestyleArticle && (
-        <>
-          <Menu />
-          <MobileMenu />
-          <Slider />
-          <About />
-          <Services />
-        </>
-      )}
+      {!isBlogArticle &&
+        !isLifestyleArticle &&
+        !isServicePage &&
+        !isWorkWithMePage && (
+          <>
+            <Menu />
+            <MobileMenu />
+            <Slider />
+            <About />
+            <Services />
+          </>
+        )}
 
       <Routes>
-        <Route path="/" element={<BlogSearchPage />} />
+        {/* <Route path="/" element={<BlogSearchPage />} />
         <Route path="/blog/:id" element={<BlogArticle />} />
-        <Route path="/lifestyle/:id" element={<LifestyleArticle />} />
+        <Route path="/lifestyle/:id" element={<LifestyleArticle />} /> */}
+        <Route path="/servizi/:serviceId" element={<ServicePage />} />
+        <Route path="/work-with-me" element={<WorkWithMe />} />
       </Routes>
 
       {!isBlogArticle && !isLifestyleArticle && (

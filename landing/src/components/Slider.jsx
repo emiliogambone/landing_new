@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { useTranslation } from "react-i18next";
 import Typewriter from "typewriter-effect";
+import { trackEvent } from "../utils/gaEvents"; // <-- import your GA helper
 
 const HeroParticles = () => {
   const { t } = useTranslation();
@@ -15,9 +18,8 @@ const HeroParticles = () => {
 
   // Roles stay in English
   const roles = [
-    "Software Engineer",
+    "Software Engineer & Solution Architect",
     "Technical Project Manager",
-    "IT Consultant",
   ];
 
   return (
@@ -107,7 +109,7 @@ const HeroParticles = () => {
 
         {/* Buttons */}
         <div className="single_about_btn">
-          <a
+          {/* <a
             href="https://app.simplymeet.me/emiliogambone"
             target="_blank"
             rel="noopener noreferrer"
@@ -115,10 +117,52 @@ const HeroParticles = () => {
             style={{ marginRight: "10px" }}
           >
             {t("hero.ctaContact")}
-          </a>
-          {/* <a href="#services" className="btn btn-outline-light">
-            {t("hero.ctaWork")}
           </a> */}
+          <Link
+            to="/work-with-me"
+            className="cta-button active"
+            onClick={() =>
+              trackEvent({
+                category: "Hero CTA",
+                action: "Click Work With Me",
+                label: "Hero Button",
+              })
+            }
+          >
+            {t("about.workWithMeButton")}
+          </Link>
+
+          {/* Servizi */}
+          <a
+            href="#service"
+            className="active"
+            smooth={true}
+            duration={500}
+            onClick={() =>
+              trackEvent({
+                category: "Hero CTA",
+                action: "Click Services",
+                label: "Hero Button",
+              })
+            }
+          >
+            {t("services.sectionTitle")}
+          </a>
+
+          {/* Chi sono */}
+          <a
+            href="#about"
+            className="single_about_btn cta-button active"
+            onClick={() =>
+              trackEvent({
+                category: "Hero CTA",
+                action: "Click About",
+                label: "Hero Button",
+              })
+            }
+          >
+            {t("menu.about")}
+          </a>
         </div>
       </div>
     </section>

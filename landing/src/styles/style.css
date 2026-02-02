@@ -1642,6 +1642,7 @@ msuzan ABOUT AREA CSS
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 2px;
+  text-align: left;
 }
 
 .single_about_content_text p {
@@ -1665,7 +1666,7 @@ msuzan ABOUT AREA CSS
   position: relative;
   z-index: 1;
   border: 3px solid #ffffff;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .single_about_btn a {
@@ -1681,7 +1682,7 @@ msuzan ABOUT AREA CSS
   position: relative;
   z-index: 1;
   border: 3px solid #ffffff;
-  border-radius: 30px;
+  border-radius: 5px;
 }
 
 .single_about_btn a.active:hover {
@@ -2046,25 +2047,80 @@ msuzan ABOUT AREA CSS
 SERVICE AREA CSS
 ======================*/
 
+.slider {
+  transition: all 0.4s ease;
+}
+
+.slider_controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.slider_btn {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.slider_btn:hover {
+  background: #fff;
+  color: #000;
+}
+
 .service_area {
   overflow: hidden;
   padding: 93px 0 70px;
   background: #073b42;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 👈 QUESTA È LA CHIAVE */
 }
 
+.service_area .container-fluid {
+  display: flex;
+  justify-content: center;
+}
 .single_service {
   overflow: hidden;
   padding: 34px 16px 11px;
   text-align: center;
-  margin-bottom: 30px;
+
+  margin: 0 auto 30px auto; /* 👈 centra orizzontalmente */
+  width: 100%;
   transition: 0.5s;
-  /* box-shadow: 0 0 19px rgba(0,0,0,0.15); */
   position: relative;
   z-index: 1;
   border-bottom: 4px solid #ffffff;
   background: #073b42;
-  height: 100%; /* Ensures all blocks have the same height */
-  min-height: 350px; /* Set a minimum height for all blocks */
+
+  min-height: 350px; /* ok */
+  height: auto; /* 👈 rimuovi height: 100% */
+  max-width: 600px; /* 👈 consigliato */
+}
+
+.discover_more_btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #e66200; /* colore di sfondo */
+  color: #fff; /* 👈 testo bianco */
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.discover_more_btn:hover {
+  background-color: #ff8800;
+  color: #fff; /* mantiene il testo bianco anche al hover */
 }
 
 .blog_article_section {
@@ -5846,4 +5902,89 @@ portfolio DITALS AREA CSS
   z-index: 9999; /* on top of other content */
   background-color: #073b42; /* solid teal background */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+
+.work-with-me {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff; /* main text color */
+  background-color: #073b42; /* site background */
+  padding: 2rem;
+}
+
+/* Hero Section */
+.work-with-me .hero {
+  text-align: left; /* align all text left */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.work-with-me .hero h1,
+.work-with-me .hero h2,
+.work-with-me .hero p {
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.work-with-me .cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #f97316; /* orange button */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.work-with-me .cta-button:hover {
+  background-color: #fb923c; /* hover effect */
+  transform: translateY(-2px); /* subtle lift */
+}
+
+/* Services Section */
+.work-with-me .services-overview {
+  text-align: left; /* align text left */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.work-with-me .services-overview h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.work-with-me .services-overview ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  color: #d0e1e3;
+  font-size: 1.125rem;
+}
+
+.work-with-me .services-overview ul li {
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.work-with-me .contact-cta {
+  text-align: left; /* align text left */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.work-with-me .contact-cta h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.work-with-me .contact-cta p {
+  color: #b0d6d9;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
 }

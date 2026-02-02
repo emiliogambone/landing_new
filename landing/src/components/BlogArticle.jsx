@@ -14,6 +14,16 @@ const BlogArticle = () => {
 
   useEffect(() => {
     const fetchPost = async () => {
+      const langMap = {
+        "en-US": "en",
+        en: "en",
+        "it-IT": "it",
+        it: "it",
+        "es-ES": "es",
+        es: "es",
+      };
+      const sanityLang = langMap[currentLang] || "en"; // fallback to 'en'
+
       const query = `*[_type == "blogPost" && _id == "${id}"]{
         _id,
         tags,
@@ -26,7 +36,7 @@ const BlogArticle = () => {
           alt
         },
         translations{
-          ${currentLang}{
+          ${sanityLang}{
             title,
             content,
             excerpt

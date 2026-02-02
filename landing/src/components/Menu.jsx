@@ -35,9 +35,9 @@ const MainMenu = () => {
                   <li>
                     <a href="#service">{t("menu.services")}</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#blog">{t("menu.blog")}</a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#contact">{t("menu.contact")}</a>
                   </li>

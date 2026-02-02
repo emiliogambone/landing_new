@@ -15,40 +15,48 @@
   },
   "about": {
     "greeting": "Hello,",
-    "name": "My name is Emilio Gambone",
-    "description": "I am an IT engineer with a solid academic and professional background: degree in Computer Science, technical diploma in Computer Science, and years of experience developing innovative solutions. I offer personalized services for companies and individuals who want to create cutting-edge technology projects. For collaborations or information about my services, feel free to contact me.",
-    "cvButton": "Download CV",
+    "name": "Professional with years of experience in the IT sector.",
+    "description": "From code to strategy: <b>I design the digital architecture of your business</b>.<br>With a solid academic background and years of hands-on experience, I help companies and professionals overcome technological challenges with <b>tailored solutions</b> that grow with your goals.<br>I don’t just write code: I build <b>scalable tools</b> and efficient processes to make your business run smoothly.<br><br><b>What I can do for you:</b><br>• <b>Custom Software Development</b>: scalable solutions designed for your specific needs.<br>• <b>Strategic Consulting</b>: optimization of IT infrastructure and business processes.<br>• <b>Technology Innovation</b>: integration of new technologies to keep your company competitive.",
+    "cvButton": "Show CV",
     "hireButton": "Contact Me",
     "showCvButton": "Show CV",
-    "hideCvButton": "Hide CV"
+    "hideCvButton": "Hide CV",
+    "workWithMeButton": "Discover How I Work"
   },
   "services": {
     "sectionTitle": "Services",
     "sectionSubtitle": "What I do?",
+    "discoverMoreLabel": "Discover More",
     "items": [
       {
+        "title": "FULL STACK DEVELOPMENT",
+        "description": "Development of complete web and mobile applications, handling frontend, backend, and integrations with modern and scalable technologies.",
+        "link": "/servizi/development",
+        "details": "<h2>Complete Web and Mobile Applications</h2><p>I provide <strong>full stack development</strong> services, managing every technical aspect of the project: from architecture design to development, deployment, and ongoing evolution.</p><p>I work on both the <strong>frontend</strong>, creating modern and intuitive interfaces, and the <strong>backend</strong>, developing robust, secure, and scalable application logic. When needed, I also deliver <strong>mobile applications</strong> integrated with existing systems.</p><h3>Technologies I use</h3><p>Frontend: React, Vue.js, Angular; Backend: Node.js, .NET; Mobile: React Native. Technology is never an end, but a tool: if the project requires it, I evaluate and use different stacks.</p><h3>What I deliver</h3><ul><li>Custom web applications</li><li>Corporate and management platforms</li><li>Backend APIs and services</li><li>Integrations with external systems (CRM, ERP, payments, cloud services)</li><li>Cross-platform mobile applications</li><li>Refactoring and optimization of existing projects</li></ul><h3>Who can benefit</h3><ul><li>Companies looking to digitize processes or build custom solutions</li><li>Startups needing a solid and scalable product</li><li>Technical teams seeking expert support in frontend, backend, or architecture</li><li>Entrepreneurs and professionals looking for a single reliable technical reference</li></ul>"
+      },
+      {
         "title": "CONSULTING",
-        "description": "I provide technology consulting to evaluate IT needs, define effective strategies, analyze code to improve quality and security, choose and implement ready-made solutions, and define requirements with detailed technical documentation."
+        "description": "Evaluation of your IT needs and personalized strategies.",
+        "link": "/servizi/consulenza",
+        "details": "<h2>IT and Technology Consulting</h2><h3>Clarity, strategy, and informed technical decisions</h3><p>I offer IT consulting services to help companies, startups, software houses, and web agencies make solid technology decisions, reducing risks, time waste, and unnecessary costs. The consulting process transforms business needs into sustainable, aligned technical solutions.</p><h3>What consulting includes</h3><p>I assist clients and teams in all decision-making stages, providing a clear and independent technical perspective:</p><ul><li>Analysis of business needs and objectives</li><li>Evaluation of software architectures and technology stacks</li><li>Support in defining technical roadmaps</li><li>Informed technology choices (stack, framework, cloud, integrations)</li><li>Review of existing or planned solutions</li><li>Support for CTOs, PMs, and non-technical stakeholders</li></ul><h3>When consulting is useful</h3><ul><li>Starting a new project and wanting a solid foundation</li><li>Existing projects that do not scale or perform adequately</li><li>Uncertainty about which technologies to adopt</li><li>Evaluating vendors or alternative solutions</li><li>Needing a second technical opinion before major decisions</li></ul><h3>Who benefits</h3><ul><li>Companies seeking more effective technology decisions</li><li>Startups validating ideas and architectures</li><li>Software houses needing external technical advice</li><li>Web agencies requiring strategic support for complex projects</li><li>Entrepreneurs and decision-makers seeking clarity without unnecessary technicalities</li></ul>"
       },
       {
-        "title": "ANALYSIS",
-        "description": "I perform in-depth analyses of existing IT systems to identify areas of improvement, optimize performance, enhance security, and ensure compatibility with business requirements."
+        "title": "PROJECT MANAGEMENT & TECH LEAD",
+        "description": "Complete management of complex technology projects.",
+        "link": "/servizi/project-management",
+        "details": "<h2>Project Management & Tech Lead</h2><h3>Comprehensive management of complex technology projects</h3><p>I offer <strong>Project Management and Tech Lead</strong> services, supporting companies, startups, software houses, and web agencies in managing and coordinating IT projects of any complexity. The goal is to ensure <strong>on-time delivery, budget adherence, and technically solid solutions</strong>, with a single technical and strategic reference.</p><h3>What I do concretely</h3><ul><li>Planning, organizing, and managing technology projects</li><li>Coordinating internal teams and external vendors</li><li>Technical supervision as <strong>Tech Lead</strong> on architecture and development</li><li>Defining roadmaps and project milestones</li><li>Monitoring progress and managing risks</li><li>Optimizing processes and tools to increase productivity and quality</li></ul><h3>When it’s useful</h3><ul><li>Projects must meet deadlines and budgets</li><li>Distributed teams or external vendors need coordination</li><li>Rapid and informed technical decisions are needed</li><li>Need a <strong>single point of contact</strong> understanding both business and technology</li><li>Strategic support is required for product evolution</li></ul><h3>Who benefits</h3><ul><li>Companies seeking professionally managed IT projects</li><li>Startups needing an expert Tech Lead to guide development</li><li>Software houses and web agencies needing project or team coordination support</li><li>Technical teams aiming to optimize workflows and processes</li><li>Entrepreneurs and decision-makers seeking clarity and control over tech development</li></ul><h3>My approach</h3><p>My approach combines <strong>rigorous project management</strong> with <strong>technical consulting</strong>: I not only coordinate but ensure solutions are <strong>scalable, secure, and aligned with business goals</strong>. The focus is always on <strong>transparency, clear communication, and tangible results</strong>.</p>"
       },
       {
-        "title": "PROJECT MANAGEMENT",
-        "description": "I manage complex technology projects from planning to execution, ensuring deadlines, budgets, and goals are met. I coordinate multidisciplinary teams and handle client communications, ensuring successful completion of every project phase."
-      },
-      {
-        "title": "DIGITAL TRANSFORMATION",
-        "description": "I support companies in digital transformation by implementing innovative solutions to optimize business processes. I guide technological change, improving operational efficiency and customer interaction through advanced technologies."
-      },
-      {
-        "title": "CLIENT & VENDOR RELATIONS",
-        "description": "I manage and optimize relationships with clients and vendors to ensure smooth and productive collaboration. I coordinate communications and negotiations, ensuring all parties' needs are met and common goals are achieved efficiently."
+        "title": "B2B RELATIONSHIP MANAGEMENT",
+        "description": "Optimizing collaboration before, during, and after sales.",
+        "link": "/servizi/relazioni-clienti-fornitori",
+        "details": "<h2>B2B Relationship Management</h2><h3>Optimizing collaboration before, during, and after sales</h3><p>I provide <strong>B2B Relationship Management</strong> services for companies, software houses, and web agencies, helping them improve communication and collaboration with clients and vendors. The goal is to ensure <strong>clear processes, strong partnerships, and productive relationships</strong>, reducing friction, inefficiencies, and operational issues.</p><h3>What I do concretely</h3><ul><li>Coordinating and optimizing client and vendor relationships</li><li>Managing the <strong>pre-sales cycle</strong>: needs analysis, proposals, objective setting</li><li>Managing the <strong>post-sales cycle</strong>: support, follow-up, satisfaction monitoring, feedback management</li><li>Creating clear processes and standardized procedures</li><li>Improving communication between internal teams and external partners</li><li>Supporting conflict resolution or critical issues in B2B relationships</li></ul><h3>When it’s useful</h3><ul><li>Relationships with clients or vendors are fragmented or unclear</li><li>You want to increase <strong>efficiency, collaboration, and partner satisfaction</strong></li><li>Strategic support in managing pre- and post-sales cycles is needed</li><li>You want to reduce errors, delays, or misunderstandings between teams, clients, and vendors</li><li>A <strong>single point of contact</strong> is necessary to coordinate communication and processes</li></ul><h3>Who benefits</h3><ul><li>Companies seeking to improve commercial and operational interactions</li><li>Startups managing clients and vendors in a structured way to grow quickly</li><li>Software houses and web agencies wanting to optimize client and partner relationships</li><li>Sales or technical teams needing clear processes and efficient coordination</li><li>Entrepreneurs and managers seeking control and visibility over all B2B relationships</li></ul><h3>My approach</h3><p>My approach combines <strong>organizational management, effective communication, and practical strategies</strong>. I don’t just coordinate relationships, I create <strong>sustainable processes</strong> that reduce friction, improve partner satisfaction, and increase overall productivity.</p>"
       },
       {
         "title": "TRAINING",
-        "description": "I provide training on technologies, tools, and best practices to enable teams to manage complex IT solutions independently. I organize customized courses tailored to each client's specific needs, improving internal skills."
+        "description": "I organize courses on technologies and best practices to improve internal skills.",
+        "link": "/servizi/formazione",
+        "details": "<h2>Technology Training</h2><h3>Enhancing internal skills and boosting your team</h3><p>I offer <strong>training on technologies, methodologies, and IT best practices</strong>, designed for companies, startups, software houses, and web agencies. The goal is to make teams more autonomous, efficient, and up-to-date, improving project quality and reducing dependence on external consultants.</p><h3>What I do concretely</h3><ul><li>Customized courses on frontend, backend, and mobile development</li><li>Training on software architectures, integrations, and APIs</li><li>Workshops on agile methodologies, project management, and DevOps</li><li>Practical sessions on React, Vue, Angular, Node.js, .NET, React Native</li><li>Supporting teams during real projects to transfer practical skills</li><li>Providing personalized documentation and training materials</li></ul><h3>When it’s useful</h3><ul><li>Internal teams need technological updates</li><li>You want to reduce dependence on external consultants</li><li>Improving processes, quality, and productivity is required</li><li>New technologies or methodologies need to be introduced in the company</li><li>You want to boost professional growth of team members</li></ul><h3>Who benefits</h3><ul><li>Internal teams of companies and startups wanting to grow quickly</li><li>Software houses and web agencies updating staff or transferring project-specific skills</li><li>Entrepreneurs and managers wanting to strengthen strategic and technical skills of their team</li><li>Junior teams or new hires needing effective onboarding</li></ul><h3>My approach</h3><p>Training combines <strong>theory and practice</strong>, with a modular approach tailored to the team’s needs. I don’t just explain technologies, I teach <strong>how to apply them in real projects</strong> to create immediately usable skills.</p>"
       }
     ]
   },
@@ -61,8 +69,55 @@
   },
   "hero": {
     "name": "EMILIO GAMBONE",
-    "description": "Helping businesses deliver scalable software & manage complex IT projects",
+    "description": "Available for freelance & contract roles",
     "ctaContact": "Contact Me",
     "ctaWork": "See My Work"
+  },
+  "workWithMe": {
+    "hero": {
+      "title": "Work With Me",
+      "subtitle": "Software Engineer & Solution Architect | Open for freelance collaborations and contract projects",
+      "description": "From code to strategy: I build the digital architecture of your business. With solid experience, I support companies and professionals in overcoming technological challenges with tailored solutions.",
+      "ctaButton": "Contact Me Now"
+    },
+    "howIWork": {
+      "title": "How I Work",
+      "description1": "Every project starts with a deep evaluation of your needs and business goals. Together we define priorities, key functionalities, and expected outcomes.",
+      "description2": "I provide transparent and scalable solutions with realistic time and cost estimates. I am always available for support, updates, and advice even after delivery."
+    },
+    "servicesOverview": {
+      "title": "What I can do for you:",
+      "services": [
+        {
+          "title": "Custom Software Development",
+          "description": "Scalable solutions tailored to your needs."
+        },
+        {
+          "title": "Strategic Consulting",
+          "description": "Optimization of IT infrastructure and processes."
+        },
+        {
+          "title": "Technological Innovation",
+          "description": "Integration of new technologies to keep your company competitive."
+        },
+        {
+          "title": "Project Management & Tech Lead",
+          "description": "Full management of complex technology projects."
+        },
+        {
+          "title": "Training & Mentoring",
+          "description": "Development of your IT team skills."
+        },
+        {
+          "title": "B2B Relationship Management",
+          "description": "Optimizing relationships with clients and suppliers."
+        }
+      ]
+    },
+    "contactCTA": {
+      "title": "Ready to collaborate?",
+      "callButton": "Let's talk about your projects",
+      "emailButton": "Send me an email"
+    }
   }
 }
