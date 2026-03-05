@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import ReactGA from "react-ga4";
+import { Link } from "react-router-dom";
 import { trackEvent } from "../utils/gaEvents"; // import from your utils
 
 const WorkWithMe = () => {
@@ -10,17 +10,16 @@ const WorkWithMe = () => {
     returnObjects: true,
   });
 
-  const trackClick = (action, label) => {
-    ReactGA.event({
-      category: "CTA",
-      action,
-      label,
-    });
-  };
-
   return (
     <section className="work-with-me">
-      <div className="hero">
+      <div className="work-with-me-top-nav">
+        <Link to="/" className="work-with-me-back" aria-label="Back to home">
+          <span className="work-with-me-back-arrow">←</span>
+          <span>{t("menu.home")}</span>
+        </Link>
+      </div>
+
+      <div className="work-with-me-hero">
         <h1>{t("workWithMe.hero.title")}</h1>
         <h2>{t("workWithMe.hero.subtitle")}</h2>
         <p>{t("workWithMe.hero.description")}</p>
@@ -39,12 +38,25 @@ const WorkWithMe = () => {
         </a>
       </div>
 
+      <div className="work-with-me-how">
+        <h3>{t("workWithMe.howIWork.title")}</h3>
+        <div className="work-with-me-how-grid">
+          <article className="work-with-me-how-card">
+            <p>{t("workWithMe.howIWork.description1")}</p>
+          </article>
+          <article className="work-with-me-how-card">
+            <p>{t("workWithMe.howIWork.description2")}</p>
+          </article>
+        </div>
+      </div>
+
       <div className="services-overview">
         <h3>{t("workWithMe.servicesOverview.title")}</h3>
-        <ul>
+        <ul className="work-with-me-services-list">
           {services.map((s, idx) => (
-            <li key={idx}>
-              <strong>{s.title}:</strong> {s.description}
+            <li key={idx} className="work-service-item">
+              <p className="work-service-title">{s.title}</p>
+              <p className="work-service-description">{s.description}</p>
             </li>
           ))}
         </ul>
@@ -53,11 +65,10 @@ const WorkWithMe = () => {
       <div id="contact" className="contact-cta">
         <h3>{t("workWithMe.contactCTA.title")}</h3>
         {/* <p>{t("workWithMe.contactCTA.description")}</p> */}
-        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+        <div className="work-with-me-contact-actions">
           <a
             href="tel:+393493554864"
-            className="cta-button"
-            style={{ backgroundColor: "#F97316" }}
+            className="cta-button contact-primary"
             onClick={() =>
               trackEvent({
                 category: "CTA",
@@ -70,8 +81,7 @@ const WorkWithMe = () => {
           </a>
           <a
             href="mailto:emilio.gambone@gmail.com"
-            className="cta-button"
-            style={{ backgroundColor: "#F97316" }}
+            className="cta-button contact-ghost"
             onClick={() =>
               trackEvent({
                 category: "CTA",

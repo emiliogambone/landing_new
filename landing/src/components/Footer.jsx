@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="footer_area minimal" style={{ zIndex: 99 }}>
+    <div className="footer_area minimal">
       <div className="container">
         <div className="coppyright">
           <div className="footer_logo">
@@ -28,15 +28,17 @@ const Footer = () => {
               href="https://github.com/emiliogambone"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <i className="fa-brands fa-github"></i>
+              <i className="fa fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/emilio-gambone-41624458/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <i className="fa-brands fa-linkedin-in"></i>
+              <i className="fa fa-linkedin"></i>
             </a>
           </div>
 
@@ -44,15 +46,7 @@ const Footer = () => {
             <select
               value={i18n.language}
               onChange={handleLanguageChange}
-              className="form-select form-select-sm"
-              style={{
-                background: "transparent",
-                color: "#fff",
-                border: "3px solid #fff",
-                borderRadius: "0",
-                padding: "10px 10px",
-                marginTop: "8px",
-              }}
+              className="form-select form-select-sm modern-language-select"
             >
               <option value="en">English</option>
               <option value="it">Italiano</option>

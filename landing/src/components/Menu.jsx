@@ -7,7 +7,7 @@ const MainMenu = () => {
 
   return (
     <div className="msuzan-main-menu one_page hidden-xs hidden-sm header--fixed headrooma full-width">
-      <div className="msuzan_nav_area" style={{ backgroundColor: "#073B42" }}>
+      <div className="msuzan_nav_area">
         <div className="container-fluid">
           <div className="row logo-left">
             {/* LOGO */}

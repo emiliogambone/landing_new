@@ -21,6 +21,7 @@ import "./styles/theme-default.css";
 import "./styles/themify-icons.css";
 import "./styles/unittest.css";
 import "./styles/widget.css";
+import "./styles/modern-landing.css";
 import "./scripts/vendor/modernizr-3.5.0.min.js";
 import "./i18n";
 import { BrowserRouter } from "react-router-dom"; // <-- import BrowserRouter

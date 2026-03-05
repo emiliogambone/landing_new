@@ -38,7 +38,6 @@ const About = () => {
                 </div>
                 <div
                   className="single_about_content_text about-text"
-                  style={{ textAlign: "left", color: "white" }}
                   dangerouslySetInnerHTML={{ __html: t("about.description") }}
                 ></div>
                 {/* {showCv && (
@@ -64,7 +63,7 @@ const About = () => {
                 </div> */}
                 <div className="single_about_btn">
                   <a
-                    // className="active"
+                    className="active"
                     href={cvFile}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -81,13 +80,13 @@ const About = () => {
                   {/* <a href="mailto:emilio.gambone@gmail.com">
                     {t("about.hireButton")}
                   </a> */}
-                  <a
-                    // className="active"
+                  <button
+                    type="button"
+                    className="active about-action-btn"
                     onClick={goToWorkWithMe}
-                    style={{ cursor: "pointer", marginLeft: "10px" }}
                   >
                     {t("about.workWithMeButton") || "Work With Me"}
-                  </a>
+                  </button>
                 </div>
                 {/* <div className="single_about_btn"></div> */}
               </div>

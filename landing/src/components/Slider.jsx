@@ -23,19 +23,7 @@ const HeroParticles = () => {
   ];
 
   return (
-    <section
-      className="hero_section"
-      style={{
-        position: "relative",
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        color: "#fff",
-        overflow: "hidden",
-      }}
-    >
+    <section className="hero_section">
       {/* Particles Background */}
       <Particles
         id="tsparticles"
@@ -77,22 +65,12 @@ const HeroParticles = () => {
       />
 
       {/* Hero Content */}
-      <div
-        className="hero_content"
-        style={{
-          position: "relative",
-          zIndex: 1,
-          maxWidth: "700px",
-          padding: "0 20px",
-        }}
-      >
+      <div className="hero_content">
         {/* Name */}
-        <h1 style={{ fontSize: "3rem", marginBottom: "20px" }}>
-          {t("hero.name")}
-        </h1>
+        <h1>{t("hero.name")}</h1>
 
         {/* Typewriter roles */}
-        <h2 style={{ fontSize: "1.8rem", marginBottom: "20px" }}>
+        <h2>
           <Typewriter
             options={{
               strings: roles,
@@ -105,10 +83,10 @@ const HeroParticles = () => {
         </h2>
 
         {/* Description */}
-        <p style={{ marginBottom: "30px" }}>{t("hero.description")}</p>
+        <p>{t("hero.description")}</p>
 
         {/* Buttons */}
-        <div className="single_about_btn">
+        <div className="single_about_btn hero_cta_group">
           {/* <a
             href="https://app.simplymeet.me/emiliogambone"
             target="_blank"
@@ -120,7 +98,7 @@ const HeroParticles = () => {
           </a> */}
           <Link
             to="/work-with-me"
-            className="cta-button active"
+            className="cta-button active primary-cta"
             onClick={() =>
               trackEvent({
                 category: "Hero CTA",
@@ -135,7 +113,7 @@ const HeroParticles = () => {
           {/* Servizi */}
           <a
             href="#service"
-            className="active"
+            className="active ghost-cta"
             smooth={true}
             duration={500}
             onClick={() =>
@@ -152,7 +130,7 @@ const HeroParticles = () => {
           {/* Chi sono */}
           <a
             href="#about"
-            className="single_about_btn cta-button active"
+            className="cta-button active ghost-cta"
             onClick={() =>
               trackEvent({
                 category: "Hero CTA",
