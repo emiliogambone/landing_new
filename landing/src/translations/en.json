@@ -15,8 +15,8 @@
   },
   "about": {
     "greeting": "Hello,",
-    "name": "Professional with years of experience in the IT sector.",
-    "description": "From code to strategy: <b>I design the digital architecture of your business</b>.<br>With a solid academic background and years of hands-on experience, I help companies and professionals overcome technological challenges with <b>tailored solutions</b> that grow with your goals.<br>I don’t just write code: I build <b>scalable tools</b> and efficient processes to make your business run smoothly.<br><br><b>What I can do for you:</b><br>• <b>Custom Software Development</b>: scalable solutions designed for your specific needs.<br>• <b>Strategic Consulting</b>: optimization of IT infrastructure and business processes.<br>• <b>Technology Innovation</b>: integration of new technologies to keep your company competitive.",
+    "name": "Software Engineer and Solution Architect with experience in complex projects.",
+    "description": "I turn business goals into <b>practical digital solutions</b> that are reliable and scalable.<br>I work with companies and professionals to streamline processes, reduce inefficiencies, and build products that create measurable value.<br>I combine strategic thinking with hands-on execution, from architecture decisions to delivery and continuous improvement.<br><br><b>How I can help:</b><br>• <b>Custom Software Development</b>: web and mobile applications built around your needs.<br>• <b>Strategic Consulting</b>: clearer and more sustainable technology decisions.<br>• <b>Project & Tech Leadership</b>: technical and operational coordination for effective delivery.<br>• <b>Optimization & Innovation</b>: continuous improvement of tools, workflows, and performance.",
     "cvButton": "Show CV",
     "hireButton": "Contact Me",
     "showCvButton": "Show CV",
@@ -60,6 +60,19 @@
       }
     ]
   },
+  "products": {
+    "sectionTitle": "Products",
+    "sectionSubtitle": "Real projects you can preview and try immediately.",
+    "openLabel": "Open Project",
+    "items": [
+      {
+        "title": "Quote Builder",
+        "description": "A web product for creating professional quotes quickly, with a guided flow, clean layout, and easy client sharing.",
+        "link": "https://quotes-black-one.vercel.app/landing",
+        "previewUrl": "https://quotes-black-one.vercel.app/landing"
+      }
+    ]
+  },
   "menu": {
     "home": "Home",
     "about": "About",
@@ -75,18 +88,35 @@
   },
   "workWithMe": {
     "hero": {
+      "eyebrow": "Collaboration Model",
       "title": "Work With Me",
-      "subtitle": "Software Engineer & Solution Architect | Open for freelance collaborations and contract projects",
-      "description": "From code to strategy: I build the digital architecture of your business. With solid experience, I support companies and professionals in overcoming technological challenges with tailored solutions.",
+      "subtitle": "Software Engineer & Solution Architect for freelance and contract projects",
+      "description": "I help companies design, build, and evolve digital products with a pragmatic approach: clear scope, realistic planning, and measurable outcomes.",
       "ctaButton": "Contact Me Now"
     },
     "howIWork": {
+      "eyebrow": "Process",
       "title": "How I Work",
-      "description1": "Every project starts with a deep evaluation of your needs and business goals. Together we define priorities, key functionalities, and expected outcomes.",
-      "description2": "I provide transparent and scalable solutions with realistic time and cost estimates. I am always available for support, updates, and advice even after delivery."
+      "intro": "A structured and transparent workflow, from first call to delivery.",
+      "steps": [
+        {
+          "title": "Discovery & Scope",
+          "description": "We define goals, constraints, priorities, and expected impact so every decision has a clear business reason."
+        },
+        {
+          "title": "Execution & Delivery",
+          "description": "I deliver in short iterations with frequent checkpoints, keeping quality high and communication simple."
+        },
+        {
+          "title": "Optimization & Support",
+          "description": "After release, I support improvements, performance tuning, and next-step planning based on real usage."
+        }
+      ]
     },
     "servicesOverview": {
-      "title": "What I can do for you:",
+      "eyebrow": "Capabilities",
+      "title": "What I can do for you",
+      "subtitle": "Flexible support across product, engineering, and delivery.",
       "services": [
         {
           "title": "Custom Software Development",
@@ -115,7 +145,9 @@
       ]
     },
     "contactCTA": {
+      "eyebrow": "Next Step",
       "title": "Ready to collaborate?",
+      "description": "Tell me your goals and timeline. I will propose a practical path forward.",
       "callButton": "Let's talk about your projects",
       "emailButton": "Send me an email"
     }

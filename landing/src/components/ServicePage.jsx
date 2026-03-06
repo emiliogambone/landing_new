@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const ServicePage = () => {
@@ -14,8 +15,19 @@ const ServicePage = () => {
   return (
     <div className="service_page_area">
       <div className="container">
+        <div className="service-page-top-nav">
+          <Link to="/" className="work-with-me-back" aria-label="Back to home">
+            <span className="work-with-me-back-arrow">←</span>
+            <span>{t("menu.home")}</span>
+          </Link>
+        </div>
+
         <div className="service-page-shell">
-          <h1>{service.title}</h1>
+          <div className="service-page-header">
+            <p className="work-section-eyebrow">{t("menu.services")}</p>
+            <h1>{service.title}</h1>
+            <p className="service-page-lead">{service.description}</p>
+          </div>
 
           {service.details && (
             <div

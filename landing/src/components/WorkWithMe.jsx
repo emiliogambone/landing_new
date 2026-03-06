@@ -20,9 +20,10 @@ const WorkWithMe = () => {
       </div>
 
       <div className="work-with-me-hero">
+        <p className="work-section-eyebrow">{t("workWithMe.hero.eyebrow")}</p>
         <h1>{t("workWithMe.hero.title")}</h1>
         <h2>{t("workWithMe.hero.subtitle")}</h2>
-        <p>{t("workWithMe.hero.description")}</p>
+        <p className="work-section-lead">{t("workWithMe.hero.description")}</p>
         <a
           href="#contact"
           className="cta-button"
@@ -39,19 +40,30 @@ const WorkWithMe = () => {
       </div>
 
       <div className="work-with-me-how">
+        <p className="work-section-eyebrow">{t("workWithMe.howIWork.eyebrow")}</p>
         <h3>{t("workWithMe.howIWork.title")}</h3>
+        <p className="work-section-lead">{t("workWithMe.howIWork.intro")}</p>
         <div className="work-with-me-how-grid">
-          <article className="work-with-me-how-card">
-            <p>{t("workWithMe.howIWork.description1")}</p>
-          </article>
-          <article className="work-with-me-how-card">
-            <p>{t("workWithMe.howIWork.description2")}</p>
-          </article>
+          {t("workWithMe.howIWork.steps", { returnObjects: true }).map(
+            (step, idx) => (
+              <article className="work-with-me-how-card" key={step.title}>
+                <p className="work-step-index">0{idx + 1}</p>
+                <h4>{step.title}</h4>
+                <p>{step.description}</p>
+              </article>
+            )
+          )}
         </div>
       </div>
 
       <div className="services-overview">
+        <p className="work-section-eyebrow">
+          {t("workWithMe.servicesOverview.eyebrow")}
+        </p>
         <h3>{t("workWithMe.servicesOverview.title")}</h3>
+        <p className="work-section-lead">
+          {t("workWithMe.servicesOverview.subtitle")}
+        </p>
         <ul className="work-with-me-services-list">
           {services.map((s, idx) => (
             <li key={idx} className="work-service-item">
@@ -63,8 +75,9 @@ const WorkWithMe = () => {
       </div>
 
       <div id="contact" className="contact-cta">
+        <p className="work-section-eyebrow">{t("workWithMe.contactCTA.eyebrow")}</p>
         <h3>{t("workWithMe.contactCTA.title")}</h3>
-        {/* <p>{t("workWithMe.contactCTA.description")}</p> */}
+        <p className="work-section-lead">{t("workWithMe.contactCTA.description")}</p>
         <div className="work-with-me-contact-actions">
           <a
             href="tel:+393493554864"

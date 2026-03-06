@@ -5,6 +5,7 @@ import MobileMenu from "./components/MobileMenu";
 import Slider from "./components/Slider";
 import About from "./components/About";
 import Services from "./components/Services";
+import Products from "./components/Products";
 import ContactArea from "./components/Contact";
 import Footer from "./components/Footer";
 import FooterBottom from "./components/FooterBottom";
@@ -43,6 +44,7 @@ function Layout() {
             <Slider />
             <About />
             <Services />
+            <Products />
           </>
         )}
 

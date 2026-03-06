@@ -3,10 +3,16 @@ import { useTranslation } from "react-i18next";
 import logo from "../assets/images/Logo_bianco.png";
 
 const MobileMenu = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleLanguageChange = (event) => {
+    const lang = event.target.value;
+    i18n.changeLanguage(lang);
+    localStorage.setItem("i18nextLng", lang);
+  };
 
   return (
     <div className="mbm hidden-md hidden-lg header_area main-menu-area one_page mobile-menu-sticky">
@@ -69,6 +75,17 @@ const MobileMenu = () => {
                 </a>
               </li>
             </ul>
+            <div className="mobile-language-switch">
+              <select
+                value={i18n.language}
+                onChange={handleLanguageChange}
+                aria-label="Select language"
+              >
+                <option value="en">🇬🇧 English</option>
+                <option value="it">🇮🇹 Italiano</option>
+                <option value="es">🇪🇸 Español</option>
+              </select>
+            </div>
           </nav>
         )}
       </div>

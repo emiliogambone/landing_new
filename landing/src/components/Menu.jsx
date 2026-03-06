@@ -3,7 +3,13 @@ import logo from "../assets/images/Logo_bianco.png";
 import { useTranslation } from "react-i18next";
 
 const MainMenu = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const handleLanguageChange = (event) => {
+    const lang = event.target.value;
+    i18n.changeLanguage(lang);
+    localStorage.setItem("i18nextLng", lang);
+  };
 
   return (
     <div className="msuzan-main-menu one_page hidden-xs hidden-sm header--fixed headrooma full-width">
@@ -40,6 +46,17 @@ const MainMenu = () => {
                   </li> */}
                   <li>
                     <a href="#contact">{t("menu.contact")}</a>
+                  </li>
+                  <li className="nav-language-item">
+                    <select
+                      value={i18n.language}
+                      onChange={handleLanguageChange}
+                      aria-label="Select language"
+                    >
+                      <option value="en">🇬🇧 EN</option>
+                      <option value="it">🇮🇹 IT</option>
+                      <option value="es">🇪🇸 ES</option>
+                    </select>
                   </li>
                   {/* <li>
                     <a href="">

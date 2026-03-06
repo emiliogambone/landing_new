@@ -15,8 +15,8 @@
   },
   "about": {
     "greeting": "Ciao,",
-    "name": "Professionista con anni di esperienza nel settore IT.",
-    "description": "Dal codice alla strategia: <b>realizzo l'architettura digitale del tuo business</b>.<br>Con una solida base accademica e anni di esperienza sul campo, supporto aziende e professionisti a superare le sfide tecnologiche con <b>soluzioni su misura</b> che crescono con i tuoi obiettivi.<br>Non mi limito a scrivere codice: costruisco strumenti <b>scalabili</b> e processi efficienti per far funzionare il tuo business.<br><br><b>Cosa posso fare per te:</b><br>• <b>Sviluppo Software Custom</b>: soluzioni scalabili progettate sulle tue esigenze.<br>• <b>Consulenza Strategica</b>: ottimizzazione di infrastrutture e processi IT esistenti.<br>• <b>Innovazione Tecnologica</b>: integrazione di nuove tecnologie per mantenere la tua azienda competitiva.",
+    "name": "Software Engineer e Solution Architect con esperienza su progetti complessi.",
+    "description": "Trasformo obiettivi di business in <b>soluzioni digitali concrete</b>, affidabili e scalabili.<br>Lavoro al fianco di aziende e professionisti per semplificare processi, ridurre inefficienze e costruire prodotti che generano valore reale.<br>Unisco visione strategica e competenze tecniche: dalla definizione dell'architettura fino alla consegna e all'evoluzione del progetto.<br><br><b>Come posso aiutarti:</b><br>• <b>Sviluppo Software Custom</b>: applicazioni web e mobile progettate sulle tue esigenze.<br>• <b>Consulenza Strategica</b>: scelte tecnologiche più solide, chiare e sostenibili.<br>• <b>Project & Tech Leadership</b>: coordinamento tecnico e operativo per consegne efficaci.<br>• <b>Ottimizzazione e Innovazione</b>: miglioramento continuo di strumenti, processi e performance.",
     "cvButton": "Visiona CV",
     "hireButton": "Contattami",
     "showCvButton": "Mostra CV",
@@ -60,6 +60,19 @@
       }
     ]
   },
+  "products": {
+    "sectionTitle": "Prodotti",
+    "sectionSubtitle": "Progetti reali che puoi vedere e testare subito.",
+    "openLabel": "Apri Progetto",
+    "items": [
+      {
+        "title": "Generatore Preventivi",
+        "description": "Prodotto web per creare preventivi professionali in modo rapido, con flusso guidato, layout pulito e condivisione immediata con il cliente.",
+        "link": "https://quotes-black-one.vercel.app/landing",
+        "previewUrl": "https://quotes-black-one.vercel.app/landing"
+      }
+    ]
+  },
   "menu": {
     "home": "Home",
     "about": "Chi sono",
@@ -75,18 +88,35 @@
   },
   "workWithMe": {
     "hero": {
+      "eyebrow": "Modalità di Collaborazione",
       "title": "Lavora con me",
-      "subtitle": "Software Engineer & Solution Architect | Aperto a collaborazioni freelance e progetti a contratto",
-      "description": "Dal codice alla strategia: realizzo l'architettura digitale del tuo business. Con solida esperienza, supporto aziende e professionisti a superare sfide tecnologiche con soluzioni su misura.",
+      "subtitle": "Software Engineer & Solution Architect per progetti freelance e a contratto",
+      "description": "Supporto aziende e professionisti a progettare, sviluppare ed evolvere prodotti digitali con un approccio pratico: obiettivi chiari, pianificazione realistica e risultati misurabili.",
       "ctaButton": "Contattami Ora"
     },
     "howIWork": {
+      "eyebrow": "Metodo",
       "title": "Come lavoro",
-      "description1": "Ogni progetto inizia con una valutazione approfondita delle tue esigenze e degli obiettivi del business. Definiamo insieme priorità, funzionalità chiave e risultati attesi.",
-      "description2": "Propongo soluzioni trasparenti e scalabili, con stime realistiche di tempi e costi. Sono sempre disponibile per supporto, aggiornamenti e consigli anche dopo la consegna."
+      "intro": "Un flusso di lavoro chiaro e trasparente, dalla prima call alla consegna.",
+      "steps": [
+        {
+          "title": "Analisi e Obiettivi",
+          "description": "Definiamo obiettivi, vincoli, priorità e risultati attesi, così ogni scelta tecnica è allineata al business."
+        },
+        {
+          "title": "Sviluppo e Consegna",
+          "description": "Lavoro per iterazioni brevi con allineamenti frequenti, mantenendo alta la qualità e la visibilità sull'avanzamento."
+        },
+        {
+          "title": "Ottimizzazione e Supporto",
+          "description": "Dopo il rilascio continuo a supportarti con miglioramenti, ottimizzazioni e pianificazione delle prossime evoluzioni."
+        }
+      ]
     },
     "servicesOverview": {
-      "title": "Cosa posso fare per te:",
+      "eyebrow": "Competenze",
+      "title": "Cosa posso fare per te",
+      "subtitle": "Supporto flessibile su prodotto, sviluppo e delivery.",
       "services": [
         {
           "title": "Sviluppo Software Custom",
@@ -115,7 +145,9 @@
       ]
     },
     "contactCTA": {
+      "eyebrow": "Prossimo Step",
       "title": "Pronto a collaborare?",
+      "description": "Raccontami obiettivi e tempistiche: ti propongo un percorso concreto per partire subito.",
       "callButton": "Parliamo dei tuoi progetti",
       "emailButton": "Inviami un'email"
     }
