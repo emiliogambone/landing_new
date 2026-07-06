@@ -1770,3 +1770,251 @@ PROGETTI
     grid-template-columns: 1fr;
   }
 }
+
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-selector .nav-lang-options {
+  position: absolute;
+  bottom: calc(100% + 8px); /* apre verso l'alto nel footer */
+  left: 0;
+  z-index: 9999;
+  min-width: 120px;
+}
+
+.language-selector .nav-lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.footer-lang-options {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 10px);
+  margin: 0;
+  padding: 8px;
+  min-width: 120px;
+  z-index: 99999;
+  list-style: none;
+}
+
+.footer-lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer-language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.footer-lang-options {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 10px);
+  margin: 0;
+  padding: 8px;
+  min-width: 120px;
+  z-index: 99999;
+  list-style: none;
+}
+
+.footer-lang-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.footer-language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+/* bottone */
+.footer-lang-trigger {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* dropdown */
+.footer-lang-options {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 0;
+
+  min-width: 120px;
+  padding: 8px 0;
+  margin: 0;
+
+  border-radius: 6px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+  list-style: none;
+  z-index: 99999;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* singola lingua */
+.footer-lang-option {
+  width: 100%;
+  padding: 8px 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* hover */
+.footer-lang-option:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* lingua selezionata */
+.footer-lang-option.is-active {
+  font-weight: 600;
+}
+
+/* bandiere */
+.nav-lang-flag,
+.footer-lang-option img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+/* freccia */
+.nav-lang-arrow {
+  transition: transform 0.2s ease;
+}
+
+.nav-lang-arrow.is-open {
+  transform: rotate(180deg);
+}
+
+.footer-language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+/* bottone uguale al menu */
+.footer-lang-trigger {
+  margin-top: 11px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 8px 12px;
+  min-width: 92px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.footer-lang-trigger:hover {
+  border-color: var(--brand-accent);
+  background: var(--brand-accent-soft);
+}
+
+/* dropdown uguale al menu ma apre sopra */
+.footer-lang-options {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  top: auto;
+  left: 0;
+  right: auto;
+
+  min-width: 130px;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(5, 45, 50, 0.98);
+  box-shadow: var(--shadow-elevated);
+
+  z-index: 1000;
+}
+
+/* singola lingua */
+.footer-lang-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: none;
+  border: none;
+  color: #fff;
+
+  padding: 8px 10px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  text-align: left;
+}
+
+.footer-lang-option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.footer-lang-option.is-active {
+  background: var(--brand-accent-soft);
+  color: var(--brand-accent);
+}
+
+/* bandiere */
+.footer-lang-option img {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}

@@ -1,15 +1,43 @@
 "use client";
-import { useTranslation } from "react-i18next";
+
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
+
+const LANGUAGES = [
+  { code: "en", label: "EN", flag: "gb" },
+  { code: "it", label: "IT", flag: "it" },
+  { code: "es", label: "ES", flag: "es" },
+];
 
 const Footer = () => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const selectedLang = e.target.value;
-    i18n.changeLanguage(selectedLang);
-    localStorage.setItem("i18nextLng", selectedLang);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const selectLanguage = (code: string) => {
+    i18n.changeLanguage(code);
+    localStorage.setItem("i18nextLng", code);
+    setLangOpen(false);
   };
+
+  const currentLang =
+    LANGUAGES.find((l) => l.code === i18n.language) || LANGUAGES[0];
 
   return (
     <div className="footer_area minimal">
@@ -35,6 +63,7 @@ const Footer = () => {
             >
               <i className="fa-brands fa-github"></i>
             </a>
+
             <a
               href="https://www.linkedin.com/in/emilio-gambone-41624458/"
               target="_blank"
@@ -45,16 +74,51 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="language-selector mt-3">
-            <select
-              value={i18n.language}
-              onChange={handleLanguageChange}
-              className="form-select form-select-sm modern-language-select"
+          <div className="footer-language-selector mt-3" ref={langRef}>
+            <button
+              type="button"
+              className="footer-lang-trigger"
+              onClick={() => setLangOpen(!langOpen)}
+              aria-haspopup="listbox"
+              aria-expanded={langOpen}
             >
-              <option value="en">English</option>
-              <option value="it">Italiano</option>
-              <option value="es">Espanol</option>
-            </select>
+              <img
+                src={`https://flagcdn.com/w40/${currentLang.flag}.png`}
+                alt={currentLang.label}
+                className="nav-lang-flag"
+              />
+
+              <span>{currentLang.label}</span>
+
+              <i
+                className={`fa-solid fa-chevron-down nav-lang-arrow ${
+                  langOpen ? "is-open" : ""
+                }`}
+              ></i>
+            </button>
+            {langOpen && (
+              <ul className="footer-lang-options" role="listbox">
+                {LANGUAGES.map((lang) => (
+                  <li key={lang.code}>
+                    <button
+                      type="button"
+                      className={`footer-lang-option ${
+                        lang.code === i18n.language ? "is-active" : ""
+                      }`}
+                      onClick={() => selectLanguage(lang.code)}
+                    >
+                      <img
+                        src={`https://flagcdn.com/w40/${lang.flag}.png`}
+                        alt={lang.label}
+                        className="nav-lang-flag"
+                      />
+
+                      <span>{lang.label}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>

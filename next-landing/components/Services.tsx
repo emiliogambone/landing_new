@@ -1,20 +1,29 @@
 "use client";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import {
+  Briefcase,
+  BarChart2,
+  ListChecks,
+  Settings2,
+  Handshake,
+  GraduationCap,
+  type LucideIcon,
+} from "lucide-react";
 import { trackEvent } from "@/utils/gaEvents";
+
+const icons: LucideIcon[] = [
+  Briefcase,
+  BarChart2,
+  ListChecks,
+  Settings2,
+  Handshake,
+  GraduationCap,
+];
 
 const Services = () => {
   const { t } = useTranslation();
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const icons = [
-    "fa-solid fa-briefcase",
-    "fa-solid fa-magnifying-glass-chart",
-    "fa-solid fa-list-check",
-    "fa-solid fa-gears",
-    "fa-solid fa-handshake",
-    "fa-solid fa-chalkboard-user",
-  ];
 
   const services = t("services.items", { returnObjects: true }) as any[];
   const discoverLabel = t("services.discoverMoreLabel");
@@ -30,6 +39,7 @@ const Services = () => {
   };
 
   const service = services[currentIndex];
+  const Icon = icons[currentIndex];
 
   return (
     <div className="service_area" id="service">
@@ -43,14 +53,16 @@ const Services = () => {
 
         <div className="single_service slider text-center mx-auto">
           <div className="service_icon">
-            <i className={icons[currentIndex]}></i>
+            <i>
+              <Icon size={40} strokeWidth={1.5} />
+            </i>
           </div>
           <div className="sercive_content">
             <h2>{service.title}</h2>
             <p>{service.description}</p>
             {service.link && (
               <a
-                href={"/servizi"}
+                href="/servizi"
                 className="discover_more_btn"
                 onClick={() => {
                   trackEvent({
