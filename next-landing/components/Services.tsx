@@ -50,7 +50,7 @@ const Services = () => {
             <p>{service.description}</p>
             {service.link && (
               <a
-                href={service.link}
+                href={"/servizi"}
                 className="discover_more_btn"
                 onClick={() => {
                   trackEvent({

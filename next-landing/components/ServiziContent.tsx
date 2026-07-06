@@ -22,6 +22,7 @@ type Servizio = {
   icon: LucideIcon;
   titleKey: string;
   descKey: string;
+  featuresKey: string;
   link?: string;
 };
 
@@ -31,6 +32,7 @@ const servizi: Servizio[] = [
     icon: Rocket,
     titleKey: "servizi.seoLanding.title",
     descKey: "servizi.seoLanding.desc",
+    featuresKey: "servizi.seoLanding.features",
     link: "#contact",
   },
   {
@@ -38,6 +40,7 @@ const servizi: Servizio[] = [
     icon: CreditCard,
     titleKey: "servizi.payments.title",
     descKey: "servizi.payments.desc",
+    featuresKey: "servizi.payments.features",
     link: "#contact",
   },
   {
@@ -45,6 +48,7 @@ const servizi: Servizio[] = [
     icon: Code2,
     titleKey: "servizi.fullstack.title",
     descKey: "servizi.fullstack.desc",
+    featuresKey: "servizi.fullstack.features",
     link: "#contact",
   },
   {
@@ -52,6 +56,7 @@ const servizi: Servizio[] = [
     icon: Wrench,
     titleKey: "servizi.gestionali.title",
     descKey: "servizi.gestionali.desc",
+    featuresKey: "servizi.gestionali.features",
     link: "#contact",
   },
   {
@@ -59,6 +64,7 @@ const servizi: Servizio[] = [
     icon: Smartphone,
     titleKey: "servizi.appNative.title",
     descKey: "servizi.appNative.desc",
+    featuresKey: "servizi.appNative.features",
     link: "#contact",
   },
   {
@@ -66,6 +72,7 @@ const servizi: Servizio[] = [
     icon: Cpu,
     titleKey: "servizi.bleIot.title",
     descKey: "servizi.bleIot.desc",
+    featuresKey: "servizi.bleIot.features",
     link: "#contact",
   },
   {
@@ -73,6 +80,7 @@ const servizi: Servizio[] = [
     icon: Bot,
     titleKey: "servizi.aiIntegration.title",
     descKey: "servizi.aiIntegration.desc",
+    featuresKey: "servizi.aiIntegration.features",
     link: "#contact",
   },
   {
@@ -80,6 +88,7 @@ const servizi: Servizio[] = [
     icon: Settings2,
     titleKey: "servizi.manutenzione.title",
     descKey: "servizi.manutenzione.desc",
+    featuresKey: "servizi.manutenzione.features",
     link: "#contact",
   },
   {
@@ -87,6 +96,7 @@ const servizi: Servizio[] = [
     icon: Network,
     titleKey: "servizi.cto.title",
     descKey: "servizi.cto.desc",
+    featuresKey: "servizi.cto.features",
     link: "#contact",
   },
   {
@@ -94,6 +104,7 @@ const servizi: Servizio[] = [
     icon: Users,
     titleKey: "servizi.techLead.title",
     descKey: "servizi.techLead.desc",
+    featuresKey: "servizi.techLead.features",
     link: "#contact",
   },
   {
@@ -101,6 +112,7 @@ const servizi: Servizio[] = [
     icon: GraduationCap,
     titleKey: "servizi.decloud.title",
     descKey: "servizi.decloud.desc",
+    featuresKey: "servizi.decloud.features",
     link: "#contact",
   },
   {
@@ -108,6 +120,7 @@ const servizi: Servizio[] = [
     icon: GraduationCap,
     titleKey: "servizi.formazione.title",
     descKey: "servizi.formazione.desc",
+    featuresKey: "servizi.formazione.features",
     link: "#contact",
   },
 ];
@@ -131,11 +144,23 @@ export default function ServiziContent() {
       <div className="servizi-list">
         {servizi.map((s, idx) => {
           const Icon = s.icon;
+          const features = t(s.featuresKey, {
+            returnObjects: true,
+            defaultValue: [],
+          }) as string[];
+
           return (
             <a
               href="#contact"
               className={`single_service ${idx % 2 === 0 ? "layout-right" : "layout-left"}`}
               key={s.id}
+              onClick={() =>
+                trackEvent({
+                  category: "servizi_click",
+                  action: "",
+                  label: s.id,
+                })
+              }
             >
               <div className="service_icon">
                 <Icon strokeWidth={1.5} />
@@ -143,6 +168,13 @@ export default function ServiziContent() {
               <div className="sercive_content">
                 <h2>{t(s.titleKey)}</h2>
                 <p>{t(s.descKey)}</p>
+                {Array.isArray(features) && features.length > 0 && (
+                  <ul>
+                    {features.map((f) => (
+                      <li key={f}>{f}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </a>
           );

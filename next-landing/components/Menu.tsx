@@ -1,18 +1,38 @@
 "use client";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
+const LANGUAGES = [
+  { code: "en", label: "EN", flag: "gb" },
+  { code: "it", label: "IT", flag: "it" },
+  { code: "es", label: "ES", flag: "es" },
+];
+
 const Menu = () => {
   const { t, i18n } = useTranslation();
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLLIElement>(null);
 
-  const handleLanguageChange = (
-    event: React.ChangeEvent<HTMLSelectElement>,
-  ) => {
-    const lang = event.target.value;
-    i18n.changeLanguage(lang);
-    localStorage.setItem("i18nextLng", lang);
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const selectLanguage = (code: string) => {
+    i18n.changeLanguage(code);
+    localStorage.setItem("i18nextLng", code);
+    setLangOpen(false);
   };
+
+  const currentLang =
+    LANGUAGES.find((l) => l.code === i18n.language) || LANGUAGES[0];
 
   return (
     <div className="msuzan-main-menu one_page hidden-xs hidden-sm header--fixed headrooma full-width">
@@ -66,16 +86,49 @@ const Menu = () => {
                   <li>
                     <Link href="/#contact">{t("menu.contact")}</Link>
                   </li>
-                  <li className="nav-language-item">
-                    <select
-                      value={i18n.language}
-                      onChange={handleLanguageChange}
-                      aria-label="Select language"
+                  <li className="nav-language-item" ref={langRef}>
+                    <button
+                      type="button"
+                      className="nav-lang-trigger"
+                      onClick={() => setLangOpen(!langOpen)}
+                      aria-haspopup="listbox"
+                      aria-expanded={langOpen}
                     >
-                      <option value="en">🇬🇧 EN</option>
-                      <option value="it">🇮🇹 IT</option>
-                      <option value="es">🇪🇸 ES</option>
-                    </select>
+                      <img
+                        src={`https://flagcdn.com/w40/${currentLang.flag}.png`}
+                        alt={currentLang.label}
+                        className="nav-lang-flag"
+                      />
+                      <span>{currentLang.label}</span>
+                      <i
+                        className={`fa-solid fa-chevron-down nav-lang-arrow ${
+                          langOpen ? "is-open" : ""
+                        }`}
+                      ></i>
+                    </button>
+
+                    {langOpen && (
+                      <ul className="nav-lang-options" role="listbox">
+                        {LANGUAGES.map((lang) => (
+                          <li key={lang.code}>
+                            <button
+                              type="button"
+                              className={`nav-lang-option ${
+                                lang.code === i18n.language ? "is-active" : ""
+                              }`}
+                              onClick={() => selectLanguage(lang.code)}
+                            >
+                              <img
+                                src={`https://flagcdn.com/w40/${lang.flag}.png`}
+                                alt={lang.label}
+                                className="nav-lang-flag"
+                              />
+                              <span>{lang.label}</span>
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 </ul>
               </nav>

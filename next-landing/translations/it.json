@@ -16,103 +16,206 @@
   "about": {
     "greeting": "Ciao,",
     "name": "Software Engineer e Solution Architect con esperienza su progetti complessi.",
-    "description": "Trasformo obiettivi di business in <b>soluzioni digitali concrete</b>, affidabili e scalabili.<br>Lavoro al fianco di aziende e professionisti per semplificare processi, ridurre inefficienze e costruire prodotti che generano valore reale.<br>Unisco visione strategica e competenze tecniche: dalla definizione dell'architettura fino alla consegna e all'evoluzione del progetto.<br><br><b>Come posso aiutarti:</b><br>• <b>Sviluppo Software Custom</b>: applicazioni web e mobile progettate sulle tue esigenze.<br>• <b>Consulenza Strategica</b>: scelte tecnologiche più solide, chiare e sostenibili.<br>• <b>Project & Tech Leadership</b>: coordinamento tecnico e operativo per consegne efficaci.<br>• <b>Ottimizzazione e Innovazione</b>: miglioramento continuo di strumenti, processi e performance.",
+    "description": "Non scrivo solo codice: progetto software che deve funzionare nel mondo reale. <br>Aiuto aziende e startup a trasformare idee in prodotti solidi, scalabili e sostenibili. <br>Lavoro in modo diretto e trasparente: se un progetto non ha senso tecnico o di business, lo dico subito.",
     "cvButton": "Visiona CV",
     "hireButton": "Contattami",
     "showCvButton": "Mostra CV",
     "hideCvButton": "Nascondi CV",
     "workWithMeButton": "Scopri come lavoro"
   },
+
   "servizi": {
     "pageTitle": "I miei servizi",
-    "pageIntro": "Trasformo esigenze concrete in soluzioni digitali funzionanti: più clienti, meno tempo perso, processi che finalmente lavorano per te.",
-    "discoverMore": "Scopri di più",
+    "pageIntro": "Trasformo esigenze concrete in soluzioni digitali funzionanti.",
+    "discoverMore": "Parliamone",
 
     "seoLanding": {
-      "title": "Landing Page SEO",
-      "desc": "Vuoi essere trovato su Google prima dei tuoi concorrenti? Costruisco pagine veloci e ottimizzate che trasformano le visite in richieste e vendite reali."
+      "title": "Landing Page",
+      "desc": "Realizzo landing page progettate per comunicare il valore del tuo business e massimizzare le conversioni.",
+      "features": [
+        "Design moderno e responsive",
+        "Ottimizzazione per conversioni e SEO",
+        "Integrazione con analytics e strumenti di marketing"
+      ]
     },
-    "payments": {
-      "title": "Integrazione Pagamenti",
-      "desc": "Fai pagare i tuoi clienti online in modo semplice e sicuro, senza rischi né complicazioni tecniche. Attivo Stripe e altri sistemi in tempi rapidi."
-    },
+
     "fullstack": {
-      "title": "Sviluppo Full Stack",
-      "desc": "Hai un'idea o un problema che i software standard non risolvono? Costruisco l'applicazione su misura che ti serve davvero, da zero."
+      "title": "Web App & Software su Misura",
+      "desc": "Progetto e sviluppo applicazioni web e software personalizzati per digitalizzare processi, migliorare l'efficienza e supportare la crescita della tua azienda.",
+      "features": [
+        "Sviluppo completamente personalizzato",
+        "Architetture scalabili e sicure",
+        "Integrazione con sistemi e servizi esistenti"
+      ]
     },
-    "gestionali": {
-      "title": "Gestionali per Artigiani e PMI",
-      "desc": "Basta fogli Excel sparsi e appunti su carta. Un gestionale pensato sul tuo modo di lavorare, per ordini, magazzino e clienti sotto controllo."
-    },
+
     "appNative": {
-      "title": "App Native (React Native)",
-      "desc": "Vuoi un'app su iOS e Android senza raddoppiare i costi di sviluppo? Un'unica base di codice, due app native, tempi e budget ottimizzati."
+      "title": "App Mobile (React Native)",
+      "desc": "Sviluppo app mobile performanti e intuitive utilizzando un'unica codebase, riducendo tempi e costi di sviluppo.",
+      "features": [
+        "Compatibilità con iOS e Android",
+        "Interfacce moderne e intuitive",
+        "Pubblicazione e aggiornamenti sugli store"
+      ]
     },
-    "bleIot": {
-      "title": "Integrazioni BLE / IoT",
-      "desc": "Hai un dispositivo hardware che deve parlare con un'app? Mi occupo del collegamento tra Bluetooth, sensori e mobile, dalla lettura dati al controllo remoto."
-    },
-    "aiIntegration": {
-      "title": "Integrazione AI nei Processi Aziendali",
-      "desc": "Quante ore perdi ogni settimana su attività ripetitive? Integro l'intelligenza artificiale nei tuoi strumenti per farti risparmiare tempo e prendere decisioni migliori."
-    },
-    "manutenzione": {
-      "title": "Manutenzione e Integrazioni",
-      "desc": "Il tuo software esistente ha bisogno di assistenza o deve collegarsi a un altro sistema? Intervengo senza fermare la tua attività quotidiana."
-    },
+
     "cto": {
-      "title": "Pianificazione Architetturale / CTO on Demand",
-      "desc": "Stai per partire con un progetto software importante? Ti aiuto a scegliere le tecnologie giuste prima di spendere budget in errori evitabili."
+      "title": "CTO Fractional / Tech Lead",
+      "desc": "Affianco startup e aziende nelle decisioni tecnologiche, nella progettazione dell'architettura e nel coordinamento del team di sviluppo.",
+      "features": [
+        "Definizione dell'architettura software",
+        "Leadership tecnica e mentoring",
+        "Supporto nelle decisioni strategiche"
+      ]
     },
+
     "techLead": {
-      "title": "Tech Lead e Gestione Progetti",
-      "desc": "Hai un team di sviluppo ma manca chi coordina e garantisce le scadenze? Divento il tuo punto di riferimento tecnico, dalla pianificazione al rilascio."
+      "title": "Project Management",
+      "desc": "Gestisco attività, tempi e priorità per garantire uno sviluppo organizzato, trasparente e orientato ai risultati.",
+      "features": [
+        "Pianificazione e roadmap",
+        "Coordinamento del team",
+        "Controllo di tempi, qualità e obiettivi"
+      ]
     },
+
     "formazione": {
       "title": "Formazione",
-      "desc": "Vuoi che il tuo team acquisisca competenze reali, non solo teoria? Corsi pratici su sviluppo web, mobile e best practice, su misura per voi."
+      "desc": "Percorsi formativi personalizzati per migliorare competenze tecniche, metodologie di sviluppo e utilizzo delle tecnologie più moderne.",
+      "features": [
+        "Formazione individuale o di gruppo",
+        "Workshop pratici e mentoring",
+        "Best practice e architetture moderne"
+      ]
+    },
+
+    "decloud": {
+      "title": "Migrazione Cloud → On-Premises",
+      "desc": "Ti supporto nella migrazione di applicazioni e servizi verso ambienti on-premises, riducendo la dipendenza dal cloud quando rappresenta la scelta più adatta.",
+      "features": [
+        "Analisi e pianificazione della migrazione",
+        "Riduzione dei costi operativi",
+        "Maggiore controllo su dati e infrastruttura"
+      ]
+    },
+
+    "payments": {
+      "title": "Integrazione Pagamenti",
+      "desc": "Integro gateway di pagamento e sistemi di fatturazione direttamente nelle tue applicazioni o piattaforme.",
+      "features": [
+        "Pagamenti online e ricorrenti",
+        "Integrazione con gateway e API",
+        "Gestione notifiche, webhook e automazioni"
+      ]
+    },
+
+    "manutenzione": {
+      "title": "Manutenzione, Integrazioni & Migrazioni",
+      "desc": "Mi occupo dell'evoluzione di applicazioni esistenti attraverso manutenzione, integrazioni con servizi esterni e migrazioni tecnologiche.",
+      "features": [
+        "Aggiornamenti e bug fixing",
+        "Integrazione con API e software esterni",
+        "Migrazione verso nuove tecnologie"
+      ]
     }
   },
+
   "progetti": {
     "pageTitle": "Progetti",
-    "pageIntro": "Alcuni dei problemi reali che ho aiutato a risolvere, settore per settore.",
+    "pageIntro": "Ogni progetto racconta una sfida diversa. Nel corso degli anni ho collaborato con startup, PMI e organizzazioni in settori molto differenti, progettando soluzioni software, guidando team tecnici e sviluppando applicazioni su misura. Di seguito trovi una selezione di progetti che rappresentano il mio approccio: comprendere il problema, progettare la soluzione e realizzarla con tecnologie affidabili e scalabili.",
     "more": "Leggi tutto",
     "less": "Riduci",
 
     "logistica": {
       "sector": "Logistica",
-      "title": "Consolidamento infrastrutturale multi-sede",
-      "desc": "Un'azienda di logistica con quattro server distribuiti si trovava con dati duplicati e nessuna visione unificata. Ho pianificato la migrazione verso un'infrastruttura consolidata, gestendo log shipping, alias DNS e remediation dei riferimenti incrociati tra database, senza fermare le operazioni quotidiane."
+      "title": "Consulenza architetturale per WMS logistico",
+      "desc": "Un'azienda operante nel settore della logistica aveva la necessità di evolvere il proprio sistema di gestione del magazzino (WMS), rendendolo più scalabile e in grado di supportare nuovi flussi operativi. Ho collaborato alla definizione dell'architettura software, analizzando i requisiti tecnici e funzionali e individuando soluzioni in grado di migliorare prestazioni, manutenibilità e integrazione con gli altri sistemi aziendali. Il lavoro ha riguardato la progettazione delle componenti software e il supporto alle decisioni tecnologiche durante lo sviluppo.",
+      "features": [
+        "Software Architecture",
+        "Consulenza tecnica",
+        "WMS",
+        "Integrazione sistemi",
+        "Analisi dei requisiti"
+      ]
     },
+
     "appNative": {
       "sector": "Mobile · Multi-settore",
-      "title": "App native per assicurazioni, mobilità e legno",
-      "desc": "Ho sviluppato applicazioni mobile per settori molto diversi tra loro: assicurazioni, mobilità elettrica (monopattini) e cubatura del legno. Un'unica base di codice React Native, adattata a logiche di business completamente diverse."
+      "title": "Applicazioni Mobile Native",
+      "desc": "Ho sviluppato applicazioni mobile destinate a contesti molto diversi tra loro, adattando ogni soluzione alle esigenze specifiche del settore. Tra i progetti realizzati figurano applicazioni per il settore assicurativo, piattaforme dedicate alla mobilità elettrica e sistemi per aziende del comparto legno. Ogni progetto è stato sviluppato con particolare attenzione alle prestazioni, all'esperienza utente e all'integrazione con servizi backend e API esterne.",
+      "features": ["Assicurazioni", "Mobilità elettrica", "Industria del legno"]
     },
+
     "gestionali": {
       "sector": "Artigiani e PMI",
-      "title": "Gestionali su misura per attività artigiane",
-      "desc": "Meccanici e artigiani spesso gestiscono ordini e magazzino tra appunti cartacei e fogli Excel sparsi. Ho costruito gestionali su misura che si adattano al loro modo di lavorare reale, non il contrario."
+      "title": "Gestionale per Artigiani e CRM per Officine Meccaniche",
+      "desc": "Ho progettato e sviluppato una piattaforma gestionale dedicata ad artigiani e officine meccaniche per semplificare la gestione quotidiana delle attività. Il software permette di organizzare clienti, interventi, preventivi, documentazione e lavorazioni in un unico ambiente, riducendo le attività manuali e migliorando il controllo operativo.",
+      "features": [
+        "Gestione clienti",
+        "Preventivi",
+        "Interventi",
+        "Documentazione",
+        "CRM personalizzato"
+      ]
     },
-    "cucine": {
-      "sector": "Ristorazione",
-      "title": "Consulenza software per cucine professionali",
-      "desc": "Supporto di consulenza per la progettazione di un sistema di gestione pensato per cucine professionali: organizzazione ordini, tracciamento scorte e flussi di lavoro interni, con l'obiettivo di ridurre sprechi e tempi morti."
-    },
+
     "volontariato": {
       "sector": "No-profit",
-      "title": "Gestione magazzino e volontari",
-      "desc": "Un'associazione di volontariato gestiva ordini, magazzino e assegnazione di volontari/assistiti senza un sistema centralizzato. Ho sviluppato un software dedicato che unifica questi tre flussi, semplificando il coordinamento quotidiano."
+      "title": "Software per Associazione di Volontariato",
+      "desc": "Per un'associazione di volontariato ho sviluppato un sistema web dedicato alla gestione del magazzino e della distribuzione del vestiario. La piattaforma consente agli utenti autorizzati di richiedere gli articoli disponibili, mentre gli operatori possono gestire disponibilità, movimentazioni e consegne attraverso un'interfaccia semplice e intuitiva.",
+      "features": [
+        "Gestione magazzino",
+        "Gestione ordini",
+        "Inventario",
+        "Storico movimentazioni",
+        "Gestione utenti"
+      ]
     },
+
     "ricettiva": {
       "sector": "Turismo / Hospitality",
-      "title": "Automazione e sicurezza per struttura ricettiva",
-      "desc": "Una struttura ricettiva gestiva le prenotazioni su più piattaforme senza sincronizzazione, con rischio di doppie prenotazioni. Ho unificato la gestione delle camere su un'unica soluzione, aggiungendo automazioni e videosorveglianza su NAS."
+      "title": "Piattaforma per Struttura Ricettiva",
+      "desc": "Per una struttura ricettiva ho sviluppato una soluzione che centralizza la gestione delle prenotazioni provenienti dalle principali piattaforme online. Parallelamente ho progettato un'infrastruttura locale installando un server interno dedicato alla gestione dell'impianto di videosorveglianza, garantendo il controllo diretto dei dati e delle registrazioni.",
+      "features": [
+        "Integrazione piattaforme di booking",
+        "Gestione centralizzata",
+        "Server on-premises",
+        "Videosorveglianza",
+        "Networking"
+      ]
     },
+
+    "stampanti": {
+      "sector": "Industria / Manifatturiero",
+      "title": "Team Management e Scheduling per Stampanti Industriali",
+      "desc": "Ho ricoperto un ruolo di coordinamento tecnico nello sviluppo di un software desktop dedicato alla gestione di stampanti industriali. Oltre allo sviluppo, mi sono occupato della pianificazione delle attività, della gestione del team e della definizione delle priorità, assicurando il rispetto delle tempistiche e la qualità del prodotto finale.",
+      "features": [
+        "Team Lead",
+        "Scheduling",
+        "Desktop Software",
+        "Industrial Printing",
+        "Project Management"
+      ]
+    },
+
     "acquaponica": {
       "sector": "IoT / Agricoltura",
-      "title": "Coltura acquaponica automatizzata (Australia)",
-      "desc": "In Australia ho lavorato a un sistema di automazione per una coltura acquaponica (pesci e piante), usando Raspberry Pi, Arduino e sensori per monitorare e controllare in autonomia i parametri della coltura."
+      "title": "Automazione Agricola in Australia",
+      "desc": "Durante un'esperienza in Australia ho partecipato allo sviluppo di un sistema di automazione per una serra acquaponica. Il progetto prevedeva il monitoraggio continuo dei parametri ambientali tramite sensori e il controllo automatico di pompe, illuminazione e altri dispositivi mediante Arduino e Raspberry Pi, con l'obiettivo di ottimizzare la crescita delle colture e ridurre gli interventi manuali.",
+      "features": ["Arduino", "Raspberry Pi", "Sensori", "Attuatori", "IoT"]
+    },
+
+    "cucine": {
+      "sector": "Ristorazione / Hospitality",
+      "title": "Consulenza SaaS per il Settore Hospitality",
+      "desc": "Ho collaborato allo sviluppo e all'evoluzione di una piattaforma SaaS dedicata alla gestione operativa delle cucine professionali. L'attività ha riguardato consulenza tecnica, progettazione software e supporto alle scelte architetturali, contribuendo all'evoluzione della piattaforma e all'introduzione di nuove funzionalità per il settore hospitality.",
+      "features": [
+        "SaaS",
+        "Software Architecture",
+        "Hospitality",
+        "Consulenza tecnica",
+        "Product Development"
+      ]
     }
   },
   "services": {
@@ -179,6 +282,34 @@
     "ctaWork": "Vedi il mio lavoro"
   },
   "workWithMe": {
+    "about": {
+      "eyebrow": "Chi sono",
+      "title": "Prima di essere uno sviluppatore, sono una persona con cui collaborare.",
+      "description1": "Sono un Freelance Software Engineer e mi occupo dello sviluppo di applicazioni web, backend e software su misura. Mi piace costruire soluzioni semplici, affidabili e pensate per durare nel tempo.",
+      "description2": "Credo che una buona collaborazione nasca dalla comunicazione, dalla fiducia reciproca e dalla trasparenza. Per questo preferisco conoscere bene il cliente e gli obiettivi del progetto prima di iniziare qualsiasi sviluppo."
+    },
+    "values": {
+      "eyebrow": "Il mio approccio",
+      "title": "Come scelgo di lavorare",
+      "items": [
+        {
+          "title": "Rapporto umano",
+          "description": "Per me ogni progetto inizia dalle persone. Credo che una buona comunicazione sia fondamentale quanto una buona architettura software."
+        },
+        {
+          "title": "Trasparenza",
+          "description": "Preferisco essere sincero fin dall'inizio su costi, tempi e fattibilità del progetto."
+        },
+        {
+          "title": "Qualità",
+          "description": "Scrivo codice pensando alla manutenzione futura, non solo alla consegna."
+        },
+        {
+          "title": "Onestà professionale",
+          "description": "Se penso di non essere la persona giusta per un progetto, lo dico subito. Preferisco rinunciare a un lavoro piuttosto che consegnare qualcosa che non rispecchi i miei standard."
+        }
+      ]
+    },
     "hero": {
       "eyebrow": "Modalità di Collaborazione",
       "title": "Lavora con me",
@@ -186,10 +317,14 @@
       "description": "Supporto aziende e professionisti a progettare, sviluppare ed evolvere prodotti digitali con un approccio pratico: obiettivi chiari, pianificazione realistica e risultati misurabili.",
       "ctaButton": "Contattami Ora"
     },
+    "philosophy": {
+      "title": "Non accetto tutti i progetti",
+      "description": "Accetto solo collaborazioni in cui penso di poter portare un valore concreto. Se ritengo che un progetto richieda competenze che non possiedo o che non possa essere sviluppato con il livello di qualità che mi aspetto, preferisco essere trasparente fin dall'inizio. Credo che l'onestà sia il primo passo per costruire un rapporto di fiducia."
+    },
     "howIWork": {
       "eyebrow": "Metodo",
       "title": "Come lavoro",
-      "intro": "Un flusso di lavoro chiaro e trasparente, dalla prima call alla consegna.",
+      "intro": "Ogni progetto è diverso, ma il mio modo di lavorare segue un processo semplice e trasparente. Mi permette di capire le esigenze del cliente, ridurre gli imprevisti e mantenere una comunicazione costante durante tutta la collaborazione.",
       "steps": [
         {
           "title": "Analisi e Obiettivi",

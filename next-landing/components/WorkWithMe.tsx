@@ -12,22 +12,58 @@ const WorkWithMe = () => {
   const steps = t("workWithMe.howIWork.steps", {
     returnObjects: true,
   }) as any[];
+  const values = t("workWithMe.values.items", {
+    returnObjects: true,
+  }) as any[];
 
   return (
     <>
       <section className="work-with-me">
-        <div className="work-with-me-top-nav">
-          <Link
-            href="/"
-            className="work-with-me-back"
-            aria-label="Back to home"
-          >
-            <span className="work-with-me-back-arrow">←</span>
-            <span>{t("menu.home")}</span>
-          </Link>
-        </div>
+        <Link href="/" className="work-with-me-back" aria-label="Back to home">
+          <span className="work-with-me-back-arrow">←</span>
+          <span>{t("menu.home")}</span>
+        </Link>
+        <div className="work-with-me-about">
+          <div className="work-with-me-about-image">
+            <img src="/images/emilio.jpg" alt="Emilio Gambone" />
+          </div>
 
-        <div className="work-with-me-hero">
+          <div className="work-with-me-about-content">
+            <p className="work-section-eyebrow">
+              {t("workWithMe.about.eyebrow")}
+            </p>
+
+            <h3>{t("workWithMe.about.title")}</h3>
+
+            <p>{t("workWithMe.about.description1")}</p>
+
+            <p>{t("workWithMe.about.description2")}</p>
+          </div>
+        </div>
+        <div className="work-with-me-values">
+          <p className="work-section-eyebrow">
+            {t("workWithMe.values.eyebrow")}
+          </p>
+
+          <h3>{t("workWithMe.values.title")}</h3>
+          <div className="work-with-me-philosophy">
+            <h3>{t("workWithMe.philosophy.title")}</h3>
+
+            <p>{t("workWithMe.philosophy.description")}</p>
+          </div>
+
+          <div className="work-with-me-values-grid">
+            {values.map((value) => (
+              <article key={value.title} className="value-card">
+                <h4>{value.title}</h4>
+                <p>{value.description}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+        <div className="work-with-me-top-nav"></div>
+
+        {/* <div className="work-with-me-hero">
           <p className="work-section-eyebrow">{t("workWithMe.hero.eyebrow")}</p>
           <h1>{t("workWithMe.hero.title")}</h1>
           <h2>{t("workWithMe.hero.subtitle")}</h2>
@@ -47,7 +83,7 @@ const WorkWithMe = () => {
           >
             {t("workWithMe.hero.ctaButton")}
           </a>
-        </div>
+        </div> */}
         <div className="work-with-me-how">
           <p className="work-section-eyebrow">
             {t("workWithMe.howIWork.eyebrow")}
@@ -64,7 +100,7 @@ const WorkWithMe = () => {
             ))}
           </div>
         </div>
-        <div className="services-overview">
+        {/* <div className="services-overview">
           <p className="work-section-eyebrow">
             {t("workWithMe.servicesOverview.eyebrow")}
           </p>
@@ -80,7 +116,7 @@ const WorkWithMe = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <div id="contact" className="contact-cta">
           <p className="work-section-eyebrow">
             {t("workWithMe.contactCTA.eyebrow")}
