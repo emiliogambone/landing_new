@@ -1,11 +1,11 @@
-import React from "react";
+"use client";
 import { useTranslation } from "react-i18next";
-import logo from "../assets/images/Logo_bianco.png";
+import Image from "next/image";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();
 
-  const handleLanguageChange = (e) => {
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedLang = e.target.value;
     i18n.changeLanguage(selectedLang);
     localStorage.setItem("i18nextLng", selectedLang);
@@ -16,12 +16,15 @@ const Footer = () => {
       <div className="container">
         <div className="coppyright">
           <div className="footer_logo">
-            <img src={logo} alt="msuzan" />
+            <div style={{ position: "relative", width: 60, height: 60 }}>
+              <Image
+                src="/assets/images/Logo_bianco.png"
+                alt="logo"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
           </div>
-
-          {/* <div className="copy-right-text">
-            <p>{t("footer_text")}</p>
-          </div> */}
 
           <div className="footer_social_icon">
             <a

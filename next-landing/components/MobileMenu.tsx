@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
-import logo from "../assets/images/Logo_bianco.png";
 
 const MobileMenu = () => {
   const { t, i18n } = useTranslation();
@@ -8,7 +10,9 @@ const MobileMenu = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleLanguageChange = (event) => {
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>,
+  ) => {
     const lang = event.target.value;
     i18n.changeLanguage(lang);
     localStorage.setItem("i18nextLng", lang);
@@ -17,50 +21,50 @@ const MobileMenu = () => {
   return (
     <div className="mbm hidden-md hidden-lg header_area main-menu-area one_page mobile-menu-sticky">
       <div className="menu_area mobile-menu">
-        {/* Logo on the left */}
         <div className="mobile-logo">
-          <a href="#about">
-            <img src={logo} alt="Logo" />
-          </a>
+          <Link href="/#about">
+            <div style={{ position: "relative", width: 60, height: 60 }}>
+              <Image
+                src="/assets/images/Logo_bianco.png"
+                alt="logo"
+                fill
+                style={{ objectFit: "contain" }}
+              />
+            </div>
+          </Link>
         </div>
 
-        {/* Hamburger icon on the right */}
         <div className="mobile-menu-toggle" onClick={toggleMenu}>
           <i className="fa-solid fa-bars"></i>
         </div>
 
-        {/* Dropdown menu */}
         {isOpen && (
           <nav className="msuzan_menu main-search-menu mobile-dropdown">
             <ul className="main-menu sub-menu clearfix nav_scroll">
               <li>
-                <a href="#about" onClick={() => setIsOpen(false)}>
+                <Link href="/" onClick={() => setIsOpen(false)}>
                   {t("menu.home")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" onClick={() => setIsOpen(false)}>
+                <Link href="/#about" onClick={() => setIsOpen(false)}>
                   {t("menu.about")}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#service" onClick={() => setIsOpen(false)}>
+                <Link href="/servizi" onClick={() => setIsOpen(false)}>
                   {t("menu.services")}
-                </a>
+                </Link>
               </li>
-              {/* <li style={{ padding: "6px 20px" }}>
-                <a
-                  href="#blog"
-                  onClick={() => setIsOpen(false)}
-                  style={{ color: "#fff", textDecoration: "none" }}
-                >
-                  {t("menu.blog")}
-                </a>
-              </li> */}
               <li>
-                <a href="#contact" onClick={() => setIsOpen(false)}>
+                <Link href="/progetti" onClick={() => setIsOpen(false)}>
+                  Progetti
+                </Link>
+              </li>
+              <li>
+                <Link href="/#contact" onClick={() => setIsOpen(false)}>
                   {t("menu.contact")}
-                </a>
+                </Link>
               </li>
             </ul>
             <div className="mobile-language-switch">

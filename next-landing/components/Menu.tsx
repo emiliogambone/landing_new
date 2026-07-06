@@ -1,11 +1,14 @@
-import React from "react";
-import logo from "../assets/images/Logo_bianco.png";
+"use client";
+import Link from "next/link";
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
-const MainMenu = () => {
+const Menu = () => {
   const { t, i18n } = useTranslation();
 
-  const handleLanguageChange = (event) => {
+  const handleLanguageChange = (
+    event: React.ChangeEvent<HTMLSelectElement>,
+  ) => {
     const lang = event.target.value;
     i18n.changeLanguage(lang);
     localStorage.setItem("i18nextLng", lang);
@@ -16,36 +19,52 @@ const MainMenu = () => {
       <div className="msuzan_nav_area">
         <div className="container-fluid">
           <div className="row logo-left">
-            {/* LOGO */}
             <div className="col-md-3 col-sm-3 col-xs-4">
               <div className="logo">
-                <a className="main_sticky_main_l" href="#about" title="msuzan">
-                  <img src={logo} alt="msuzan" />
-                </a>
-                <a className="main_sticky_l" href="#about" title="msuzan">
-                  <img src={logo} alt="msuzan" />
-                </a>
+                <Link
+                  className="main_sticky_main_l"
+                  href="/#about"
+                  title="msuzan"
+                >
+                  <div style={{ position: "relative", width: 60, height: 60 }}>
+                    <Image
+                      src="/assets/images/Logo_bianco.png"
+                      alt="logo"
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </Link>
+                <Link className="main_sticky_l" href="/#about" title="msuzan">
+                  <div style={{ position: "relative", width: 60, height: 60 }}>
+                    <Image
+                      src="/assets/images/Logo_bianco.png"
+                      alt="logo"
+                      fill
+                      style={{ objectFit: "contain" }}
+                    />
+                  </div>
+                </Link>
               </div>
             </div>
 
-            {/* MAIN MENU */}
             <div className="col-md-9 col-sm-9 col-xs-8">
               <nav className="msuzan_menu main-search-menu">
                 <ul className="main-menu sub-menu nav_scroll">
                   <li>
-                    <a href="#about">{t("menu.home")}</a>
+                    <Link href="/">{t("menu.home")}</Link>
                   </li>
                   <li>
-                    <a href="#about">{t("menu.about")}</a>
+                    <Link href="/#about">{t("menu.about")}</Link>
                   </li>
                   <li>
-                    <a href="#service">{t("menu.services")}</a>
+                    <Link href="/servizi">{t("menu.services")}</Link>
                   </li>
-                  {/* <li>
-                    <a href="#blog">{t("menu.blog")}</a>
-                  </li> */}
                   <li>
-                    <a href="#contact">{t("menu.contact")}</a>
+                    <Link href="/progetti">{t("Progetti")}</Link>
+                  </li>
+                  <li>
+                    <Link href="/#contact">{t("menu.contact")}</Link>
                   </li>
                   <li className="nav-language-item">
                     <select
@@ -58,15 +77,9 @@ const MainMenu = () => {
                       <option value="es">🇪🇸 ES</option>
                     </select>
                   </li>
-                  {/* <li>
-                    <a href="">
-                      <i className="fa-solid fa-bars"></i>
-                    </a>
-                  </li> */}
                 </ul>
               </nav>
             </div>
-            {/* END MAIN MENU */}
           </div>
         </div>
       </div>
@@ -74,4 +87,4 @@ const MainMenu = () => {
   );
 };
 
-export default MainMenu;
+export default Menu;

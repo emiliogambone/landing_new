@@ -1,0 +1,247 @@
+{
+  "contact": {
+    "phone": {
+      "title": "Telefono",
+      "value": "+39 3493554864"
+    },
+    "email": {
+      "title": "Email",
+      "value": "emilio.gambone@gmail.com"
+    },
+    "whatsapp": {
+      "title": "Whatsapp",
+      "value": "+39 3493554864"
+    }
+  },
+  "about": {
+    "greeting": "Ciao,",
+    "name": "Software Engineer e Solution Architect con esperienza su progetti complessi.",
+    "description": "Trasformo obiettivi di business in <b>soluzioni digitali concrete</b>, affidabili e scalabili.<br>Lavoro al fianco di aziende e professionisti per semplificare processi, ridurre inefficienze e costruire prodotti che generano valore reale.<br>Unisco visione strategica e competenze tecniche: dalla definizione dell'architettura fino alla consegna e all'evoluzione del progetto.<br><br><b>Come posso aiutarti:</b><br>• <b>Sviluppo Software Custom</b>: applicazioni web e mobile progettate sulle tue esigenze.<br>• <b>Consulenza Strategica</b>: scelte tecnologiche più solide, chiare e sostenibili.<br>• <b>Project & Tech Leadership</b>: coordinamento tecnico e operativo per consegne efficaci.<br>• <b>Ottimizzazione e Innovazione</b>: miglioramento continuo di strumenti, processi e performance.",
+    "cvButton": "Visiona CV",
+    "hireButton": "Contattami",
+    "showCvButton": "Mostra CV",
+    "hideCvButton": "Nascondi CV",
+    "workWithMeButton": "Scopri come lavoro"
+  },
+  "servizi": {
+    "pageTitle": "I miei servizi",
+    "pageIntro": "Trasformo esigenze concrete in soluzioni digitali funzionanti: più clienti, meno tempo perso, processi che finalmente lavorano per te.",
+    "discoverMore": "Scopri di più",
+
+    "seoLanding": {
+      "title": "Landing Page SEO",
+      "desc": "Vuoi essere trovato su Google prima dei tuoi concorrenti? Costruisco pagine veloci e ottimizzate che trasformano le visite in richieste e vendite reali."
+    },
+    "payments": {
+      "title": "Integrazione Pagamenti",
+      "desc": "Fai pagare i tuoi clienti online in modo semplice e sicuro, senza rischi né complicazioni tecniche. Attivo Stripe e altri sistemi in tempi rapidi."
+    },
+    "fullstack": {
+      "title": "Sviluppo Full Stack",
+      "desc": "Hai un'idea o un problema che i software standard non risolvono? Costruisco l'applicazione su misura che ti serve davvero, da zero."
+    },
+    "gestionali": {
+      "title": "Gestionali per Artigiani e PMI",
+      "desc": "Basta fogli Excel sparsi e appunti su carta. Un gestionale pensato sul tuo modo di lavorare, per ordini, magazzino e clienti sotto controllo."
+    },
+    "appNative": {
+      "title": "App Native (React Native)",
+      "desc": "Vuoi un'app su iOS e Android senza raddoppiare i costi di sviluppo? Un'unica base di codice, due app native, tempi e budget ottimizzati."
+    },
+    "bleIot": {
+      "title": "Integrazioni BLE / IoT",
+      "desc": "Hai un dispositivo hardware che deve parlare con un'app? Mi occupo del collegamento tra Bluetooth, sensori e mobile, dalla lettura dati al controllo remoto."
+    },
+    "aiIntegration": {
+      "title": "Integrazione AI nei Processi Aziendali",
+      "desc": "Quante ore perdi ogni settimana su attività ripetitive? Integro l'intelligenza artificiale nei tuoi strumenti per farti risparmiare tempo e prendere decisioni migliori."
+    },
+    "manutenzione": {
+      "title": "Manutenzione e Integrazioni",
+      "desc": "Il tuo software esistente ha bisogno di assistenza o deve collegarsi a un altro sistema? Intervengo senza fermare la tua attività quotidiana."
+    },
+    "cto": {
+      "title": "Pianificazione Architetturale / CTO on Demand",
+      "desc": "Stai per partire con un progetto software importante? Ti aiuto a scegliere le tecnologie giuste prima di spendere budget in errori evitabili."
+    },
+    "techLead": {
+      "title": "Tech Lead e Gestione Progetti",
+      "desc": "Hai un team di sviluppo ma manca chi coordina e garantisce le scadenze? Divento il tuo punto di riferimento tecnico, dalla pianificazione al rilascio."
+    },
+    "formazione": {
+      "title": "Formazione",
+      "desc": "Vuoi che il tuo team acquisisca competenze reali, non solo teoria? Corsi pratici su sviluppo web, mobile e best practice, su misura per voi."
+    }
+  },
+  "progetti": {
+    "pageTitle": "Progetti",
+    "pageIntro": "Alcuni dei problemi reali che ho aiutato a risolvere, settore per settore.",
+    "more": "Leggi tutto",
+    "less": "Riduci",
+
+    "logistica": {
+      "sector": "Logistica",
+      "title": "Consolidamento infrastrutturale multi-sede",
+      "desc": "Un'azienda di logistica con quattro server distribuiti si trovava con dati duplicati e nessuna visione unificata. Ho pianificato la migrazione verso un'infrastruttura consolidata, gestendo log shipping, alias DNS e remediation dei riferimenti incrociati tra database, senza fermare le operazioni quotidiane."
+    },
+    "appNative": {
+      "sector": "Mobile · Multi-settore",
+      "title": "App native per assicurazioni, mobilità e legno",
+      "desc": "Ho sviluppato applicazioni mobile per settori molto diversi tra loro: assicurazioni, mobilità elettrica (monopattini) e cubatura del legno. Un'unica base di codice React Native, adattata a logiche di business completamente diverse."
+    },
+    "gestionali": {
+      "sector": "Artigiani e PMI",
+      "title": "Gestionali su misura per attività artigiane",
+      "desc": "Meccanici e artigiani spesso gestiscono ordini e magazzino tra appunti cartacei e fogli Excel sparsi. Ho costruito gestionali su misura che si adattano al loro modo di lavorare reale, non il contrario."
+    },
+    "cucine": {
+      "sector": "Ristorazione",
+      "title": "Consulenza software per cucine professionali",
+      "desc": "Supporto di consulenza per la progettazione di un sistema di gestione pensato per cucine professionali: organizzazione ordini, tracciamento scorte e flussi di lavoro interni, con l'obiettivo di ridurre sprechi e tempi morti."
+    },
+    "volontariato": {
+      "sector": "No-profit",
+      "title": "Gestione magazzino e volontari",
+      "desc": "Un'associazione di volontariato gestiva ordini, magazzino e assegnazione di volontari/assistiti senza un sistema centralizzato. Ho sviluppato un software dedicato che unifica questi tre flussi, semplificando il coordinamento quotidiano."
+    },
+    "ricettiva": {
+      "sector": "Turismo / Hospitality",
+      "title": "Automazione e sicurezza per struttura ricettiva",
+      "desc": "Una struttura ricettiva gestiva le prenotazioni su più piattaforme senza sincronizzazione, con rischio di doppie prenotazioni. Ho unificato la gestione delle camere su un'unica soluzione, aggiungendo automazioni e videosorveglianza su NAS."
+    },
+    "acquaponica": {
+      "sector": "IoT / Agricoltura",
+      "title": "Coltura acquaponica automatizzata (Australia)",
+      "desc": "In Australia ho lavorato a un sistema di automazione per una coltura acquaponica (pesci e piante), usando Raspberry Pi, Arduino e sensori per monitorare e controllare in autonomia i parametri della coltura."
+    }
+  },
+  "services": {
+    "sectionTitle": "Servizi",
+    "sectionSubtitle": "Cosa faccio?",
+    "discoverMoreLabel": "Scopri di più",
+    "items": [
+      {
+        "title": "LANDING PAGE CHE PORTANO CLIENTI",
+        "description": "Landing page veloci, moderne e ottimizzate per trasformare traffico pubblicitario in contatti e vendite.",
+        "link": "/servizi/landing-page",
+        "details": "<h2>Landing page progettate per una sola cosa: generare contatti e clienti</h2><p>Creo landing page pensate per campagne pubblicitarie (Google Ads, Meta Ads, Instagram) con un focus totale sulla conversione.</p><p>Ogni pagina è progettata per essere veloce, chiara e persuasiva, eliminando distrazioni e guidando l’utente verso l’azione.</p><h3>Cosa ottieni</h3><ul><li>Landing page ottimizzate per conversione</li><li>Design moderno e mobile-first</li><li>Struttura pensata per advertising</li><li>Integrazione con form, WhatsApp o CRM</li><li>Versione pronta per campagne Ads</li></ul><h3>A chi è utile</h3><ul><li>A chi fa pubblicità online e vuole più contatti</li><li>Professionisti e aziende locali</li><li>Startup che vogliono validare un’offerta</li></ul>"
+      },
+      {
+        "title": "SVILUPPO WEB & SOFTWARE SU MISURA",
+        "description": "Siti web, web app e sistemi personalizzati progettati sulle esigenze reali del tuo business.",
+        "link": "/servizi/development",
+        "details": "<h2>Soluzioni digitali costruite attorno al tuo business</h2><p>Realizzo siti web, piattaforme e software su misura per digitalizzare processi e creare prodotti scalabili.</p><p>Non uso soluzioni generiche: ogni progetto viene progettato per essere veloce, sicuro e facilmente evolvibile.</p><h3>Cosa realizzo</h3><ul><li>Siti web aziendali e landing page avanzate</li><li>Web app e dashboard gestionali</li><li>Software su misura</li><li>Integrazioni API e sistemi esterni</li><li>App mobile cross-platform</li></ul>"
+      },
+      {
+        "title": "CONSULENZA TECNOLOGICA",
+        "description": "Ti aiuto a scegliere la giusta tecnologia ed evitare errori costosi nei tuoi progetti.",
+        "link": "/servizi/consulenza",
+        "details": "<h2>Decisioni tecniche più sicure e strategiche</h2><p>Ti aiuto a evitare scelte sbagliate che possono rallentare o bloccare il tuo progetto digitale.</p><h3>Cosa faccio</h3><ul><li>Analisi del tuo progetto o idea</li><li>Scelta stack tecnologico</li><li>Revisione architettura software</li><li>Second opinion su decisioni tecniche</li></ul>"
+      },
+      {
+        "title": "PROJECT MANAGEMENT & TECH LEAD",
+        "description": "Coordino sviluppo e team per portare i progetti a termine senza caos e ritardi.",
+        "link": "/servizi/project-management",
+        "details": "<h2>Il tuo referente tecnico per progetti complessi</h2><p>Gestisco e coordino lo sviluppo di progetti digitali assicurando chiarezza, ordine e consegne puntuali.</p><h3>Cosa faccio</h3><ul><li>Gestione team di sviluppo</li><li>Coordinamento fornitori</li><li>Definizione roadmap e priorità</li><li>Controllo qualità tecnico</li></ul>"
+      },
+      {
+        "title": "FORMAZIONE PRATICA PER TEAM",
+        "description": "Formazione su tecnologie moderne per rendere il tuo team più autonomo e produttivo.",
+        "link": "/servizi/formazione",
+        "details": "<h2>Crescita tecnica del tuo team</h2><p>Formazione pratica su sviluppo software e best practice moderne.</p><h3>Cosa insegno</h3><ul><li>Frontend e backend moderni</li><li>Architetture software</li><li>Best practice di sviluppo</li><li>Approccio pratico su progetti reali</li></ul>"
+      }
+    ]
+  },
+  "products": {
+    "sectionTitle": "Prodotti",
+    "sectionSubtitle": "Progetti reali che puoi vedere e testare subito.",
+    "openLabel": "Apri Progetto",
+    "items": [
+      {
+        "title": "Generatore Preventivi",
+        "description": "Prodotto web per creare preventivi professionali in modo rapido, con flusso guidato, layout pulito e condivisione immediata con il cliente.",
+        "link": "https://quotes-black-one.vercel.app/landing",
+        "previewUrl": "https://quotes-black-one.vercel.app/landing"
+      }
+    ]
+  },
+  "menu": {
+    "home": "Home",
+    "about": "Chi sono",
+    "services": "Servizi",
+    "contact": "Contatti",
+    "blog": "Insights"
+  },
+  "hero": {
+    "name": "EMILIO GAMBONE",
+    "description": "Aperto a collaborazioni freelance e progetti a contratto",
+    "ctaContact": "Contattami",
+    "ctaWork": "Vedi il mio lavoro"
+  },
+  "workWithMe": {
+    "hero": {
+      "eyebrow": "Modalità di Collaborazione",
+      "title": "Lavora con me",
+      "subtitle": "Software Engineer & Solution Architect per progetti freelance e a contratto",
+      "description": "Supporto aziende e professionisti a progettare, sviluppare ed evolvere prodotti digitali con un approccio pratico: obiettivi chiari, pianificazione realistica e risultati misurabili.",
+      "ctaButton": "Contattami Ora"
+    },
+    "howIWork": {
+      "eyebrow": "Metodo",
+      "title": "Come lavoro",
+      "intro": "Un flusso di lavoro chiaro e trasparente, dalla prima call alla consegna.",
+      "steps": [
+        {
+          "title": "Analisi e Obiettivi",
+          "description": "Definiamo obiettivi, vincoli, priorità e risultati attesi, così ogni scelta tecnica è allineata al business."
+        },
+        {
+          "title": "Sviluppo e Consegna",
+          "description": "Lavoro per iterazioni brevi con allineamenti frequenti, mantenendo alta la qualità e la visibilità sull'avanzamento."
+        },
+        {
+          "title": "Ottimizzazione e Supporto",
+          "description": "Dopo il rilascio continuo a supportarti con miglioramenti, ottimizzazioni e pianificazione delle prossime evoluzioni."
+        }
+      ]
+    },
+    "servicesOverview": {
+      "eyebrow": "Competenze",
+      "title": "Cosa posso fare per te",
+      "subtitle": "Supporto flessibile su prodotto, sviluppo e delivery.",
+      "services": [
+        {
+          "title": "Sviluppo Software Custom",
+          "description": "Soluzioni scalabili progettate sulle tue esigenze."
+        },
+        {
+          "title": "Consulenza Strategica",
+          "description": "Ottimizzazione di infrastrutture e processi IT esistenti."
+        },
+        {
+          "title": "Innovazione Tecnologica",
+          "description": "Integrazione di nuove tecnologie per mantenere la tua azienda competitiva."
+        },
+        {
+          "title": "Project Management & Tech Lead",
+          "description": "Gestione completa dei progetti tecnologici complessi."
+        },
+        {
+          "title": "Formazione & Mentoring",
+          "description": "Sviluppo delle competenze del tuo team IT."
+        },
+        {
+          "title": "Gestione Relazioni B2B",
+          "description": "Ottimizzazione delle relazioni con clienti e fornitori."
+        }
+      ]
+    },
+    "contactCTA": {
+      "eyebrow": "Prossimo Step",
+      "title": "Pronto a collaborare?",
+      "description": "Raccontami obiettivi e tempistiche: ti propongo un percorso concreto per partire subito.",
+      "callButton": "Parliamo dei tuoi progetti",
+      "emailButton": "Inviami un'email"
+    }
+  }
+}
