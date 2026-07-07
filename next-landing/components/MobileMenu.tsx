@@ -4,6 +4,11 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import {
+  X,
+  Menu,
+  ChevronDown
+} from "lucide-react";
 
 const LANGUAGES = [
   { code: "en", label: "English", flag: "gb" },
@@ -60,7 +65,7 @@ const MobileMenu = () => {
               onClick={closeMenu}
               aria-label="Chiudi menu"
             >
-              <i className="fa-solid fa-xmark"></i>
+<X size={20} />
             </button>
 
             <ul className="side-menu-list">
@@ -105,11 +110,11 @@ const MobileMenu = () => {
                   className="side-menu-flag"
                 />
                 <span>{currentLang.label}</span>
-                <i
-                  className={`fa-solid fa-chevron-down side-menu-lang-arrow ${
+                <ChevronDown
+                  className={` side-menu-lang-arrow ${
                     langOpen ? "is-open" : ""
                   }`}
-                ></i>
+                ></ChevronDown>
               </button>
 
               {langOpen && (
@@ -158,8 +163,7 @@ const MobileMenu = () => {
         </div>
 
         <div className="mobile-menu-toggle" onClick={toggleMenu}>
-          <i className="fa-solid fa-bars"></i>
-        </div>
+<Menu size={24} />        </div>
       </div>
 
       {menuPortal}

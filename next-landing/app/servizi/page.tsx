@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 import ServiziContent from "@/components/ServiziContent";
 
 export const metadata: Metadata = {
-  title: "Servizi | Emilio Gambone",
-  description:
-    "Sviluppo web e mobile, integrazioni BLE/IoT, consulenza tecnica e formazione per aziende e PMI.",
+  title: "Servizi di Sviluppo Software e Consulenza a Verona | Emilio Gambone",
+  description: "Sviluppo landing page, software su misura, app mobile e consulenza tecnologica. Freelance a Verona, disponibile anche da remoto in tutta Italia.",
 };
+
 
 export default function ServiziPage() {
   return (

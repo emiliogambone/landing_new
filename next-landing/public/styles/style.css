@@ -3529,7 +3529,7 @@ msuzan BLOG DETAILS AREA CSS
   position: relative;
 }
 
-.plases_text p::before {
+/* .plases_text p::before {
   position: absolute;
   content: "";
   width: 1px;
@@ -3537,7 +3537,7 @@ msuzan BLOG DETAILS AREA CSS
   background: #ffffff;
   left: 96%;
   top: -40px;
-}
+} */
 
 .last .plases_text p::before {
   display: none;

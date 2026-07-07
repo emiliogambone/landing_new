@@ -6,13 +6,41 @@ import { HeaderChrome, FooterChrome } from "../components/ClientChrome";
 import ParticlesInit from "@/components/ParticleInit";
 
 export const metadata = {
-  title: "Emilio Gambone",
-  description: "...",
+  metadataBase: new URL("https://emiliogambone.com"),
+  title: {
+    default: "Emilio Gambone - Software Engineer e Solution Architect",
+    template: "%s | Emilio Gambone",
+  },
+  description: "Sviluppo software su misura, consulenza tecnologica e project management per aziende a Verona e in tutta Italia.",
+  keywords: [
+    "Software Engineer freelance",
+    "Solution Architect",
+    "sviluppo software su misura",
+    "consulenza IT",
+    "Tech Lead",
+    "Project Management IT",
+    "applicazioni web",
+    "app mobile",
+    "Verona",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Emilio Gambone - Software Engineer e Solution Architect",
+    description: "Sviluppo software su misura, consulenza tecnologica e leadership tecnica per aziende e startup.",
+    type: "website",
+    locale: "it_IT",
+    url: "/",
+  },
   icons: {
     icon: "/favicon.svg",
   },
 };
-
 export default function RootLayout({
   children,
 }: {
@@ -25,23 +53,16 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-        <link rel="stylesheet" href="/styles/all.min.css" />
-        <link rel="stylesheet" href="/styles/animate.css" />
-        <link rel="stylesheet" href="/styles/animated-text.css" />
+        {/* <link rel="stylesheet" href="/styles/all.min.css" /> */}
+        {/* <link rel="stylesheet" href="/styles/animate.css" /> */}
         <link rel="stylesheet" href="/styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/styles/elements.css" />
         <link rel="stylesheet" href="/styles/em-breadcrumb.css" />
-        <link rel="stylesheet" href="/styles/meanmenu.min.css" />
-        <link rel="stylesheet" href="/styles/nivo-slider.css" />
-        <link rel="stylesheet" href="/styles/owl.carousel.css" />
-        <link rel="stylesheet" href="/styles/owl.transitions.css" />
         <link rel="stylesheet" href="/styles/responsive.css" />
-        <link rel="stylesheet" href="/styles/slick.css" />
         <link rel="stylesheet" href="/styles/style.css" />
-        <link rel="stylesheet" href="/styles/theme-default.css" />
-        <link rel="stylesheet" href="/styles/themify-icons.css" />
-        <link rel="stylesheet" href="/styles/unittest.css" />
-        <link rel="stylesheet" href="/styles/widget.css" />
+        {/* <link rel="stylesheet" href="/styles/themify-icons.css" /> */}
+        {/* <link rel="stylesheet" href="/styles/unittest.css" /> */}
+        {/* <link rel="stylesheet" href="/styles/widget.css" /> */}
         <link rel="stylesheet" href="/styles/modern-landing.css" />
       </head>
       <body>

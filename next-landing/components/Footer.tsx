@@ -3,6 +3,13 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import {
+  ChevronDown
+} from "lucide-react";
+import {
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const LANGUAGES = [
   { code: "en", label: "EN", flag: "gb" },
@@ -61,8 +68,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <i className="fa-brands fa-github"></i>
-            </a>
+<FaGithub size={20} />            </a>
 
             <a
               href="https://www.linkedin.com/in/emilio-gambone-41624458/"
@@ -70,8 +76,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
+<FaLinkedin size={20} />            </a>
           </div>
 
           <div className="footer-language-selector mt-3" ref={langRef}>
@@ -90,11 +95,11 @@ const Footer = () => {
 
               <span>{currentLang.label}</span>
 
-              <i
-                className={`fa-solid fa-chevron-down nav-lang-arrow ${
+              <ChevronDown
+                className={` nav-lang-arrow ${
                   langOpen ? "is-open" : ""
                 }`}
-              ></i>
+              ></ChevronDown>
             </button>
             {langOpen && (
               <ul className="footer-lang-options" role="listbox">

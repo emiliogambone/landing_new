@@ -496,6 +496,12 @@ h6 {
   font-size: 30px;
 }
 
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
 .plases_text h2 {
   color: #fff;
 }
@@ -2379,4 +2385,48 @@ PROGETTI
 .project-tag--active:hover {
   background: #00e6db;
   border-color: #00e6db;
+}
+
+.single_plases_inner {
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-card-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.plases_icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,255,240,.14);
+}
+
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--brand-accent);
+}
+
+.plases_text {
+  text-align: left;
+}
+
+.plases_text h2 {
+  margin: 0 0 6px;
+}
+
+.plases_text p {
+  margin: 0;
 }

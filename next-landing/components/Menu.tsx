@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import { ChevronDown } from "lucide-react";
 
 const LANGUAGES = [
   { code: "en", label: "EN", flag: "gb" },
@@ -100,11 +101,11 @@ const Menu = () => {
                         className="nav-lang-flag"
                       />
                       <span>{currentLang.label}</span>
-                      <i
-                        className={`fa-solid fa-chevron-down nav-lang-arrow ${
+<ChevronDown
+                        className={` nav-lang-arrow ${
                           langOpen ? "is-open" : ""
                         }`}
-                      ></i>
+                      ></ChevronDown>
                     </button>
 
                     {langOpen && (
