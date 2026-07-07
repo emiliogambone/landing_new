@@ -21,7 +21,10 @@ const FooterBottom = () => {
                   <a href="#about">{t("menu.about")}</a>
                 </li>
                 <li>
-                  <a href="#service">{t("menu.services")}</a>
+                  <a href="/servizi">{t("menu.services")}</a>
+                </li>
+                                <li>
+                  <a href="/progetti">{t("progetti.pageTitle")}</a>
                 </li>
               </ul>
             </div>

@@ -82,7 +82,7 @@ const Menu = () => {
                     <Link href="/servizi">{t("menu.services")}</Link>
                   </li>
                   <li>
-                    <Link href="/progetti">{t("Progetti")}</Link>
+                    <Link href="/progetti">{t("progetti.pageTitle")}</Link>
                   </li>
                   <li>
                     <Link href="/#contact">{t("menu.contact")}</Link>

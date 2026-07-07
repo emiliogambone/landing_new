@@ -88,7 +88,7 @@ const Slider = () => {
                 {t("about.workWithMeButton")}
               </Link>
               <a
-                href="#service"
+                href="/servizi"
                 className="active ghost-cta"
                 onClick={() =>
                   trackEvent({
