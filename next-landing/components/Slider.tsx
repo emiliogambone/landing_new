@@ -101,7 +101,7 @@ const Slider = () => {
                 {t("services.sectionTitle")}
               </a>
               <a
-                href="#about"
+                href="/progetti"
                 className="cta-button active ghost-cta"
                 onClick={() =>
                   trackEvent({
@@ -111,7 +111,7 @@ const Slider = () => {
                   })
                 }
               >
-                {t("menu.about")}
+                {t("progetti.pageTitle")}
               </a>
             </div>
           </>
