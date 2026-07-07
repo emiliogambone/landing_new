@@ -108,6 +108,15 @@
         "Gestione notifiche, webhook e automazioni"
       ]
     },
+    "aiSolutions": {
+  "title": "Soluzioni AI per aziende",
+  "desc": "Integro funzionalità di intelligenza artificiale all'interno di applicazioni e processi aziendali per automatizzare attività, migliorare l'accesso alle informazioni e supportare decisioni più rapide ed efficaci.",
+  "features": [
+    "Integrazione di modelli AI e LLM",
+    "Assistenti intelligenti e chatbot aziendali",
+    "Automazione di processi e analisi documentale"
+  ]
+},
 
     "manutenzione": {
       "title": "Manutenzione, Integrazioni & Migrazioni",
@@ -121,6 +130,14 @@
   },
 
   "progetti": {
+    "filters": {
+  "all": "Tutti",
+  "architecture": "Solution Architecture",
+  "customSoftware": "Software su Misura",
+  "mobile": "Mobile & App",
+  "iot": "IoT & Automazione",
+  "consulting": "Tech Lead & Consulting"
+},
     "pageTitle": "Progetti",
     "pageIntro": "Ogni progetto racconta una sfida diversa. Nel corso degli anni ho collaborato con startup, PMI e organizzazioni in settori molto differenti, progettando soluzioni software, guidando team tecnici e sviluppando applicazioni su misura. Di seguito trovi una selezione di progetti che rappresentano il mio approccio: comprendere il problema, progettare la soluzione e realizzarla con tecnologie affidabili e scalabili.",
     "more": "Leggi tutto",
@@ -147,6 +164,49 @@
     "Technical Consulting"
   ]
 },
+"legno": {
+  "sector": "Industria del legno",
+  "title": "Sviluppo di un'app nativa per la cubatura del legno",
+
+  "challengeTitle": "La sfida",
+  "challenge": "Un'azienda del settore legno necessitava di uno strumento digitale per automatizzare il processo di cubatura, raccogliere misurazioni precise e collegarsi direttamente agli strumenti di rilevazione come metri e calibri digitali.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato l'architettura dell'applicazione nativa, definito i flussi operativi e sviluppato l'integrazione con dispositivi di misura per garantire una raccolta dati affidabile e immediata.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare un'applicazione semplice e veloce per digitalizzare la misurazione del legname, ridurre gli errori manuali e migliorare l'efficienza delle operazioni in campo.",
+
+  "features": [
+    "Native App Development",
+    "Device Integration",
+    "Bluetooth Communication",
+    "Digital Measurement",
+    "Software Design"
+  ]
+},
+"volontariato": {
+  "sector": "Terzo settore",
+  "title": "Sistema gestionale multi-sede per organizzazioni di volontariato",
+
+  "challengeTitle": "La sfida",
+  "challenge": "Un'organizzazione di volontariato con più sedi necessitava di digitalizzare la gestione del magazzino, degli ordini e della distribuzione del vestiario, coordinando utenti, disponibilità e operazioni tra diverse strutture.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato l'architettura software della soluzione, definito il modello dati e supportato la progettazione dei flussi operativi per una gestione multiutente e multi-sede.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare una piattaforma centralizzata, scalabile e semplice da utilizzare per migliorare la tracciabilità delle scorte, la gestione degli ordini e il coordinamento delle attività dei volontari.",
+
+  "features": [
+    "Solution Architecture",
+    "Software Design",
+    "Multi-user Management",
+    "Inventory Management",
+    "Multi-site Architecture",
+    "Process Digitalization"
+  ]
+},
     "appNative": {
       "sector": "Mobile · Multi-settore",
       "title": "Applicazioni Mobile Native",
@@ -166,19 +226,52 @@
         "CRM personalizzato"
       ]
     },
+    "industrialPrinting": {
+  "sector": "Industria manifatturiera",
+  "title": "Tech Lead e Project Management per piattaforma software white label",
 
-    "volontariato": {
-      "sector": "No-profit",
-      "title": "Software per Associazione di Volontariato",
-      "desc": "Per un'associazione di volontariato ho sviluppato un sistema web dedicato alla gestione del magazzino e della distribuzione del vestiario. La piattaforma consente agli utenti autorizzati di richiedere gli articoli disponibili, mentre gli operatori possono gestire disponibilità, movimentazioni e consegne attraverso un'interfaccia semplice e intuitiva.",
-      "features": [
-        "Gestione magazzino",
-        "Gestione ordini",
-        "Inventario",
-        "Storico movimentazioni",
-        "Gestione utenti"
-      ]
-    },
+  "challengeTitle": "La sfida",
+  "challenge": "Un'azienda produttrice di stampanti industriali necessitava di una soluzione software white label per supportare diversi clienti, gestire configurazioni personalizzate e coordinare i processi operativi legati all'utilizzo delle macchine.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho ricoperto il ruolo di Tech Lead e Project Manager, guidando l'analisi dei requisiti, la definizione delle attività tecniche, il coordinamento del team e il monitoraggio delle scadenze progettuali.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare una piattaforma software flessibile e personalizzabile, in grado di adattarsi a diversi contesti industriali mantenendo controllo su tempi, qualità e avanzamento delle attività.",
+
+  "features": [
+    "Technical Leadership",
+    "Project Management",
+    "Requirements Analysis",
+    "White Label Software",
+    "Project Planning",
+    "Deadline Management"
+  ]
+},
+"acquaponica": {
+  "sector": "Agritech / IoT",
+  "title": "Automazione IoT per serre acquaponiche",
+
+  "challengeTitle": "La sfida",
+  "challenge": "Un progetto internazionale in Australia richiedeva l'automazione di serre per coltivazione acquaponica attraverso sistemi intelligenti in grado di monitorare l'ambiente, controllare gli impianti e ottimizzare i processi di crescita delle colture.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato l'architettura della soluzione IoT, definendo l'integrazione tra dispositivi embedded, sensori, attuatori e sistemi software per il monitoraggio e il controllo automatico della serra.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare un sistema di automazione affidabile e scalabile per la gestione intelligente della serra, migliorando il controllo dei parametri ambientali e riducendo gli interventi manuali.",
+
+  "features": [
+    "IoT Architecture",
+    "Embedded Systems",
+    "Raspberry Pi",
+    "Arduino Development",
+    "Sensor Integration",
+    "Actuator Control",
+    "Automation Systems",
+    "Remote Monitoring"
+  ]
+},
 
     "ricettiva": {
       "sector": "Turismo / Hospitality",
@@ -205,14 +298,91 @@
         "Project Management"
       ]
     },
+    "crmOfficina": {
+  "sector": "Automotive",
+  "title": "CRM gestionale per officina meccanica",
 
-    "acquaponica": {
-      "sector": "IoT / Agricoltura",
-      "title": "Automazione Agricola in Australia",
-      "desc": "Durante un'esperienza in Australia ho partecipato allo sviluppo di un sistema di automazione per una serra acquaponica. Il progetto prevedeva il monitoraggio continuo dei parametri ambientali tramite sensori e il controllo automatico di pompe, illuminazione e altri dispositivi mediante Arduino e Raspberry Pi, con l'obiettivo di ottimizzare la crescita delle colture e ridurre gli interventi manuali.",
-      "features": ["Arduino", "Raspberry Pi", "Sensori", "Attuatori", "IoT"]
-    },
+  "challengeTitle": "La sfida",
+  "challenge": "Una piccola officina meccanica necessitava di uno strumento digitale per organizzare gli interventi effettuati sui veicoli, mantenere lo storico delle lavorazioni e migliorare la gestione del rapporto con i clienti.",
 
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato la struttura del sistema gestionale, analizzando i flussi operativi dell'officina e definendo le funzionalità per la gestione clienti, veicoli, interventi e manutenzioni.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare un CRM verticale semplice e intuitivo per migliorare la tracciabilità degli interventi e creare uno storico completo delle manutenzioni dei veicoli.",
+
+  "features": [
+    "CRM Design",
+    "Business Analysis",
+    "Customer Management",
+    "Vehicle History",
+    "Maintenance Tracking"
+  ]
+},
+"hospitality": {
+  "sector": "Hospitality",
+  "title": "Piattaforma gestionale per strutture ricettive e pricing intelligente",
+
+  "challengeTitle": "La sfida",
+  "challenge": "Una struttura ricettiva necessitava di centralizzare la gestione delle prenotazioni provenienti da diverse piattaforme e migliorare le decisioni di pricing attraverso l'analisi del mercato e dei concorrenti.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato l'architettura della soluzione, analizzato i processi operativi e definito i flussi per l'integrazione delle piattaforme di prenotazione e il supporto alle strategie di prezzo.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Creare un sistema centralizzato per semplificare la gestione delle camere, ridurre le attività manuali e supportare strategie di prezzo più efficaci.",
+
+  "features": [
+    "Solution Architecture",
+    "Platform Integration",
+    "Hospitality Management",
+    "Data Analysis",
+    "Dynamic Pricing"
+  ]
+},
+"offGridHome": {
+  "sector": "Smart Home / IoT",
+  "title": "Sistema domotico off-grid per gestione energia e sicurezza",
+
+  "challengeTitle": "La sfida",
+  "challenge": "Un'abitazione indipendente dalla rete elettrica richiedeva un sistema integrato per monitorare energia, sicurezza e contenuti digitali attraverso dispositivi locali e servizi automatizzati.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato e configurato l'architettura tecnologica integrando NAS, videosorveglianza, sistemi di allarme, gestione energetica tramite inverter e servizi multimediali.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare un ecosistema domestico affidabile e autonomo per il controllo della sicurezza, dell'energia e della gestione dei contenuti personali.",
+
+  "features": [
+    "IoT Architecture",
+    "Home Automation",
+    "NAS Configuration",
+    "Energy Monitoring",
+    "Video Surveillance",
+    "Media Center"
+  ]
+},
+"farmacovigilanza": {
+  "sector": "Healthcare",
+  "title": "Software per farmacovigilanza e raccolta reazioni avverse",
+
+  "challengeTitle": "La sfida",
+  "challenge": "Nell'ambito di una tesi universitaria presso l'ambiente ospedaliero era necessario progettare un sistema software per raccogliere e organizzare le segnalazioni di reazioni avverse a farmaci e vaccini da parte del personale medico.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho analizzato il dominio applicativo, progettato il modello software e sviluppato una soluzione per la raccolta strutturata delle informazioni e la gestione dei dati clinici.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare uno strumento digitale a supporto della farmacovigilanza, migliorando la qualità e la tracciabilità delle segnalazioni raccolte.",
+
+  "features": [
+    "Healthcare Software",
+    "Requirements Analysis",
+    "Data Modeling",
+    "Information Management",
+    "Software Design"
+  ]
+},
     "cucine": {
       "sector": "Ristorazione / Hospitality",
       "title": "Consulenza SaaS per il Settore Hospitality",

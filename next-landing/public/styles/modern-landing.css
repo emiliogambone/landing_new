@@ -2345,3 +2345,38 @@ PROGETTI
   }
 }
 
+.progetti-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.project-tag--filter {
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, transform 0.15s ease;
+}
+
+.project-tag--filter:hover {
+  background: rgba(0, 255, 240, 0.16);
+  border-color: rgba(0, 255, 240, 0.45);
+}
+
+.project-tag--filter:active {
+  transform: scale(0.96);
+}
+
+.project-tag--active {
+  background: #00fff0;
+  border-color: #00fff0;
+  color: #041014;
+  font-weight: 600;
+}
+
+.project-tag--active:hover {
+  background: #00e6db;
+  border-color: #00e6db;
+}

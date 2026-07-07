@@ -86,70 +86,447 @@
     "ctaContact": "Contáctame",
     "ctaWork": "Ver mi trabajo"
   },
-  "workWithMe": {
-    "hero": {
-      "eyebrow": "Modelo de Colaboración",
-      "title": "Trabaja conmigo",
-      "subtitle": "Ingeniero de Software & Solution Architect para proyectos freelance y por contrato",
-      "description": "Ayudo a empresas y profesionales a diseñar, construir y evolucionar productos digitales con un enfoque práctico: alcance claro, planificación realista y resultados medibles.",
-      "ctaButton": "Contáctame Ahora"
-    },
-    "howIWork": {
-      "eyebrow": "Proceso",
-      "title": "Cómo trabajo",
-      "intro": "Un flujo de trabajo claro y transparente, desde la primera llamada hasta la entrega.",
-      "steps": [
-        {
-          "title": "Análisis y Alcance",
-          "description": "Definimos objetivos, límites, prioridades e impacto esperado para que cada decisión técnica tenga sentido de negocio."
-        },
-        {
-          "title": "Ejecución y Entrega",
-          "description": "Trabajo en iteraciones cortas con revisiones frecuentes, manteniendo calidad alta y comunicación simple."
-        },
-        {
-          "title": "Optimización y Soporte",
-          "description": "Tras el lanzamiento, continúo con mejoras, optimización de rendimiento y planificación de siguientes pasos."
-        }
-      ]
-    },
-    "servicesOverview": {
-      "eyebrow": "Capacidades",
-      "title": "Qué puedo hacer por ti",
-      "subtitle": "Soporte flexible en producto, ingeniería y entrega.",
-      "services": [
-        {
-          "title": "Desarrollo de Software a Medida",
-          "description": "Soluciones escalables diseñadas según tus necesidades."
-        },
-        {
-          "title": "Consultoría Estratégica",
-          "description": "Optimización de infraestructuras y procesos IT existentes."
-        },
-        {
-          "title": "Innovación Tecnológica",
-          "description": "Integración de nuevas tecnologías para mantener competitiva tu empresa."
-        },
-        {
-          "title": "Project Management & Tech Lead",
-          "description": "Gestión completa de proyectos tecnológicos complejos."
-        },
-        {
-          "title": "Formación & Mentoring",
-          "description": "Desarrollo de las competencias de tu equipo IT."
-        },
-        {
-          "title": "Gestión de Relaciones B2B",
-          "description": "Optimización de relaciones con clientes y proveedores."
-        }
-      ]
-    },
-    "contactCTA": {
-      "eyebrow": "Siguiente Paso",
-      "title": "¿Listo para colaborar?",
-      "description": "Cuéntame objetivos y tiempos. Te propondré una ruta concreta para avanzar.",
-      "callButton": "Hablemos de tus proyectos",
-      "emailButton": "Envíame un email"
-    }
+"workWithMe": {
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Antes que desarrollador, soy una persona con la que es fácil colaborar.",
+    "description1": "Soy Ingeniero de Software Freelance especializado en el desarrollo de aplicaciones web, backend y software a medida. Disfruto creando soluciones sencillas, fiables y diseñadas para perdurar en el tiempo.",
+    "description2": "Creo que una buena colaboración se basa en la comunicación, la confianza mutua y la transparencia. Por eso prefiero conocer a fondo al cliente y los objetivos del proyecto antes de comenzar cualquier desarrollo."
+  },
+  "values": {
+    "eyebrow": "Mi enfoque",
+    "title": "Cómo me gusta trabajar",
+    "items": [
+      {
+        "title": "Relación humana",
+        "description": "Para mí, cada proyecto comienza con las personas. Creo que una buena comunicación es tan importante como una buena arquitectura de software."
+      },
+      {
+        "title": "Transparencia",
+        "description": "Prefiero ser sincero desde el principio sobre costes, plazos y viabilidad del proyecto."
+      },
+      {
+        "title": "Calidad",
+        "description": "Escribo código pensando en su mantenimiento futuro, no solo en la entrega inicial."
+      },
+      {
+        "title": "Integridad profesional",
+        "description": "Si considero que no soy la persona adecuada para un proyecto, lo digo desde el primer momento. Prefiero rechazar un trabajo antes que entregar un resultado que no cumpla con mis estándares."
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Forma de colaboración",
+    "title": "Trabaja conmigo",
+    "subtitle": "Ingeniero de Software y Arquitecto de Soluciones para proyectos freelance y por contrato",
+    "description": "Ayudo a empresas y profesionales a diseñar, desarrollar y hacer crecer productos digitales con un enfoque práctico: objetivos claros, planificación realista y resultados medibles.",
+    "ctaButton": "Contáctame"
+  },
+  "philosophy": {
+    "title": "No acepto todos los proyectos",
+    "description": "Solo acepto colaboraciones en las que creo que puedo aportar un valor real. Si considero que un proyecto requiere conocimientos que no poseo o que no puede desarrollarse con el nivel de calidad que espero, prefiero ser transparente desde el principio. Creo que la honestidad es la base de cualquier relación de confianza."
+  },
+  "howIWork": {
+    "eyebrow": "Metodología",
+    "title": "Cómo trabajo",
+    "intro": "Cada proyecto es diferente, pero mi forma de trabajar sigue un proceso sencillo y transparente. Me permite comprender las necesidades del cliente, reducir imprevistos y mantener una comunicación constante durante toda la colaboración.",
+    "steps": [
+      {
+        "title": "Análisis y objetivos",
+        "description": "Definimos objetivos, limitaciones, prioridades y resultados esperados para que cada decisión técnica esté alineada con las necesidades del negocio."
+      },
+      {
+        "title": "Desarrollo y entrega",
+        "description": "Trabajo en iteraciones cortas con actualizaciones frecuentes, manteniendo un alto nivel de calidad y total visibilidad sobre el avance del proyecto."
+      },
+      {
+        "title": "Optimización y soporte",
+        "description": "Tras el lanzamiento, sigo apoyándote con mejoras, optimizaciones y la planificación de futuras evoluciones."
+      }
+    ]
+  },
+  "servicesOverview": {
+    "eyebrow": "Especialidades",
+    "title": "Cómo puedo ayudarte",
+    "subtitle": "Soporte flexible en estrategia de producto, desarrollo y entrega de software.",
+    "services": [
+      {
+        "title": "Desarrollo de software a medida",
+        "description": "Soluciones escalables diseñadas según las necesidades de tu empresa."
+      },
+      {
+        "title": "Consultoría estratégica",
+        "description": "Optimización de infraestructuras y procesos tecnológicos existentes."
+      },
+      {
+        "title": "Innovación tecnológica",
+        "description": "Integración de nuevas tecnologías para mantener tu empresa competitiva."
+      },
+      {
+        "title": "Project Management y Tech Lead",
+        "description": "Gestión integral de proyectos tecnológicos complejos."
+      },
+      {
+        "title": "Formación y mentoring",
+        "description": "Desarrollo de las competencias de tu equipo técnico."
+      },
+      {
+        "title": "Gestión de relaciones B2B",
+        "description": "Optimización de las relaciones con clientes y socios comerciales."
+      }
+    ]
+  },
+  "contactCTA": {
+    "eyebrow": "Siguiente paso",
+    "title": "¿Listo para trabajar juntos?",
+    "description": "Cuéntame tus objetivos y plazos, y te propondré un plan práctico para comenzar cuanto antes.",
+    "callButton": "Hablemos de tu proyecto",
+    "emailButton": "Envíame un correo"
   }
+},
+"servizi": {
+  "pageTitle": "Mis servicios",
+  "pageIntro": "Transformo necesidades concretas en soluciones digitales funcionales.",
+  "discoverMore": "Hablemos",
+
+  "seoLanding": {
+    "title": "Landing Page",
+    "desc": "Creo landing pages diseñadas para comunicar el valor de tu negocio y maximizar las conversiones.",
+    "features": [
+      "Diseño moderno y responsive",
+      "Optimización para conversiones y SEO",
+      "Integración con analytics y herramientas de marketing"
+    ]
+  },
+
+  "fullstack": {
+    "title": "Web Apps y Software a Medida",
+    "desc": "Diseño y desarrollo aplicaciones web y software personalizados para digitalizar procesos, mejorar la eficiencia y apoyar el crecimiento de tu empresa.",
+    "features": [
+      "Desarrollo completamente personalizado",
+      "Arquitecturas escalables y seguras",
+      "Integración con sistemas y servicios existentes"
+    ]
+  },
+
+  "appNative": {
+    "title": "Apps Mobile (React Native)",
+    "desc": "Desarrollo aplicaciones móviles eficientes e intuitivas utilizando una única base de código, reduciendo tiempos y costes de desarrollo.",
+    "features": [
+      "Compatibilidad con iOS y Android",
+      "Interfaces modernas e intuitivas",
+      "Publicación y actualizaciones en las tiendas"
+    ]
+  },
+
+  "cto": {
+    "title": "CTO Fractional / Tech Lead",
+    "desc": "Acompaño a startups y empresas en las decisiones tecnológicas, el diseño de arquitectura y la coordinación de equipos de desarrollo.",
+    "features": [
+      "Definición de arquitectura software",
+      "Liderazgo técnico y mentoring",
+      "Soporte en decisiones estratégicas"
+    ]
+  },
+
+  "techLead": {
+    "title": "Gestión de Proyectos",
+    "desc": "Gestiono actividades, tiempos y prioridades para garantizar un desarrollo organizado, transparente y orientado a resultados.",
+    "features": [
+      "Planificación y roadmap",
+      "Coordinación del equipo",
+      "Control de tiempos, calidad y objetivos"
+    ]
+  },
+
+  "formazione": {
+    "title": "Formación",
+    "desc": "Programas formativos personalizados para mejorar competencias técnicas, metodologías de desarrollo y uso de tecnologías modernas.",
+    "features": [
+      "Formación individual o en grupo",
+      "Workshops prácticos y mentoring",
+      "Buenas prácticas y arquitecturas modernas"
+    ]
+  },
+
+  "decloud": {
+    "title": "Migración Cloud → On-Premises",
+    "desc": "Te ayudo en la migración de aplicaciones y servicios hacia entornos on-premises, reduciendo la dependencia del cloud cuando representa la opción más adecuada.",
+    "features": [
+      "Análisis y planificación de la migración",
+      "Reducción de costes operativos",
+      "Mayor control sobre datos e infraestructura"
+    ]
+  },
+
+  "payments": {
+    "title": "Integración de Pagos",
+    "desc": "Integro gateways de pago y sistemas de facturación directamente en tus aplicaciones o plataformas.",
+    "features": [
+      "Pagos online y recurrentes",
+      "Integración con gateways y APIs",
+      "Gestión de notificaciones, webhooks y automatizaciones"
+    ]
+  },
+
+  "aiSolutions": {
+    "title": "Soluciones de IA para empresas",
+    "desc": "Integro funcionalidades de inteligencia artificial dentro de aplicaciones y procesos empresariales para automatizar tareas, mejorar el acceso a la información y apoyar decisiones más rápidas y eficaces.",
+    "features": [
+      "Integración de modelos de IA y LLM",
+      "Asistentes inteligentes y chatbots empresariales",
+      "Automatización de procesos y análisis documental"
+    ]
+  },
+
+  "manutenzione": {
+    "title": "Mantenimiento, Integraciones y Migraciones",
+    "desc": "Me encargo de la evolución de aplicaciones existentes mediante mantenimiento, integraciones con servicios externos y migraciones tecnológicas.",
+    "features": [
+      "Actualizaciones y corrección de errores",
+      "Integración con APIs y software externo",
+      "Migración hacia nuevas tecnologías"
+    ]
+  }
+},
+"progetti": {
+  "filters": {
+  "all": "Todos",
+  "architecture": "Arquitectura de Soluciones",
+  "customSoftware": "Software a Medida",
+  "mobile": "Mobile & Apps",
+  "iot": "IoT y Automatización",
+  "consulting": "Tech Lead y Consultoría"
+},
+  "pageTitle": "Proyectos",
+  "pageIntro": "Cada proyecto cuenta una historia diferente. A lo largo de los años he colaborado con startups, pymes y organizaciones de distintos sectores, diseñando soluciones software, liderando equipos técnicos y desarrollando aplicaciones a medida. A continuación encontrarás una selección de proyectos que representan mi enfoque: comprender el problema, diseñar la solución y desarrollarla utilizando tecnologías fiables y escalables.",
+  "more": "Leer más",
+  "less": "Reducir",
+
+  "logistica": {
+    "sector": "Logística",
+    "title": "Evolución de un Warehouse Management System (WMS)",
+
+    "challengeTitle": "El reto",
+    "challenge": "Una empresa logística necesitaba evolucionar su WMS para soportar nuevos flujos operativos, mejorar la escalabilidad e integrarse con otros sistemas empresariales.",
+
+    "roleTitle": "Mi rol",
+    "role": "Diseñé la arquitectura software, analicé los requisitos y apoyé al equipo en las decisiones técnicas durante el desarrollo.",
+
+    "outcomeTitle": "Objetivo",
+    "outcome": "Crear una plataforma modular, fácil de mantener y preparada para evolucionar con el tiempo.",
+
+    "features": [
+      "Solution Architecture",
+      "Software Design",
+      "Análisis de requisitos",
+      "Integración de sistemas",
+      "Consultoría técnica"
+    ]
+  },
+
+  "legno": {
+    "sector": "Industria de la madera",
+    "title": "Desarrollo de una app nativa para la cubicación de madera",
+
+    "challengeTitle": "El reto",
+    "challenge": "Una empresa del sector de la madera necesitaba una herramienta digital para automatizar el proceso de cubicación, recopilar mediciones precisas y conectarse directamente con instrumentos de medición como metros y calibres digitales.",
+
+    "roleTitle": "Mi rol",
+    "role": "Diseñé la arquitectura de la aplicación nativa, definí los flujos operativos y desarrollé la integración con dispositivos de medición para garantizar una recopilación de datos fiable e inmediata.",
+
+    "outcomeTitle": "Objetivo",
+    "outcome": "Crear una aplicación sencilla y rápida para digitalizar la medición de la madera, reducir errores manuales y mejorar la eficiencia de las operaciones en campo.",
+
+    "features": [
+      "Native App Development",
+      "Device Integration",
+      "Bluetooth Communication",
+      "Digital Measurement",
+      "Software Design"
+    ]
+  },
+
+  "volontariato": {
+    "sector": "Tercer sector",
+    "title": "Sistema de gestión multi-sede para organizaciones de voluntariado",
+
+    "challengeTitle": "El reto",
+    "challenge": "Una organización de voluntariado con varias sedes necesitaba digitalizar la gestión del almacén, pedidos y distribución de ropa, coordinando usuarios, disponibilidad y operaciones entre diferentes estructuras.",
+
+    "roleTitle": "Mi rol",
+    "role": "Diseñé la arquitectura software de la solución, definí el modelo de datos y apoyé el diseño de los flujos operativos para una gestión multiusuario y multisede.",
+
+    "outcomeTitle": "Objetivo",
+    "outcome": "Crear una plataforma centralizada, escalable y sencilla de utilizar para mejorar la trazabilidad del stock, la gestión de pedidos y la coordinación de las actividades de los voluntarios.",
+
+    "features": [
+      "Solution Architecture",
+      "Software Design",
+      "Multi-user Management",
+      "Inventory Management",
+      "Multi-site Architecture",
+      "Process Digitalization"
+    ]
+  },
+
+  "appNative": {
+    "sector": "Mobile · Multisector",
+    "title": "Aplicaciones Mobile Nativas",
+    "desc": "He desarrollado aplicaciones móviles destinadas a contextos muy diferentes, adaptando cada solución a las necesidades específicas del sector. Entre los proyectos realizados se incluyen aplicaciones para el sector asegurador, plataformas dedicadas a la movilidad eléctrica y sistemas para empresas del sector de la madera. Cada proyecto ha sido desarrollado prestando especial atención al rendimiento, la experiencia de usuario y la integración con servicios backend y APIs externas.",
+    "features": [
+      "Seguros",
+      "Movilidad eléctrica",
+      "Industria de la madera"
+    ]
+  },
+
+  "gestionali": {
+    "sector": "Artesanos y pymes",
+    "title": "Software de gestión para artesanos y CRM para talleres mecánicos",
+    "desc": "He diseñado y desarrollado una plataforma de gestión dedicada a artesanos y talleres mecánicos para simplificar la gestión diaria de las actividades. El software permite organizar clientes, intervenciones, presupuestos, documentación y trabajos en un único entorno, reduciendo tareas manuales y mejorando el control operativo.",
+    "features": [
+      "Gestión de clientes",
+      "Presupuestos",
+      "Intervenciones",
+      "Documentación",
+      "CRM personalizado"
+    ]
+  },
+
+  "industrialPrinting": {
+    "sector": "Industria manufacturera",
+    "title": "Tech Lead y Project Management para plataforma software white label",
+
+    "challengeTitle": "El reto",
+    "challenge": "Una empresa fabricante de impresoras industriales necesitaba una solución software white label para dar soporte a diferentes clientes, gestionar configuraciones personalizadas y coordinar los procesos operativos relacionados con el uso de las máquinas.",
+
+    "roleTitle": "Mi rol",
+    "role": "Desempeñé el papel de Tech Lead y Project Manager, liderando el análisis de requisitos, la definición de actividades técnicas, la coordinación del equipo y el seguimiento de los plazos del proyecto.",
+
+    "outcomeTitle": "Objetivo",
+    "outcome": "Crear una plataforma software flexible y personalizable capaz de adaptarse a diferentes contextos industriales manteniendo el control sobre tiempos, calidad y avance del proyecto.",
+
+    "features": [
+      "Technical Leadership",
+      "Project Management",
+      "Requirements Analysis",
+      "White Label Software",
+      "Project Planning",
+      "Deadline Management"
+    ]
+  },
+  "acquaponica": {
+  "sector": "Agritech / IoT",
+  "title": "Automatización IoT para invernaderos acuapónicos",
+
+  "challengeTitle": "El reto",
+  "challenge": "Un proyecto internacional en Australia requería automatizar invernaderos acuapónicos mediante sistemas inteligentes capaces de monitorizar las condiciones ambientales, controlar equipos y optimizar los procesos de cultivo.",
+
+  "roleTitle": "Mi rol",
+  "role": "Diseñé la arquitectura de la solución IoT, definiendo la integración entre dispositivos embebidos, sensores, actuadores y sistemas software para la monitorización y control automático del invernadero.",
+
+  "outcomeTitle": "Objetivo",
+  "outcome": "Crear un sistema de automatización fiable y escalable para la gestión inteligente del invernadero, mejorando el control ambiental y reduciendo la intervención manual.",
+
+  "features": [
+    "Arquitectura IoT",
+    "Sistemas embebidos",
+    "Raspberry Pi",
+    "Desarrollo Arduino",
+    "Integración de sensores",
+    "Control de actuadores",
+    "Sistemas de automatización",
+    "Monitorización remota"
+  ]
+},
+
+"crmOfficina": {
+  "sector": "Automoción",
+  "title": "CRM para gestión de talleres mecánicos",
+
+  "challengeTitle": "El reto",
+  "challenge": "Un pequeño taller mecánico necesitaba una solución digital para organizar las operaciones de mantenimiento de vehículos, mantener un historial completo de intervenciones y mejorar la gestión de clientes.",
+
+  "roleTitle": "Mi rol",
+  "role": "Diseñé la arquitectura del CRM analizando los procesos del taller y definiendo funcionalidades para la gestión de clientes, vehículos, servicios y mantenimiento.",
+
+  "outcomeTitle": "Objetivo",
+  "outcome": "Crear un CRM vertical sencillo e intuitivo que mejore la trazabilidad de las intervenciones y proporcione un historial completo de mantenimiento para cada vehículo.",
+
+  "features": [
+    "Diseño CRM",
+    "Análisis de negocio",
+    "Gestión de clientes",
+    "Historial de vehículos",
+    "Seguimiento de mantenimiento"
+  ]
+},
+
+"hospitality": {
+  "sector": "Hospitalidad",
+  "title": "Plataforma de gestión hotelera con precios inteligentes",
+
+  "challengeTitle": "El reto",
+  "challenge": "Un negocio del sector hospitality necesitaba centralizar las reservas procedentes de diferentes plataformas online y mejorar las decisiones de precios mediante análisis de mercado y competencia.",
+
+  "roleTitle": "Mi rol",
+  "role": "Diseñé la arquitectura de la solución, analicé los procesos operativos y definí los flujos de integración con plataformas de reservas y estrategias de pricing.",
+
+  "outcomeTitle": "Objetivo",
+  "outcome": "Crear un sistema centralizado para simplificar la gestión de habitaciones, reducir tareas manuales y mejorar la estrategia de precios.",
+
+  "features": [
+    "Arquitectura de soluciones",
+    "Integración de plataformas",
+    "Gestión hospitality",
+    "Análisis de datos",
+    "Pricing dinámico"
+  ]
+},
+
+"farmacovigilancia": {
+  "sector": "Farmacéutico",
+  "title": "Sistema software para farmacovigilancia",
+
+  "challengeTitle": "El reto",
+  "challenge": "Una organización del sector farmacéutico necesitaba una solución software para gestionar procesos de farmacovigilancia, mejorar la recopilación de información y garantizar una gestión estructurada de los datos.",
+
+  "roleTitle": "Mi rol",
+  "role": "Diseñé la arquitectura software de la solución, definiendo modelos de datos, flujos operativos e integraciones necesarias para soportar los procesos internos.",
+
+  "outcomeTitle": "Objetivo",
+  "outcome": "Crear una plataforma fiable y escalable capaz de mejorar la gestión de información y la eficiencia de los procesos de farmacovigilancia.",
+
+  "features": [
+    "Arquitectura software",
+    "Gestión de datos",
+    "Procesos farmacéuticos",
+    "Integración de sistemas",
+    "Software empresarial"
+  ]
+},
+
+"offGridHome": {
+  "sector": "Smart Home / IoT",
+  "title": "Sistema inteligente para vivienda off-grid",
+
+  "challengeTitle": "El reto",
+  "challenge": "Un proyecto de vivienda independiente requería una solución tecnológica para monitorizar consumos, gestionar dispositivos y mejorar la autonomía energética mediante sistemas inteligentes.",
+
+  "roleTitle": "Mi rol",
+  "role": "Diseñé la arquitectura IoT definiendo la comunicación entre sensores, dispositivos conectados y sistemas software para la supervisión y automatización de la vivienda.",
+
+  "outcomeTitle": "Objetivo",
+  "outcome": "Desarrollar un sistema inteligente capaz de mejorar la eficiencia energética y proporcionar un mayor control sobre la infraestructura doméstica.",
+
+  "features": [
+    "IoT",
+    "Smart Home",
+    "Automatización",
+    "Monitorización energética",
+    "Arquitectura de sistemas"
+  ]
+}
+}
 }

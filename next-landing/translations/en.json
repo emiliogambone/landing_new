@@ -13,6 +13,377 @@
       "value": "+39 3493554864"
     }
   },
+  "servizi": {
+    "pageTitle": "My Services",
+    "pageIntro": "I turn real business needs into effective digital solutions.",
+    "discoverMore": "Let's Talk",
+
+    "seoLanding": {
+      "title": "Landing Pages",
+      "desc": "I create landing pages designed to showcase the value of your business and maximize conversions.",
+      "features": [
+        "Modern, responsive design",
+        "Conversion and SEO optimization",
+        "Integration with analytics and marketing tools"
+      ]
+    },
+
+    "fullstack": {
+      "title": "Custom Web Applications & Software",
+      "desc": "I design and develop custom web applications and software to digitize business processes, improve efficiency, and support your company's growth.",
+      "features": [
+        "Fully custom development",
+        "Scalable and secure architectures",
+        "Integration with existing systems and services"
+      ]
+    },
+
+    "appNative": {
+      "title": "Mobile Apps (React Native)",
+      "desc": "I develop high-performance and intuitive mobile applications using a single codebase, reducing development time and costs.",
+      "features": [
+        "Compatible with iOS and Android",
+        "Modern and user-friendly interfaces",
+        "App Store and Google Play publishing and updates"
+      ]
+    },
+
+    "cto": {
+      "title": "Fractional CTO / Tech Lead",
+      "desc": "I help startups and companies make technology decisions, design scalable architectures, and coordinate development teams.",
+      "features": [
+        "Software architecture design",
+        "Technical leadership and mentoring",
+        "Support for strategic technology decisions"
+      ]
+    },
+
+    "techLead": {
+      "title": "Project Management",
+      "desc": "I manage tasks, timelines, and priorities to ensure organized, transparent, and results-driven software development.",
+      "features": [
+        "Planning and roadmap definition",
+        "Team coordination",
+        "Monitoring timelines, quality, and objectives"
+      ]
+    },
+
+    "formazione": {
+      "title": "Training",
+      "desc": "Tailored training programs to improve technical skills, development methodologies, and the adoption of modern technologies.",
+      "features": [
+        "One-to-one or group training",
+        "Hands-on workshops and mentoring",
+        "Best practices and modern software architectures"
+      ]
+    },
+
+    "decloud": {
+      "title": "Cloud to On-Premises Migration",
+      "desc": "I support businesses in migrating applications and services to on-premises environments, reducing cloud dependency whenever it is the most suitable choice.",
+      "features": [
+        "Migration analysis and planning",
+        "Reduced operational costs",
+        "Greater control over data and infrastructure"
+      ]
+    },
+
+    "payments": {
+      "title": "Payment Integration",
+      "desc": "I integrate payment gateways and invoicing systems directly into your applications and platforms.",
+      "features": [
+        "Online and recurring payments",
+        "Gateway and API integration",
+        "Webhook, notification, and automation management"
+      ]
+    },
+
+    "aiSolutions": {
+      "title": "AI Solutions for Businesses",
+      "desc": "I integrate artificial intelligence capabilities into applications and business processes to automate tasks, improve access to information, and support faster, smarter decision-making.",
+      "features": [
+        "AI model and LLM integration",
+        "Intelligent assistants and business chatbots",
+        "Process automation and document analysis"
+      ]
+    },
+
+    "manutenzione": {
+      "title": "Maintenance, Integrations & Migrations",
+      "desc": "I help evolve existing applications through maintenance, third-party integrations, and technology migrations.",
+      "features": [
+        "Updates and bug fixing",
+        "Integration with external APIs and software",
+        "Migration to modern technologies"
+      ]
+    }
+  },
+  "progetti": {
+    "filters": {
+  "all": "All",
+  "architecture": "Solution Architecture",
+  "customSoftware": "Custom Software",
+  "mobile": "Mobile & Apps",
+  "iot": "IoT & Automation",
+  "consulting": "Tech Lead & Consulting"
+},
+    "pageTitle": "Projects",
+    "pageIntro": "Every project tells a different story. Over the years, I've worked with startups, SMEs, and organizations across a wide range of industries, designing software solutions, leading technical teams, and developing custom applications. Below is a selection of projects that reflect my approach: understanding the problem, designing the right solution, and delivering it using reliable and scalable technologies.",
+    "more": "Read more",
+    "less": "Show less",
+
+    "logistica": {
+      "sector": "Logistics",
+      "title": "Evolution of a Warehouse Management System (WMS)",
+
+      "challengeTitle": "The Challenge",
+      "challenge": "A logistics company needed to evolve its Warehouse Management System to support new operational workflows, improve scalability, and integrate with existing enterprise systems.",
+
+      "roleTitle": "My Role",
+      "role": "I designed the software architecture, analyzed business requirements, and supported the development team in making technical decisions throughout the project.",
+
+      "outcomeTitle": "Goal",
+      "outcome": "Deliver a modular, maintainable platform designed to evolve alongside the company's future needs.",
+
+      "features": [
+        "Solution Architecture",
+        "Software Design",
+        "Requirements Analysis",
+        "System Integration",
+        "Technical Consulting"
+      ]
+    },
+
+    "legno": {
+      "sector": "Wood Industry",
+      "title": "Native Mobile Application for Timber Volume Measurement",
+
+      "challengeTitle": "The Challenge",
+      "challenge": "A company in the wood industry required a digital solution to automate timber volume calculations, collect precise measurements, and connect directly to digital measuring tools such as laser meters and calipers.",
+
+      "roleTitle": "My Role",
+      "role": "I designed the native application's architecture, defined operational workflows, and developed integrations with measuring devices to ensure fast and reliable data collection.",
+
+      "outcomeTitle": "Goal",
+      "outcome": "Develop a simple and efficient application to digitize timber measurement, reduce manual errors, and improve field operations.",
+
+      "features": [
+        "Native App Development",
+        "Device Integration",
+        "Bluetooth Communication",
+        "Digital Measurement",
+        "Software Design"
+      ]
+    },
+
+    "volontariato": {
+      "sector": "Non-Profit",
+      "title": "Multi-Site Management Platform for Volunteer Organizations",
+
+      "challengeTitle": "The Challenge",
+      "challenge": "A volunteer organization with multiple locations needed to digitize warehouse management, orders, and clothing distribution while coordinating users, inventory, and operations across different facilities.",
+
+      "roleTitle": "My Role",
+      "role": "I designed the software architecture, defined the data model, and supported the design of operational workflows for a multi-user, multi-site platform.",
+
+      "outcomeTitle": "Goal",
+      "outcome": "Build a centralized, scalable, and easy-to-use platform to improve inventory traceability, order management, and volunteer coordination.",
+
+      "features": [
+        "Solution Architecture",
+        "Software Design",
+        "Multi-user Management",
+        "Inventory Management",
+        "Multi-site Architecture",
+        "Process Digitalization"
+      ]
+    },
+
+    "appNative": {
+      "sector": "Mobile · Multi-Industry",
+      "title": "Native Mobile Applications",
+      "desc": "I've developed native mobile applications for businesses across various industries, tailoring each solution to specific requirements. Projects include insurance applications, electric mobility platforms, and software for the wood industry. Every application was built with a strong focus on performance, user experience, and seamless integration with backend services and external APIs.",
+      "features": [
+        "Insurance",
+        "Electric Mobility",
+        "Wood Industry"
+      ]
+    },
+
+    "gestionali": {
+      "sector": "Craftsmen & SMEs",
+      "title": "Business Management Platform and CRM for Mechanical Workshops",
+      "desc": "I designed and developed a business management platform for craftsmen and mechanical workshops to simplify daily operations. The software centralizes customer management, service jobs, quotations, documentation, and workflows, reducing manual work and improving operational control.",
+      "features": [
+        "Customer Management",
+        "Quotations",
+        "Service Management",
+        "Documentation",
+        "Custom CRM"
+      ]
+    },
+
+    "industrialPrinting": {
+      "sector": "Manufacturing",
+      "title": "Tech Lead & Project Management for a White-Label Software Platform",
+
+      "challengeTitle": "The Challenge",
+      "challenge": "A manufacturer of industrial printers required a white-label software platform capable of supporting multiple customers, custom configurations, and operational processes related to machine management.",
+
+      "roleTitle": "My Role",
+      "role": "I served as Tech Lead and Project Manager, leading requirements analysis, planning technical activities, coordinating the development team, and monitoring project milestones.",
+
+      "outcomeTitle": "Goal",
+      "outcome": "Develop a flexible and customizable software platform capable of adapting to different industrial environments while maintaining high standards of quality and delivery.",
+
+      "features": [
+        "Technical Leadership",
+        "Project Management",
+        "Requirements Analysis",
+        "White Label Software",
+        "Project Planning",
+        "Deadline Management"
+      ]
+    },
+  "acquaponica": {
+    "sector": "Agritech / IoT",
+    "title": "IoT Automation for Aquaponic Greenhouses",
+
+    "challengeTitle": "The Challenge",
+    "challenge": "An international project in Australia required the automation of aquaponic greenhouses using intelligent systems capable of monitoring environmental conditions, controlling equipment, and optimizing crop growth processes.",
+
+    "roleTitle": "My Role",
+    "role": "I designed the IoT solution architecture, defining the integration between embedded devices, sensors, actuators, and software systems for automated greenhouse monitoring and control.",
+
+    "outcomeTitle": "Goal",
+    "outcome": "Develop a reliable and scalable automation system for smart greenhouse management, improving environmental control while reducing manual intervention.",
+
+    "features": [
+      "IoT Architecture",
+      "Embedded Systems",
+      "Raspberry Pi",
+      "Arduino Development",
+      "Sensor Integration",
+      "Actuator Control",
+      "Automation Systems",
+      "Remote Monitoring"
+    ]
+  },
+
+  "ricettiva": {
+    "sector": "Tourism / Hospitality",
+    "title": "Hospitality Management Platform",
+    "desc": "For a hospitality business, I developed a solution that centralizes bookings from the main online booking platforms. At the same time, I designed an on-premises infrastructure with a dedicated local server to manage the video surveillance system, ensuring full control over data and recordings.",
+    "features": [
+      "Booking Platform Integration",
+      "Centralized Management",
+      "On-Premises Server",
+      "Video Surveillance",
+      "Networking"
+    ]
+  },
+
+  "stampanti": {
+    "sector": "Manufacturing",
+    "title": "Team Management & Scheduling for Industrial Printing Software",
+    "desc": "I led the technical coordination of a desktop software project for industrial printers. In addition to development, I managed planning, team coordination, and task prioritization, ensuring deadlines were met while maintaining high product quality.",
+    "features": [
+      "Team Leadership",
+      "Scheduling",
+      "Desktop Software",
+      "Industrial Printing",
+      "Project Management"
+    ]
+  },
+
+  "crmOfficina": {
+    "sector": "Automotive",
+    "title": "Workshop Management CRM",
+
+    "challengeTitle": "The Challenge",
+    "challenge": "A small mechanical workshop needed a digital solution to organize vehicle service operations, maintain a complete maintenance history, and improve customer relationship management.",
+
+    "roleTitle": "My Role",
+    "role": "I designed the CRM architecture by analyzing workshop processes and defining features for customer, vehicle, service, and maintenance management.",
+
+    "outcomeTitle": "Goal",
+    "outcome": "Build a simple and intuitive vertical CRM that improves service traceability and provides a complete maintenance history for every vehicle.",
+
+    "features": [
+      "CRM Design",
+      "Business Analysis",
+      "Customer Management",
+      "Vehicle History",
+      "Maintenance Tracking"
+    ]
+  },
+
+  "hospitality": {
+    "sector": "Hospitality",
+    "title": "Hospitality Management Platform with Intelligent Pricing",
+
+    "challengeTitle": "The Challenge",
+    "challenge": "A hospitality business needed to centralize reservations coming from multiple booking platforms while improving pricing decisions through market and competitor analysis.",
+
+    "roleTitle": "My Role",
+    "role": "I designed the solution architecture, analyzed operational processes, and defined the workflows for booking platform integration and pricing strategy support.",
+
+    "outcomeTitle": "Goal",
+    "outcome": "Create a centralized system to simplify room management, reduce manual tasks, and support more effective pricing strategies.",
+
+    "features": [
+      "Solution Architecture",
+      "Platform Integration",
+      "Hospitality Management",
+      "Data Analysis",
+      "Dynamic Pricing"
+    ]
+  },
+  "offGridHome": {
+  "sector": "Smart Home / IoT",
+  "title": "Off-grid Smart Home System for Energy and Security Management",
+
+  "challengeTitle": "The Challenge",
+  "challenge": "A home independent from the electrical grid required an integrated system to monitor energy, security, and digital services through local devices and automated solutions.",
+
+  "roleTitle": "My Role",
+  "role": "I designed and configured the technology architecture by integrating NAS systems, video surveillance, security systems, energy management through inverters, and multimedia services.",
+
+  "outcomeTitle": "Goal",
+  "outcome": "Create a reliable and autonomous home ecosystem for managing security, energy, and personal digital content.",
+
+  "features": [
+    "IoT Architecture",
+    "Home Automation",
+    "NAS Configuration",
+    "Energy Monitoring",
+    "Video Surveillance",
+    "Media Center"
+  ]
+},
+
+"farmacovigilanza": {
+  "sector": "Healthcare",
+  "title": "Software for Pharmacovigilance and Adverse Reaction Reporting",
+
+  "challengeTitle": "The Challenge",
+  "challenge": "As part of a university thesis in a hospital environment, it was necessary to design a software system for collecting and organizing adverse drug and vaccine reaction reports from healthcare professionals.",
+
+  "roleTitle": "My Role",
+  "role": "I analyzed the application domain, designed the software model, and developed a solution for structured data collection and clinical information management.",
+
+  "outcomeTitle": "Goal",
+  "outcome": "Create a digital tool supporting pharmacovigilance activities by improving the quality and traceability of collected reports.",
+
+  "features": [
+    "Healthcare Software",
+    "Requirements Analysis",
+    "Data Modeling",
+    "Information Management",
+    "Software Design"
+  ]
+}
+  },
   "about": {
     "greeting": "Hello,",
     "name": "Software Engineer and Solution Architect with experience in complex projects.",
@@ -87,69 +458,100 @@
     "ctaWork": "See My Work"
   },
   "workWithMe": {
-    "hero": {
-      "eyebrow": "Collaboration Model",
-      "title": "Work With Me",
-      "subtitle": "Software Engineer & Solution Architect for freelance and contract projects",
-      "description": "I help companies design, build, and evolve digital products with a pragmatic approach: clear scope, realistic planning, and measurable outcomes.",
-      "ctaButton": "Contact Me Now"
-    },
-    "howIWork": {
-      "eyebrow": "Process",
-      "title": "How I Work",
-      "intro": "A structured and transparent workflow, from first call to delivery.",
-      "steps": [
-        {
-          "title": "Discovery & Scope",
-          "description": "We define goals, constraints, priorities, and expected impact so every decision has a clear business reason."
-        },
-        {
-          "title": "Execution & Delivery",
-          "description": "I deliver in short iterations with frequent checkpoints, keeping quality high and communication simple."
-        },
-        {
-          "title": "Optimization & Support",
-          "description": "After release, I support improvements, performance tuning, and next-step planning based on real usage."
-        }
-      ]
-    },
-    "servicesOverview": {
-      "eyebrow": "Capabilities",
-      "title": "What I can do for you",
-      "subtitle": "Flexible support across product, engineering, and delivery.",
-      "services": [
-        {
-          "title": "Custom Software Development",
-          "description": "Scalable solutions tailored to your needs."
-        },
-        {
-          "title": "Strategic Consulting",
-          "description": "Optimization of IT infrastructure and processes."
-        },
-        {
-          "title": "Technological Innovation",
-          "description": "Integration of new technologies to keep your company competitive."
-        },
-        {
-          "title": "Project Management & Tech Lead",
-          "description": "Full management of complex technology projects."
-        },
-        {
-          "title": "Training & Mentoring",
-          "description": "Development of your IT team skills."
-        },
-        {
-          "title": "B2B Relationship Management",
-          "description": "Optimizing relationships with clients and suppliers."
-        }
-      ]
-    },
-    "contactCTA": {
-      "eyebrow": "Next Step",
-      "title": "Ready to collaborate?",
-      "description": "Tell me your goals and timeline. I will propose a practical path forward.",
-      "callButton": "Let's talk about your projects",
-      "emailButton": "Send me an email"
-    }
+  "about": {
+    "eyebrow": "About Me",
+    "title": "Before I'm a software engineer, I'm someone you can work with.",
+    "description1": "I'm a Freelance Software Engineer specializing in web applications, backend development, and custom software solutions. I enjoy building simple, reliable software designed to stand the test of time.",
+    "description2": "I believe great collaborations are built on communication, mutual trust, and transparency. That's why I prefer to fully understand my clients and their goals before starting any project."
+  },
+  "values": {
+    "eyebrow": "My Approach",
+    "title": "How I Choose to Work",
+    "items": [
+      {
+        "title": "Human Relationships",
+        "description": "Every project starts with people. I believe effective communication is just as important as well-designed software architecture."
+      },
+      {
+        "title": "Transparency",
+        "description": "I prefer to be honest from day one about costs, timelines, and project feasibility."
+      },
+      {
+        "title": "Quality",
+        "description": "I write code with future maintenance in mind, not just the initial delivery."
+      },
+      {
+        "title": "Professional Integrity",
+        "description": "If I don't believe I'm the right person for a project, I'll tell you immediately. I'd rather turn down a job than deliver something that doesn't meet my standards."
+      }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Working Together",
+    "title": "Work With Me",
+    "subtitle": "Software Engineer & Solution Architect for freelance and contract projects",
+    "description": "I help businesses and professionals design, develop, and grow digital products with a practical approach: clear objectives, realistic planning, and measurable results.",
+    "ctaButton": "Get in Touch"
+  },
+  "philosophy": {
+    "title": "I Don't Accept Every Project",
+    "description": "I only take on projects where I believe I can provide real value. If I think a project requires expertise outside my skill set or cannot be delivered to the quality standards I expect, I'll be transparent from the beginning. I believe honesty is the foundation of every successful collaboration."
+  },
+  "howIWork": {
+    "eyebrow": "Process",
+    "title": "How I Work",
+    "intro": "Every project is unique, but my way of working follows a simple and transparent process. It helps me understand your needs, reduce unexpected issues, and maintain clear communication throughout the collaboration.",
+    "steps": [
+      {
+        "title": "Analysis & Goals",
+        "description": "We define objectives, constraints, priorities, and expected outcomes so every technical decision supports your business goals."
+      },
+      {
+        "title": "Development & Delivery",
+        "description": "I work in short iterations with frequent updates, ensuring high quality and complete visibility throughout the project's progress."
+      },
+      {
+        "title": "Optimization & Support",
+        "description": "After launch, I continue supporting you with improvements, optimizations, and planning for future development."
+      }
+    ]
+  },
+  "servicesOverview": {
+    "eyebrow": "Expertise",
+    "title": "How I Can Help",
+    "subtitle": "Flexible support across product strategy, software development, and delivery.",
+    "services": [
+      {
+        "title": "Custom Software Development",
+        "description": "Scalable solutions designed around your business needs."
+      },
+      {
+        "title": "Strategic Consulting",
+        "description": "Optimization of existing IT infrastructure and business processes."
+      },
+      {
+        "title": "Technology Innovation",
+        "description": "Integration of modern technologies to keep your business competitive."
+      },
+      {
+        "title": "Project Management & Tech Leadership",
+        "description": "End-to-end management of complex technology projects."
+      },
+      {
+        "title": "Training & Mentoring",
+        "description": "Helping your IT team develop new skills and best practices."
+      },
+      {
+        "title": "B2B Relationship Management",
+        "description": "Improving collaboration and communication with clients and business partners."
+      }
+    ]
+  },
+  "contactCTA": {
+    "eyebrow": "Next Step",
+    "title": "Ready to Work Together?",
+    "description": "Tell me about your goals and timeline, and I'll suggest a practical roadmap to get started.",
+    "callButton": "Let's Talk About Your Project",
+    "emailButton": "Send Me an Email"
   }
-}
+  }}
