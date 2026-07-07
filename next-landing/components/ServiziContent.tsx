@@ -167,7 +167,7 @@ export default function ServiziContent() {
               </div>
               <div className="sercive_content">
                 <h2>{t(s.titleKey)}</h2>
-                <p>{t(s.descKey)}</p>
+                {/* <p>{t(s.descKey)}</p> */}
                 {Array.isArray(features) && features.length > 0 && (
                   <ul>
                     {features.map((f) => (

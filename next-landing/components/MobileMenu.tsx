@@ -70,7 +70,7 @@ const MobileMenu = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/#about" onClick={closeMenu}>
+                <Link href="/work-with-me" onClick={closeMenu}>
                   {t("menu.about")}
                 </Link>
               </li>

@@ -25,7 +25,7 @@ const WorkWithMe = () => {
         </Link>
         <div className="work-with-me-about">
           <div className="work-with-me-about-image">
-            <img src="/images/emilio.jpg" alt="Emilio Gambone" />
+            <img src="/assets/images/profile.jpg" alt="Emilio Gambone" />
           </div>
 
           <div className="work-with-me-about-content">

@@ -43,7 +43,7 @@ const Menu = () => {
               <div className="logo">
                 <Link
                   className="main_sticky_main_l"
-                  href="/#about"
+                  href="/"
                   title="msuzan"
                 >
                   <div style={{ position: "relative", width: 60, height: 60 }}>
@@ -75,7 +75,7 @@ const Menu = () => {
                     <Link href="/">{t("menu.home")}</Link>
                   </li>
                   <li>
-                    <Link href="/#about">{t("menu.about")}</Link>
+                    <Link href="/work-with-me">{t("menu.about")}</Link>
                   </li>
                   <li>
                     <Link href="/servizi">{t("menu.services")}</Link>

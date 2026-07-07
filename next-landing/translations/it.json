@@ -126,19 +126,27 @@
     "more": "Leggi tutto",
     "less": "Riduci",
 
-    "logistica": {
-      "sector": "Logistica",
-      "title": "Consulenza architetturale per WMS logistico",
-      "desc": "Un'azienda operante nel settore della logistica aveva la necessità di evolvere il proprio sistema di gestione del magazzino (WMS), rendendolo più scalabile e in grado di supportare nuovi flussi operativi. Ho collaborato alla definizione dell'architettura software, analizzando i requisiti tecnici e funzionali e individuando soluzioni in grado di migliorare prestazioni, manutenibilità e integrazione con gli altri sistemi aziendali. Il lavoro ha riguardato la progettazione delle componenti software e il supporto alle decisioni tecnologiche durante lo sviluppo.",
-      "features": [
-        "Software Architecture",
-        "Consulenza tecnica",
-        "WMS",
-        "Integrazione sistemi",
-        "Analisi dei requisiti"
-      ]
-    },
+"logistica": {
+  "sector": "Logistica",
+  "title": "Evoluzione di un Warehouse Management System (WMS)",
 
+  "challengeTitle": "La sfida",
+  "challenge": "Un'azienda logistica doveva evolvere il proprio WMS per supportare nuovi flussi operativi, migliorare la scalabilità e integrarsi con gli altri sistemi aziendali.",
+
+  "roleTitle": "Il mio ruolo",
+  "role": "Ho progettato l'architettura software, analizzato i requisiti e supportato il team nelle decisioni tecniche durante lo sviluppo.",
+
+  "outcomeTitle": "Obiettivo",
+  "outcome": "Realizzare una piattaforma modulare, facilmente manutenibile e pronta a evolversi nel tempo.",
+
+  "features": [
+    "Solution Architecture",
+    "Software Design",
+    "Analisi requisiti",
+    "System Integration",
+    "Technical Consulting"
+  ]
+},
     "appNative": {
       "sector": "Mobile · Multi-settore",
       "title": "Applicazioni Mobile Native",
