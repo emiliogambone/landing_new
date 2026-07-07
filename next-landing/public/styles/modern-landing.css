@@ -2073,7 +2073,6 @@ PROGETTI
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-
 .project-section {
   margin-top: 1.5rem;
 }
@@ -2142,7 +2141,11 @@ PROGETTI
 
 .progetto-card {
   position: relative;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.02)
+  );
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 24px;
   padding: 0;
@@ -2150,7 +2153,10 @@ PROGETTI
   flex-direction: column;
   overflow: hidden;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .progetto-card::before {
@@ -2168,7 +2174,9 @@ PROGETTI
 .progetto-card:hover {
   transform: translateY(-6px);
   border-color: rgba(0, 255, 240, 0.35);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35), 0 0 40px rgba(0, 255, 240, 0.08);
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35),
+    0 0 40px rgba(0, 255, 240, 0.08);
 }
 
 .progetto-card:hover::before {
@@ -2362,8 +2370,11 @@ PROGETTI
   border: none;
   cursor: pointer;
   font: inherit;
-  transition: background-color 0.2s ease, border-color 0.2s ease,
-    color 0.2s ease, transform 0.15s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.15s ease;
 }
 
 .project-tag--filter:hover {
@@ -2410,7 +2421,7 @@ PROGETTI
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,255,240,.14);
+  background: rgba(0, 255, 240, 0.14);
 }
 
 .contact-icon {
