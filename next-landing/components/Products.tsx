@@ -30,8 +30,8 @@ const Products = () => {
               </div>
 
               <div className="product_content">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                {/* <h3>{item.title}</h3> */}
+                {/* <p>{item.description}</p> */}
                 <a
                   href={item.link}
                   target="_blank"

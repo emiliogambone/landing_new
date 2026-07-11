@@ -56,7 +56,7 @@ const WorkWithMe = () => {
             {values.map((value) => (
               <article key={value.title} className="value-card">
                 <h4>{value.title}</h4>
-                <p>{value.description}</p>
+                {/* <p>{value.description}</p> */}
               </article>
             ))}
           </div>
@@ -95,7 +95,7 @@ const WorkWithMe = () => {
               <article className="work-with-me-how-card" key={step.title}>
                 <p className="work-step-index">0{idx + 1}</p>
                 <h4>{step.title}</h4>
-                <p>{step.description}</p>
+                {/* <p>{step.description}</p> */}
               </article>
             ))}
           </div>

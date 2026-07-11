@@ -962,8 +962,8 @@ h6 {
 }
 
 .work-with-me-how-card h4 {
-  margin: 4px 0 10px;
-  font-size: 1.02rem;
+  /* margin: 4px 0 10px; */
+  font-size: 1.7rem;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   color: #fff;
 }
@@ -1770,7 +1770,7 @@ PROGETTI
 .value-card h4 {
   color: white;
   margin-bottom: 0.75rem;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
 }
 
 .value-card p {
