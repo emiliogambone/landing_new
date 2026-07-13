@@ -41,6 +41,8 @@ END CSS INDEX
 
 html,
 body {
+    overflow-x: hidden;
+
 }
 
 img {
