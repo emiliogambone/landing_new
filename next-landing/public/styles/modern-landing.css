@@ -418,14 +418,27 @@ h6 {
 .product_preview {
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* adatta al layout della card */
+  border-radius: 8px;
 }
 
 .product_preview iframe {
   width: 100%;
   height: min(62vw, 460px);
   min-height: 340px;
-  border: 0;
+  /* border: 0; */
   background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  pointer-events: none; /* blocca scroll/click dentro l'iframe */
+  transform-origin: top left;
 }
 
 .product_content {
@@ -2440,4 +2453,86 @@ PROGETTI
 
 .plases_text p {
   margin: 0;
+}
+
+.contatti_text_block {
+  margin-bottom: 32px;
+  max-width: 700px;
+}
+
+.contatti_text_block h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contatti_text_block p {
+  line-height: 1.7;
+}
+
+/* layout orizzontale, responsive */
+.contatti_content_row {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.contatti_block {
+  flex: 1 1 260px; /* si restringe ma non sotto 260px, poi va a capo */
+  min-width: 0;
+}
+
+.contatti_block h2 {
+  margin-bottom: 10px;
+}
+
+/* blocca il cambio colore su hover ereditato da .single_service */
+.single_service.no-hover:hover h2,
+.single_service.no-hover:hover p,
+.single_service.no-hover:hover * {
+  color: inherit !important;
+}
+
+.contatti_full_card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.contatti_full_card .sercive_content {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.whatsapp_float_btn {
+  display: none; /* nascosto di default (desktop) */
+}
+
+@media (max-width: 768px) {
+  .whatsapp_float_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25d366; /* verde WhatsApp ufficiale */
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+    transition: transform 0.2s ease;
+  }
+
+  .whatsapp_float_btn:hover,
+  .whatsapp_float_btn:active {
+    transform: scale(1.08);
+    color: #fff; /* evita che diventi nero come nel menu */
+  }
+
+  .whatsapp_float_btn svg {
+    width: 28px;
+    height: 28px;
+  }
 }

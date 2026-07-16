@@ -86,12 +86,23 @@
     "ctaContact": "Contáctame",
     "ctaWork": "Ver mi trabajo"
   },
+  "contatti": {
+  "pageTitle": "Contacto",
+  "pageSubtitle": "Hablemos de tu proyecto: normalmente respondo en 24 horas.",
+  "locationTitle": "Dónde estoy",
+  "locationText": "Estoy ubicado en Verona, pero suelo trabajar en remoto con clientes en toda Italia y en el extranjero.",
+  "remoteTitle": "Cómo trabajo",
+  "remoteText": "Colaboro tanto de forma presencial como remota, adaptándome a las necesidades de cada proyecto. Uso comunicación asíncrona y llamadas periódicas para mantener todo alineado sin perder tiempo.",
+  "availabilityTitle": "Disponibilidad",
+  "availabilityText": "Actualmente disponible para nuevos proyectos freelance, consultoría técnica y colaboraciones continuas."
+},
   "workWithMe": {
     "about": {
       "eyebrow": "Sobre mí",
       "title": "Antes que desarrollador, soy una persona con la que es fácil colaborar.",
       "description1": "Soy Ingeniero de Software Freelance especializado en el desarrollo de aplicaciones web, backend y software a medida. Disfruto creando soluciones sencillas, fiables y diseñadas para perdurar en el tiempo.",
-      "description2": "Creo que una buena colaboración se basa en la comunicación, la confianza mutua y la transparencia. Por eso prefiero conocer a fondo al cliente y los objetivos del proyecto antes de comenzar cualquier desarrollo."
+      "description2": "Creo que una buena colaboración se basa en la comunicación, la confianza mutua y la transparencia. Por eso prefiero conocer a fondo al cliente y los objetivos del proyecto antes de comenzar cualquier desarrollo.",
+      "description3": "Hablo italiano, inglés y español, lo que me permite trabajar sin fricciones con equipos y clientes internacionales."
     },
     "values": {
       "eyebrow": "Mi enfoque",

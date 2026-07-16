@@ -4,6 +4,8 @@ import GAListener from "./GAListener";
 import I18nProvider from "./I18nProvider";
 import { HeaderChrome, FooterChrome } from "../components/ClientChrome";
 import ParticlesInit from "@/components/ParticleInit";
+import WhatsappFloatingButton from "@/components/WhatsappFlotaingButton";
+
 
 export const metadata = {
   metadataBase: new URL("https://emiliogambone.com"),
@@ -72,8 +74,9 @@ export default function RootLayout({
             <div className="App">
               <HeaderChrome />
               {children}
-              <ContactArea />
+              {/* <ContactArea /> */}
               <FooterChrome />
+              <WhatsappFloatingButton />
             </div>
           </I18nProvider>
         </ParticlesInit>

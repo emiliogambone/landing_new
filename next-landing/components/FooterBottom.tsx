@@ -13,7 +13,7 @@ const FooterBottom = () => {
           </div>
           <div className="col-md-6 col-sm-6">
             <div className="footer-menu">
-              <ul className="text-right">
+              {/* <ul className="text-right">
                 <li>
                   <a href="#">{t("menu.home")}</a>
                 </li>
@@ -26,7 +26,7 @@ const FooterBottom = () => {
                                 <li>
                   <a href="/progetti">{t("progetti.pageTitle")}</a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

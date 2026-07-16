@@ -38,6 +38,9 @@ const WorkWithMe = () => {
             <p>{t("workWithMe.about.description1")}</p>
 
             <p>{t("workWithMe.about.description2")}</p>
+
+            <p>{t("workWithMe.about.description3")}</p>
+
           </div>
         </div>
         <div className="work-with-me-values">
@@ -118,16 +121,16 @@ const WorkWithMe = () => {
           </ul>
         </div> */}
         <div id="contact" className="contact-cta">
-          <p className="work-section-eyebrow">
+          {/* <p className="work-section-eyebrow">
             {t("workWithMe.contactCTA.eyebrow")}
-          </p>
-          <h3>{t("workWithMe.contactCTA.title")}</h3>
-          <p className="work-section-lead">
+          </p> */}
+          {/* <h3>{t("workWithMe.contactCTA.title")}</h3> */}
+          {/* <p className="work-section-lead">
             {t("workWithMe.contactCTA.description")}
-          </p>
+          </p> */}
           <div className="work-with-me-contact-actions">
             <a
-              href="tel:+393493554864"
+              href="/contact"
               className="cta-button contact-primary"
               onClick={() =>
                 trackEvent({
@@ -139,7 +142,7 @@ const WorkWithMe = () => {
             >
               {t("workWithMe.contactCTA.callButton")}
             </a>
-            <a
+            {/* <a
               href="mailto:emilio.gambone@gmail.com"
               className="cta-button contact-ghost"
               onClick={() =>
@@ -151,7 +154,7 @@ const WorkWithMe = () => {
               }
             >
               {t("workWithMe.contactCTA.emailButton")}
-            </a>
+            </a> */}
           </div>
         </div>
       </section>

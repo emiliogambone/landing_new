@@ -85,7 +85,7 @@ const Menu = () => {
                     <Link href="/progetti">{t("progetti.pageTitle")}</Link>
                   </li>
                   <li>
-                    <Link href="/#contact">{t("menu.contact")}</Link>
+                    <Link href="/contact">{t("menu.contact")}</Link>
                   </li>
                   <li className="nav-language-item" ref={langRef}>
                     <button

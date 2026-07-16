@@ -487,8 +487,8 @@ msuzan HEADING NAV AREA CSS
 
 .msuzan_menu > ul > li > a {
   display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
   position: relative;
   color: #999;
   font-size: 13px;
@@ -505,8 +505,14 @@ msuzan HEADING NAV AREA CSS
   left: -2px;
   bottom: -6px;
   width: 0%;
-  border-bottom: 5px dotted #999;
-  transition: 0.3s;
+  height: 2px;
+  background-color: #fff;
+  border-bottom: none; /* rimuove i pallini */
+  transition: width 0.3s ease;
+}
+
+.msuzan_menu > ul > li > a:hover {
+  color: #fff;
 }
 
 .msuzan_menu > ul > li > a:hover::before {
@@ -519,7 +525,7 @@ msuzan HEADING NAV AREA CSS
 
 .msuzan_menu > ul > li.current > a,
 .msuzan_menu > ul > li:hover > a {
-  color: #000;
+  color: #fff;
   background-color: transparent;
 }
 

@@ -396,6 +396,16 @@
       ]
     }
   },
+  "contatti": {
+  "pageTitle": "Contatti",
+  "pageSubtitle": "Parliamo del tuo progetto: rispondo di solito entro 24 ore.",
+  "locationTitle": "Dove sono",
+  "locationText": "Sono basato a Verona, ma lavoro abitualmente da remoto con clienti in tutta Italia e all'estero.",
+  "remoteTitle": "Come lavoro",
+  "remoteText": "Collaboro sia in presenza che a distanza, adattandomi alle esigenze del progetto. Uso strumenti di comunicazione asincrona e call periodiche per mantenere tutto allineato senza sprecare tempo.",
+  "availabilityTitle": "Disponibilità",
+  "availabilityText": "Attualmente disponibile per nuovi progetti freelance, consulenze tecniche e collaborazioni continuative."
+},
   "services": {
     "sectionTitle": "Servizi",
     "sectionSubtitle": "Cosa faccio?",
@@ -464,7 +474,8 @@
       "eyebrow": "Chi sono",
       "title": "Prima di essere un professionista, sono una persona affidabile con cui collaborare.",
       "description1": "Sono un professionista con molti anni di esperienza maturata in progetti, settori e ruoli differenti, sempre a contatto con sfide tecnologiche e organizzative.",
-      "description2": "Questa varietà di esperienze mi consente di unire visione d’insieme, competenza tecnica e attenzione agli obiettivi di chi si affida a me."
+      "description2": "Questa varietà di esperienze mi consente di unire visione d’insieme, competenza tecnica e attenzione agli obiettivi di chi si affida a me.",
+      "description3": "Parlo italiano, inglese e spagnolo, e questo mi permette di lavorare senza attriti anche con team e clienti internazionali."
     },
     "values": {
       "eyebrow": "Il mio approccio",

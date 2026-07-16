@@ -18,31 +18,39 @@ const Products = () => {
         </div>
 
         <div className="products_grid">
-          {products.map((item: any) => (
-            <article key={item.link} className="product_card">
-              <div className="product_preview">
-                <iframe
-                  src={item.previewUrl || item.link}
-                  title={item.title}
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
-              </div>
+          {products.map((item: any) => {
+            const scale = item.previewScale || 1.0; // quanto "zoomare"
+            const offsetX = item.previewOffsetX || 0; // px, sposta a sinistra/destra
+            const offsetY = item.previewOffsetY || 0; // px, sposta sù/giù (es. -300 per saltare l'header)
 
-              <div className="product_content">
-                {/* <h3>{item.title}</h3> */}
-                {/* <p>{item.description}</p> */}
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="product_link_btn"
-                >
-                  {t("products.openLabel")}
-                </a>
-              </div>
-            </article>
-          ))}
+            return (
+              <article key={item.link} className="product_card">
+                <div className="product_preview">
+                  <iframe
+                    src={item.previewUrl || item.link}
+                    title={item.title}
+                    loading="lazy"
+                    scrolling="no"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    style={{
+                      transform: `scale(${scale}) translate(${offsetX}px, ${offsetY}px)`,
+                    }}
+                  />
+                </div>
+
+                <div className="product_content">
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="product_link_btn"
+                  >
+                    {t("products.openLabel")}
+                  </a>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>

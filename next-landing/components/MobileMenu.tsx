@@ -90,7 +90,7 @@ const MobileMenu = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" onClick={closeMenu}>
+                <Link href="/contact" onClick={closeMenu}>
                   {t("menu.contact")}
                 </Link>
               </li>
